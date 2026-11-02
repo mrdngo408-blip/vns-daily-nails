@@ -90,7 +90,7 @@ jobs:
       - name: Save Instagram result
         if: always()
         run: |
-          git add docs
+          git add docs secure 2>/dev/null || git add docs
           git diff --cached --quiet && exit 0
           git commit -m "Instagram post result"
           git pull --rebase

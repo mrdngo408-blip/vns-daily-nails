@@ -1,12 +1,15 @@
 """
 Posts the newest generated post(s) to Instagram through the official
-Instagram Graph API (Instagram Business account linked to a Facebook Page).
+Instagram API with Instagram Login (Business or Creator account, no Facebook Page needed).
+The 60-day login token is renewed automatically about every 3 weeks and stored
+encrypted in secure/ig_token.enc (the key is derived from the IG_ACCESS_TOKEN secret).
 
 - Feed post: the 4:5 version + full caption with 5 hashtags
 - Story: the full 9:16 version (turn off with POST_STORY=0)
 
 Environment:
-  IG_USER_ID, IG_ACCESS_TOKEN   required (if missing, posting is skipped)
+  IG_ACCESS_TOKEN               required (if missing, posting is skipped)
+  IG_USER_ID                    optional (default "me")
   POST_NOW=1                    post even for manual runs
   POST_STORY                    "1" (default) or "0"
   GRAPH_VERSION                 default v23.0
@@ -29,9 +32,60 @@ LAST_RUN = ROOT / ".last_run.json"
 TZ = ZoneInfo("America/Los_Angeles")
 SLOT_HOURS = {"morning": 9, "evening": 18}
 
-GRAPH = f"https://graph.facebook.com/{os.getenv('GRAPH_VERSION', 'v23.0')}"
-IG_USER = os.getenv("IG_USER_ID", "").strip()
-TOKEN = os.getenv("IG_ACCESS_TOKEN", "").strip()
+GRAPH_HOST = "https://graph.instagram.com"
+GRAPH = f"{GRAPH_HOST}/{os.getenv('GRAPH_VERSION', 'v23.0')}"
+IG_USER = os.getenv("IG_USER_ID", "").strip() or "me"
+SECRET_TOKEN = os.getenv("IG_ACCESS_TOKEN", "").strip()
+TOKEN_FILE = ROOT / "secure" / "ig_token.enc"
+TOKEN = SECRET_TOKEN
+
+
+# ---------------------------------------------------------------- token storage
+def _fernet():
+    import base64, hashlib
+    from cryptography.fernet import Fernet
+    key = hashlib.sha256(("vns-ig-token|" + SECRET_TOKEN).encode()).digest()
+    return Fernet(base64.urlsafe_b64encode(key))
+
+
+def load_token():
+    """Use the renewed token if we have one that matches the current secret."""
+    global TOKEN
+    if TOKEN_FILE.exists():
+        try:
+            data = json.loads(_fernet().decrypt(TOKEN_FILE.read_bytes()))
+            TOKEN = data["token"]
+            return data.get("saved", "")
+        except Exception:  # noqa: BLE001  (secret was replaced -> start fresh from it)
+            print("Stored Instagram token doesn't match the current secret - using the secret.")
+    return ""
+
+
+def save_token(token):
+    TOKEN_FILE.parent.mkdir(exist_ok=True)
+    payload = json.dumps({"token": token, "saved": dt.datetime.now(TZ).isoformat(timespec="seconds")})
+    TOKEN_FILE.write_bytes(_fernet().encrypt(payload.encode()))
+
+
+def maybe_refresh(saved):
+    """Renew the 60-day token if it's older than ~3 weeks (or age unknown)."""
+    global TOKEN
+    try:
+        if saved and (dt.datetime.now(TZ) - dt.datetime.fromisoformat(saved)).days < 20:
+            return
+        url = f"{GRAPH_HOST}/refresh_access_token?" + urllib.parse.urlencode(
+            {"grant_type": "ig_refresh_token", "access_token": TOKEN})
+        with urllib.request.urlopen(url, timeout=60) as r:
+            new = json.loads(r.read()).get("access_token")
+        if new:
+            TOKEN = new
+            save_token(new)
+            print("Instagram login renewed for another 60 days.")
+    except urllib.error.HTTPError as e:
+        # a brand-new token can't be renewed in its first 24 hours - that's fine
+        print(f"Token renewal skipped (HTTP {e.code}); will try again next run.")
+    except Exception as e:  # noqa: BLE001
+        print(f"Token renewal skipped ({type(e).__name__}); will try again next run.")
 
 
 def api(method, path, params):
@@ -47,7 +101,8 @@ def api(method, path, params):
             return json.loads(r.read())
     except urllib.error.HTTPError as e:
         body = e.read().decode(errors="replace")
-        body = body.replace(TOKEN, "***") if TOKEN else body
+        for t in (TOKEN, SECRET_TOKEN):
+            body = body.replace(t, "***") if t else body
         raise RuntimeError(f"Instagram API error {e.code}: {body[:400]}") from None
 
 
@@ -100,9 +155,10 @@ def main():
     if not slot and os.getenv("POST_NOW") != "1":
         print("Manual run without 'post to Instagram' - skipping Instagram.")
         return
-    if not (IG_USER and TOKEN):
-        print("Instagram is not connected yet (IG_USER_ID / IG_ACCESS_TOKEN missing) - skipping.")
+    if not SECRET_TOKEN:
+        print("Instagram is not connected yet (IG_ACCESS_TOKEN missing) - skipping.")
         return
+    maybe_refresh(load_token())
 
     wait_for_slot(slot)
     posts = json.loads(POSTS_JSON.read_text())

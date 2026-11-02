@@ -18,8 +18,8 @@ Every day at **9 AM and 6 PM Pacific** this app:
 |---|---|
 | `OPENAI_API_KEY` | OpenAI key (images + captions) |
 | `GALLERY_PASSCODE` | Passcode for the gallery page (optional) |
-| `IG_USER_ID` | Instagram Business account ID |
-| `IG_ACCESS_TOKEN` | Long-lived Meta access token (System User token never expires) |
+| `IG_USER_ID` | Optional (defaults to "me") |
+| `IG_ACCESS_TOKEN` | Instagram token from the Meta app dashboard (renewed automatically, stored encrypted in secure/) |
 
 Optional variable: `POST_STORY` = `0` to stop the Story post.
 
