@@ -1,0 +1,95 @@
+name: Nail Posts (9 AM + 6 PM)
+
+on:
+  schedule:
+    # GitHub uses UTC and ignores daylight saving, so each slot has two run times.
+    # The script only works on the one that lands just before 9 AM / 6 PM Pacific,
+    # makes the post, then waits until exactly 9:00 / 6:00 to publish.
+    - cron: "35 15 * * *"   # morning (summer time)
+    - cron: "35 16 * * *"   # morning (winter time)
+    - cron: "35 0 * * *"    # evening (summer time)
+    - cron: "35 1 * * *"    # evening (winter time)
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "one = 1 new post now | samples = 4 posts, one per season"
+        type: choice
+        options: [one, samples]
+        default: one
+      season:
+        description: "Force a season (auto = today's real season)"
+        type: choice
+        options: [auto, winter, spring, summer, fall]
+        default: auto
+      post_to_instagram:
+        description: "Also post it to Instagram right now? (ignored for samples)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nail-posts
+  cancel-in-progress: false
+
+jobs:
+  generate-and-post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: Set gallery passcode
+        env:
+          GALLERY_PASSCODE: ${{ secrets.GALLERY_PASSCODE }}
+        run: |
+          python - <<'EOF'
+          import hashlib, os
+          p = os.environ.get("GALLERY_PASSCODE", "").strip()
+          h = hashlib.sha256(p.encode()).hexdigest() if p else ""
+          open("docs/config.js", "w").write(f'window.GALLERY_HASH = "{h}";\n')
+          EOF
+
+      - name: Make image + caption
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          MODE: ${{ github.event_name == 'schedule' && 'slot' || github.event.inputs.mode }}
+          FORCE_SEASON: ${{ github.event.inputs.season != 'auto' && github.event.inputs.season || '' }}
+        run: python generate.py
+
+      - name: Save to gallery
+        if: always()
+        run: |
+          git config user.name "nail-bot"
+          git config user.email "nail-bot@users.noreply.github.com"
+          git add docs
+          git diff --cached --quiet && echo "Nothing new" && exit 0
+          git commit -m "New nail post $(date -u +%Y-%m-%d_%H%M)"
+          git pull --rebase
+          git push
+
+      - name: Post to Instagram
+        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one')
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          POST_NOW: ${{ github.event.inputs.post_to_instagram == 'true' && '1' || '0' }}
+          POST_STORY: ${{ vars.POST_STORY || '1' }}
+        run: python publish.py
+
+      - name: Save Instagram result
+        if: always()
+        run: |
+          git add docs
+          git diff --cached --quiet && exit 0
+          git commit -m "Instagram post result"
+          git pull --rebase
+          git push

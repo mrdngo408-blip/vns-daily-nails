@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Venetian Nail Spa · Daily Looks</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="config.js"></script>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#ffffff; --ink:#2a2320; --muted:#8a7f78; --line:#ece4da;
+    --gold:#b08d57; --gold-2:#d8bd8a; --ok:#3f7a54; --bad:#a3413a;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  header{background:rgba(250,247,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:14px 18px 12px;padding-top:max(14px,env(safe-area-inset-top))}
+  .brand{font-family:"Cormorant Garamond",serif;font-size:26px;font-weight:600;letter-spacing:.3px;margin:0}
+  .brand em{color:var(--gold);font-style:italic;font-weight:500}
+  .sub{font-size:12px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase;margin-top:2px}
+  .bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}
+  .status{font-size:12px;padding:5px 10px;border-radius:99px;background:#f1ebe2;color:var(--muted)}
+  .status.ok{background:#e8f2ea;color:var(--ok)} .status.bad{background:#f7e6e4;color:var(--bad)}
+  .btn{appearance:none;border:1px solid var(--ink);background:var(--ink);color:#fff;font:600 13px Inter,sans-serif;padding:10px 14px;border-radius:10px;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:42px}
+  .btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn.gold{background:var(--gold);border-color:var(--gold)}
+  .btn:active{transform:scale(.98)}
+  .filters{display:flex;gap:6px;overflow-x:auto;padding:12px 18px 4px;scrollbar-width:none}
+  .chip{flex:none;border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 13px;font-size:13px;color:var(--muted);cursor:pointer}
+  .chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  main{max-width:1100px;margin:0 auto;padding:10px 14px 60px}
+  .grid{display:grid;grid-template-columns:1fr;gap:18px}
+  @media(min-width:700px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:1050px){.grid{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 1px 2px rgba(60,40,20,.04)}
+  .imgwrap{position:relative;aspect-ratio:9/16;background:#efe9e1}
+  .imgwrap img{width:100%;height:100%;object-fit:cover;display:block}
+  .tag{position:absolute;top:10px;left:10px;background:rgba(255,255,255,.9);border-radius:99px;padding:4px 10px;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+  .ig{position:absolute;top:10px;right:10px;border-radius:99px;padding:4px 10px;font-size:11px;font-weight:600;background:rgba(255,255,255,.9)}
+  .ig.ok{color:var(--ok)} .ig.bad{color:var(--bad)}
+  .body{padding:14px 14px 16px}
+  .title{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:600;margin:0 0 2px}
+  .meta{font-size:12px;color:var(--muted);margin-bottom:10px}
+  .swatches{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px}
+  .sw{font-size:11px;padding:3px 8px;border-radius:99px;border:1px solid var(--line);color:var(--muted)}
+  .cap{white-space:pre-wrap;font-size:14px;line-height:1.5;background:#fbf8f4;border:1px solid var(--line);border-radius:12px;padding:12px;margin:0 0 12px}
+  .tags{color:var(--gold);font-weight:500}
+  .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .actions .wide{grid-column:1/-1}
+  .empty{text-align:center;color:var(--muted);padding:60px 20px;line-height:1.6}
+  .empty b{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--ink);display:block;margin-bottom:6px}
+  #gate{position:fixed;inset:0;background:var(--bg);display:none;align-items:center;justify-content:center;z-index:20;padding:24px}
+  #gate .box{width:100%;max-width:340px;text-align:center}
+  #gate input{width:100%;font-size:16px;padding:13px 14px;border-radius:12px;border:1px solid var(--line);margin:16px 0 10px;background:#fff}
+  #gate .err{color:var(--bad);font-size:13px;min-height:18px}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(80px);background:var(--ink);color:#fff;padding:11px 18px;border-radius:99px;font-size:14px;transition:transform .25s;z-index:30}
+  .toast.show{transform:translateX(-50%) translateY(0)}
+  footer{text-align:center;font-size:12px;color:var(--muted);padding:20px}
+</style>
+</head>
+<body>
+<div id="gate"><div class="box">
+  <div class="brand">Venetian <em>Nail Spa</em></div>
+  <div class="sub">Daily Looks</div>
+  <input id="pass" type="password" placeholder="Passcode" autocomplete="current-password">
+  <div class="err" id="passErr"></div>
+  <button class="btn" style="width:100%" onclick="checkPass()">Open</button>
+</div></div>
+
+<header>
+  <h1 class="brand">Venetian <em>Nail Spa</em></h1>
+  <div class="sub">Daily Looks · auto-posts 9 AM &amp; 6 PM</div>
+  <div class="bar">
+    <span class="status" id="status">Loading…</span>
+    <a class="btn ghost" id="makeNow" target="_blank" rel="noopener">＋ Make one now</a>
+  </div>
+</header>
+<div class="filters" id="filters"></div>
+<main><div class="grid" id="grid"></div></main>
+<footer>Images are AI-generated design inspiration.</footer>
+<div class="toast" id="toast"></div>
+
+<script>
+let POSTS = [], FILTER = "all";
+const $ = id => document.getElementById(id);
+
+function toast(msg){ const t=$("toast"); t.textContent=msg; t.classList.add("show"); setTimeout(()=>t.classList.remove("show"),1800); }
+function esc(s){ return String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+
+async function sha256(s){
+  const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s));
+  return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("");
+}
+function remembered(){ try{ return localStorage.getItem("vns_ok")===window.GALLERY_HASH; }catch(e){ return false; } }
+async function checkPass(){
+  const h = await sha256($("pass").value.trim());
+  if(h===window.GALLERY_HASH){ try{localStorage.setItem("vns_ok",h);}catch(e){} $("gate").style.display="none"; load(); }
+  else $("passErr").textContent="Wrong passcode";
+}
+$("pass").addEventListener("keydown",e=>{ if(e.key==="Enter") checkPass(); });
+
+// link to GitHub "Run workflow" page (works for owner.github.io/repo)
+(function(){
+  const owner = location.hostname.split(".")[0], repo = location.pathname.split("/")[1];
+  $("makeNow").href = owner && repo ? `https://github.com/${owner}/${repo}/actions/workflows/daily.yml` : "#";
+})();
+
+async function copyText(text){
+  try{ await navigator.clipboard.writeText(text); }
+  catch(e){ const ta=document.createElement("textarea"); ta.value=text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove(); }
+  toast("Caption copied");
+}
+
+async function saveImage(url, name){
+  // On phones, the share sheet lets you "Save Image" straight to Photos.
+  try{
+    const blob = await (await fetch(url, {cache:"no-store"})).blob();
+    const file = new File([blob], name, {type: blob.type || "image/jpeg"});
+    if(navigator.canShare && navigator.canShare({files:[file]})){ await navigator.share({files:[file]}); return; }
+    const a=document.createElement("a"); a.href=URL.createObjectURL(file); a.download=name; a.click();
+    setTimeout(()=>URL.revokeObjectURL(a.href),4000);
+  }catch(e){ if(e.name!=="AbortError") window.open(url,"_blank"); }
+}
+
+function igBadge(p){
+  if(!p.instagram) return p.slot ? `<span class="ig">Waiting to post</span>` : "";
+  if(p.instagram.error) return `<span class="ig bad">IG failed</span>`;
+  return `<span class="ig ok">✓ Posted</span>`;
+}
+
+function render(){
+  const list = POSTS.filter(p=>FILTER==="all"||p.season===FILTER).slice().reverse();
+  if(!list.length){
+    $("grid").innerHTML = `<div class="empty"><b>No looks yet</b>The first one appears after the next scheduled run,<br>or tap “Make one now”.</div>`;
+    return;
+  }
+  $("grid").innerHTML = list.map(p=>{
+    const d = new Date((p.created||p.date)).toLocaleString("en-US",{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
+    const slot = p.slot ? (p.slot==="morning"?" · 9 AM post":" · 6 PM post") : "";
+    return `<article class="card">
+      <div class="imgwrap"><img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title)}"><span class="tag">${esc(p.season)}${p.holiday?" · "+esc(p.holiday.split(" (")[0]):""}</span>${igBadge(p)}</div>
+      <div class="body">
+        <h2 class="title">${esc(p.title)}</h2>
+        <div class="meta">${esc(d)}${slot} · ${esc(p.technique)}</div>
+        <div class="swatches">${(p.palette||[]).map(c=>`<span class="sw">${esc(c)}</span>`).join("")}</div>
+        <p class="cap">${esc(p.caption)}\n<span class="tags">${esc((p.hashtags||[]).join(" "))}</span></p>
+        <div class="actions">
+          <button class="btn wide gold" data-copy="${esc(p.id)}">Copy caption + hashtags</button>
+          <button class="btn ghost" data-save="${esc(p.image)}" data-name="${esc(p.id)}-story.jpg">Save 9:16</button>
+          <button class="btn ghost" data-save="${esc(p.feed_image||p.image)}" data-name="${esc(p.id)}-feed.jpg">Save 4:5 feed</button>
+        </div>
+      </div>
+    </article>`;
+  }).join("");
+}
+
+document.addEventListener("click", e=>{
+  const c = e.target.closest("[data-copy]"); if(c){ const p=POSTS.find(x=>x.id===c.dataset.copy); copyText(p.full_caption); }
+  const s = e.target.closest("[data-save]"); if(s) saveImage(s.dataset.save, s.dataset.name);
+  const f = e.target.closest("[data-f]"); if(f){ FILTER=f.dataset.f; drawFilters(); render(); }
+});
+
+function drawFilters(){
+  $("filters").innerHTML = ["all","winter","spring","summer","fall"].map(s=>
+    `<button class="chip ${FILTER===s?"on":""}" data-f="${s}">${s==="all"?"All":s[0].toUpperCase()+s.slice(1)}</button>`).join("");
+}
+
+async function load(){
+  drawFilters();
+  try{
+    const [posts, status] = await Promise.all([
+      fetch("posts.json",{cache:"no-store"}).then(r=>r.json()),
+      fetch("status.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)
+    ]);
+    POSTS = posts;
+    const st=$("status");
+    if(status){ st.textContent=(status.ok?"✓ ":"⚠ ")+status.message+" · "+status.time; st.className="status "+(status.ok?"ok":"bad"); }
+    else st.textContent="Waiting for first run";
+  }catch(e){ $("status").textContent="Could not load posts"; }
+  render();
+}
+
+if(window.GALLERY_HASH && !remembered()){ $("gate").style.display="flex"; }
+else load();
+</script>
+</body>
+</html>
