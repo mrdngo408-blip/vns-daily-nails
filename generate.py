@@ -247,9 +247,15 @@ def usage_now():
     return u, u["days"].get(d, {"images": 0, "cost": 0.0}), u["months"].get(m, {"images": 0, "cost": 0.0}), d, m
 
 
+TEST_DAILY_LIMIT = int(os.getenv("TEST_DAILY_LIMIT", "8") or 8)
+TESTING = {"on": False}
+
+
 def budget_check():
     _, day, month, d, m = usage_now()
-    if day["images"] >= DAILY_IMAGE_LIMIT:
+    if TESTING["on"] and day.get("test_images", 0) >= TEST_DAILY_LIMIT:
+        raise BudgetStop(f"Daily test limit reached ({day.get('test_images', 0)}/{TEST_DAILY_LIMIT} test images).")
+    if not TESTING["on"] and day["images"] - day.get("test_images", 0) >= DAILY_IMAGE_LIMIT:
         raise BudgetStop(f"Daily safety limit reached ({day['images']}/{DAILY_IMAGE_LIMIT} images on {d}). "
                          f"No more images until tomorrow.")
     if month["cost"] + COST_PER_IMAGE > MONTHLY_BUDGET:
@@ -261,6 +267,8 @@ def record_image(kind="image"):
     u, day, month, d, m = usage_now()
     for bucket in (day, month):
         bucket["images"] = bucket.get("images", 0) + 1
+        if TESTING["on"]:
+            bucket["test_images"] = bucket.get("test_images", 0) + 1
         bucket["cost"] = round(bucket.get("cost", 0.0) + COST_PER_IMAGE, 2)
     u["days"][d], u["months"][m] = day, month
     u["days"] = dict(sorted(u["days"].items())[-60:])          # keep 60 days
@@ -607,12 +615,12 @@ def current_slot(now=None):
 
 
 # ---------------------------------------------------------------- main
-def make_post(client, day, season, posts, slot=None):
+def make_post(client, day, season, posts, slot=None, force_pose=None):
     holiday = upcoming_holiday(day) if season == season_for(day) else None
     if holiday and random.random() < 0.5:
         holiday = None  # about half the posts near a holiday lean into it
     brief = build_brief(day, season, holiday, posts)
-    CURRENT_POSE["pose"] = pick_pose(posts)
+    CURRENT_POSE["pose"] = force_pose or pick_pose(posts)
     pose_name = CURRENT_POSE["pose"]["name"] if CURRENT_POSE["pose"] else None
     print(f"- {day} | {season} | holiday: {holiday} | pose: {pose_name} | {brief['technique']} | {brief['background']}")
 
@@ -671,7 +679,7 @@ def make_post(client, day, season, posts, slot=None):
 
 def main():
     mode = os.getenv("MODE", "none").strip().lower() or "none"
-    if mode not in ("slot", "one", "samples", "test"):
+    if mode not in ("slot", "one", "samples", "test", "test-poses"):
         print(f"Mode '{mode}': nothing to make (safety default).")
         return
     force = os.getenv("FORCE_SEASON", "").strip().lower()
@@ -726,16 +734,21 @@ def main():
         jobs = [(today, s) for s in ("winter", "spring", "summer", "fall")]
     elif mode == "test":
         jobs = [(today, season_for(today))] * 2
+    elif mode == "test-poses":
+        new_poses = [p for p in load_poses() if not p["name"].startswith("01-")]   # pose 01 is already proven
+        jobs = [(today, season_for(today))] * len(new_poses)
     else:
         jobs = [(today, force if force in SEASONS else season_for(today))]
+    TESTING["on"] = mode in ("test", "test-poses")
 
     made = 0
     new_ids = []
     try:
         for day, season in jobs:
-            post = make_post(client, day, season, posts, slot)
+            post = make_post(client, day, season, posts, slot,
+                             force_pose=(new_poses[made] if mode == "test-poses" else None))
             post["quality"] = IMAGE_QUALITY
-            if mode == "test":
+            if mode in ("test", "test-poses"):
                 post["test"] = True              # test images are never posted
             posts.append(post)
             new_ids.append(post["id"])

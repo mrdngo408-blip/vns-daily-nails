@@ -6,7 +6,8 @@
     },
     "2026-11-02": {
       "images": 3,
-      "cost": 0.24
+      "cost": 0.24,
+      "test_images": 2
     }
   },
   "months": {

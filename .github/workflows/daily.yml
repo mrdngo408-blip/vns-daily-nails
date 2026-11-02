@@ -70,7 +70,7 @@ jobs:
         if: ${{ !contains(github.event.head_commit.message, '[post-latest]') && !contains(github.event.head_commit.message, '[ig-check]') && !contains(github.event.head_commit.message, '[fb-test]') && !contains(github.event.head_commit.message, '[fb-story-test]') }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || (contains(github.event.head_commit.message, '[samples]') && 'samples' || (contains(github.event.head_commit.message, '[test-medium]') && 'test' || 'none'))) || github.event.inputs.mode) }}
+          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || (contains(github.event.head_commit.message, '[samples]') && 'samples' || (contains(github.event.head_commit.message, '[test-medium]') && 'test' || (contains(github.event.head_commit.message, '[test-poses]') && 'test-poses' || 'none')))) || github.event.inputs.mode) }}
           IMAGE_QUALITY: ${{ contains(github.event.head_commit.message, '[test-medium]') && 'medium' || (vars.IMAGE_QUALITY || 'medium') }}
           DAILY_IMAGE_LIMIT: ${{ vars.DAILY_IMAGE_LIMIT || '6' }}
           MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD || '12' }}
