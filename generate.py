@@ -659,8 +659,8 @@ def _font(size):
         return ImageFont.load_default()
 
 
-def add_fine_print(img: Image.Image) -> Image.Image:
-    if not SHOW_FINE_PRINT:
+def add_fine_print(img: Image.Image, force=False) -> Image.Image:
+    if not (SHOW_FINE_PRINT or force):
         return img.convert("RGB")
     """Small white line centered at the very bottom with a soft shadow (no strip)."""
     img = img.convert("RGB")
@@ -743,7 +743,8 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     stamp = dt.datetime.now(TZ).strftime("%H%M%S")
     pid = f"{day.isoformat()}-{season}-{stamp}-{hashlib.md5(prompt.encode()).hexdigest()[:5]}"
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
-    add_fine_print(img).save(POSTS_DIR / f"{pid}.jpg", "JPEG", quality=92, optimize=True)
+    # 9:16 version = Instagram/Facebook Story (no caption there), so it carries the AI note
+    add_fine_print(img, force=True).save(POSTS_DIR / f"{pid}.jpg", "JPEG", quality=92, optimize=True)
     # Instagram feed posts only accept 4:5 up to 1.91:1, so also save a 4:5 (1080x1350) version
     feed = img.crop((0, (1920 - 1350) // 2, 1080, (1920 - 1350) // 2 + 1350))  # hand is centered
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
