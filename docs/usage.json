@@ -5,16 +5,16 @@
       "cost": 5.4
     },
     "2026-11-02": {
-      "images": 7,
-      "cost": 0.56,
-      "test_images": 6
+      "images": 12,
+      "cost": 0.96,
+      "test_images": 11
     }
   },
   "months": {
     "2026-11": {
-      "images": 25,
-      "cost": 5.96,
-      "test_images": 4
+      "images": 30,
+      "cost": 6.36,
+      "test_images": 9
     }
   },
   "note": "Nov 1 setup/testing estimated at 18 images",
