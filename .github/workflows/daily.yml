@@ -10,7 +10,7 @@ on:
     - cron: "35 0 * * *"    # evening (summer time)
     - cron: "35 1 * * *"    # evening (winter time)
   push:
-    paths: ["triggers/run-samples.txt"]   # lets Claude start a sample run by updating this file
+    paths: ["triggers/**"]   # lets Claude start runs: run-samples.txt = 4 samples, post-now.txt = 1 post to Instagram
   workflow_dispatch:
     inputs:
       mode:
@@ -63,7 +63,7 @@ jobs:
       - name: Make image + caption
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && 'samples' || github.event.inputs.mode) }}
+          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || 'samples') || github.event.inputs.mode) }}
           FORCE_SEASON: ${{ github.event.inputs.season != 'auto' && github.event.inputs.season || '' }}
         run: python generate.py
 
@@ -79,11 +79,11 @@ jobs:
           git push
 
       - name: Post to Instagram
-        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one')
+        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[post-now]'))
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || '17841465658821849' }}   # venetian.nailspa_modesto
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          POST_NOW: ${{ github.event.inputs.post_to_instagram == 'true' && '1' || '0' }}
+          POST_NOW: ${{ (github.event.inputs.post_to_instagram == 'true' || contains(github.event.head_commit.message, '[post-now]')) && '1' || '0' }}
           POST_STORY: ${{ vars.POST_STORY || '1' }}
         run: python publish.py
 
