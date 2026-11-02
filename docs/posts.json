@@ -177,5 +177,77 @@
       "posted": "2026-11-01T22:47:21-08:00",
       "story_id": "1430142829185346"
     }
+  },
+  {
+    "id": "2026-11-02-fall-001530-0d533",
+    "date": "2026-11-02",
+    "created": "2026-11-02T00:15:30-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Merlot & Gold Swirls",
+    "palette": [
+      "Merlot",
+      "Caramel Glaze",
+      "Mocha Espresso",
+      "22K Gold"
+    ],
+    "palette_text": "Merlot, Caramel Glaze, Mocha Espresso, 22K Gold",
+    "technique": "abstract flowing swirls",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-02-fall-001530-0d533.jpg",
+    "feed_image": "posts/2026-11-02-fall-001530-0d533-feed.jpg",
+    "slot": null,
+    "instagram": null,
+    "caption": "Deep merlot and caramel swirls set against mocha warmth — fall's luxe manicure. ✨\nSoft stiletto silhouette with a torn 22K gold-leaf accent for subtle drama.\nSeasonal inspo for Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#MerlotManicure",
+      "#SoftStiletto",
+      "#FallNailArt"
+    ],
+    "full_caption": "Deep merlot and caramel swirls set against mocha warmth — fall's luxe manicure. ✨\nSoft stiletto silhouette with a torn 22K gold-leaf accent for subtle drama.\nSeasonal inspo for Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n.\n#VenetianNailSpaModesto #ModestoNails #MerlotManicure #SoftStiletto #FallNailArt",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, with the fingers softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered in the frame. A thin dainty gold band on the ring finger. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with gold chrome accents and small crystals where the design calls for them. All four visible nails form one coordinated salon set. Color palette: Merlot, Caramel Glaze, Mocha Espresso, 22K Gold. Design: Soft stiletto shape on warm golden-tan skin. Index: glossy Merlot base with a single flowing caramel glaze swirl starting at the cuticle and fading toward the tip, edged with hair-thin veins of 22K gold leaf. Middle: Mocha Espresso canvas with layered translucent Merlot and Caramel Glaze swirls that overlap like silk, finished with scattered micro flakes of 22K gold for warm sparkle. Ring (accent): marbled centerpiece — heavy abstract swirls of Merlot and Caramel with a bold torn ribbon of 22K gold leaf down the center and a sliver of negative-space crescent near the sidewall; high-gloss finish to emphasize depth. Pinky: Merlot-to-Caramel ombré swirl swept diagonally with a soft mocha shadow near the tip and a single gilded speck at the cuticle. Overall look is cohesive: flowing abstract swirls, glossy gel depth, warm metallic highlights, luxurious fall mood. Technique emphasis: abstract flowing swirls. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Four fingers visible, each with exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, warm golden tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium",
+    "test": true
+  },
+  {
+    "id": "2026-11-02-fall-001641-fd5c3",
+    "date": "2026-11-02",
+    "created": "2026-11-02T00:16:41-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Cashmere & Gold Leaf",
+    "palette": [
+      "Espresso Brown",
+      "Camel Cashmere",
+      "Honey Amber",
+      "22K Gold Leaf"
+    ],
+    "palette_text": "Espresso Brown, Camel Cashmere, Honey Amber, 22K Gold Leaf",
+    "technique": "gold leaf flakes",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-02-fall-001641-fd5c3.jpg",
+    "feed_image": "posts/2026-11-02-fall-001641-fd5c3-feed.jpg",
+    "slot": null,
+    "instagram": null,
+    "caption": "Cashmere camel and deep espresso warmed with honey amber and 22K gold leaf — fall's luxe long-oval look. ✨\nSoft matte meets glossy with a marbled gold-flake accent for depth.\nInspired for Modesto this season; book at Venetian Nail Spa (link in bio) or call 209-408-8597",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#GoldLeafNails",
+      "#LongOval",
+      "#FallNailInspo"
+    ],
+    "full_caption": "Cashmere camel and deep espresso warmed with honey amber and 22K gold leaf — fall's luxe long-oval look. ✨\nSoft matte meets glossy with a marbled gold-flake accent for depth.\nInspired for Modesto this season; book at Venetian Nail Spa (link in bio) or call 209-408-8597\n.\n#VenetianNailSpaModesto #ModestoNails #GoldLeafNails #LongOval #FallNailInspo",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, with the fingers softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered in the frame. A thin dainty gold band on the ring finger. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with gold chrome accents and small crystals where the design calls for them. All four visible nails form one coordinated salon set. Color palette: Espresso Brown, Camel Cashmere, Honey Amber, 22K Gold Leaf. Design: Long oval nails on a deep-brown hand. Index: glossy Espresso Brown base with a slender vertical streak of Camel Cashmere shimmer near the cuticle and scattered small 22K gold leaf flakes drifting toward the tip. Middle: soft-matte Camel Cashmere base with a feathered Honey Amber translucent French tip; a fine line of crushed gold leaf hugs the smile line. Ring (accent): warm Honey Amber base with painterly Camel Cashmere marbling swept across the center and three larger irregular 22K gold leaf flakes layered over the veins for dimension. Pinky: glossy Espresso Brown with a subtle Champagne-fine microglitter gradient from cuticle to midpoint and tiny gold leaf specks clustered at the cuticle. Cohesive warm metallic finish with mixed matte and glossy textures, unified by gold leaf accents. Technique emphasis: gold leaf flakes. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Four fingers visible, each with exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium",
+    "test": true
   }
 ]
