@@ -154,7 +154,11 @@
     "image": "posts/2026-11-01-fall-222057-73a4b.jpg",
     "feed_image": "posts/2026-11-01-fall-222057-73a4b-feed.jpg",
     "slot": null,
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18121997398961324",
+      "posted": "2026-11-01T22:21:10-08:00",
+      "story_id": "18133364119690445"
+    },
     "caption": "Autumn cat-eye luxury in burgundy, copper and molten gold — creamy marble and gold leaf for depth. ✨\nLong oval, glossy and warm: this season's Modesto-inspired look. \nBook your Venetian Nail Spa appointment (link in bio) or call 209-408-8597.",
     "hashtags": [
       "#ModestoNails",
