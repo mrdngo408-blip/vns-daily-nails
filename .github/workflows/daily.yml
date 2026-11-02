@@ -9,6 +9,8 @@ on:
     - cron: "35 16 * * *"   # morning (winter time)
     - cron: "35 0 * * *"    # evening (summer time)
     - cron: "35 1 * * *"    # evening (winter time)
+  push:
+    paths: ["triggers/run-samples.txt"]   # lets Claude start a sample run by updating this file
   workflow_dispatch:
     inputs:
       mode:
@@ -61,7 +63,7 @@ jobs:
       - name: Make image + caption
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MODE: ${{ github.event_name == 'schedule' && 'slot' || github.event.inputs.mode }}
+          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && 'samples' || github.event.inputs.mode) }}
           FORCE_SEASON: ${{ github.event.inputs.season != 'auto' && github.event.inputs.season || '' }}
         run: python generate.py
 

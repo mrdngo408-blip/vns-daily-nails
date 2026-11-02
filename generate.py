@@ -38,6 +38,7 @@ TZ = ZoneInfo("America/Los_Angeles")
 IMAGE_MODELS = [m for m in os.getenv("IMAGE_MODELS", "gpt-image-2,gpt-image-1.5,gpt-image-1").split(",") if m]
 TEXT_MODELS = [m for m in os.getenv("TEXT_MODELS", "gpt-5-mini,gpt-4.1-mini,gpt-4o-mini").split(",") if m]
 IMAGE_QUALITY = os.getenv("IMAGE_QUALITY", "high")
+IMAGE_SIZES = ["1088x1920", "1024x1536"]  # true 9:16 first, then the standard tall size
 MOCK = os.getenv("MOCK") == "1"
 
 BUSINESS = {
@@ -51,20 +52,26 @@ LOCAL_TAGS = ["#ModestoNails", "#VenetianNailSpa", "#ModestoCA", "#CentralValley
 
 # ---------------------------------------------------------------- style
 REFERENCE_STYLE = (
-    "Ultra-realistic luxury beauty-editorial macro photograph. Two elegant feminine hands softly "
-    "overlapped in a relaxed natural pose, nails as the clear hero of the shot. Long {shape} nails, "
-    "perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail is divided into "
-    "flowing curved 'stained glass' sections outlined in raised {metal} chrome lines, filled with "
-    "rich color, with small clustered rhinestones and crystals placed along the metallic lines. "
-    "Every nail is slightly different but the full set is one coordinated design."
+    "Ultra-realistic luxury beauty-editorial close-up photograph of a woman's two hands, shot from slightly "
+    "above. POSE: the left hand lies flat and relaxed, back of the hand facing the camera, and the right hand "
+    "rests gently on top of it, crossing over at an angle so its fingers drape across the lower hand's fingers. "
+    "Both hands run diagonally from the upper right of the frame down toward the lower left, fingers relaxed, "
+    "softly separated and fanned out, gently curved, nails pointing down and to the left. All ten nails are "
+    "clearly visible, separate and fully in frame, five on each hand, none hidden or overlapping each other. "
+    "The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. "
+    "NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail "
+    "is divided into flowing curved 'stained glass' sections outlined in raised {metal} chrome lines, filled "
+    "with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every "
+    "nail is slightly different but the full set is one coordinated design."
 )
 
 REALISM_RULES = (
-    "Anatomically correct hands: exactly five fingers on each hand, natural knuckles, realistic skin "
-    "texture and pores, natural proportions, {skin} skin tone. Nails razor sharp and in focus, shallow "
+    "Anatomically perfect hands: exactly two hands, exactly five fingers on each hand (one thumb and four "
+    "fingers), every finger clearly separate and attached naturally, no extra, missing, fused or tangled "
+    "fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, "
+    "natural proportions, elegant slim fingers, {skin} skin tone. Nails razor sharp and in focus, shallow "
     "depth of field on the background. Soft warm studio lighting with gentle specular highlights on the "
-    "gloss. Tall vertical composition with the hands centered and empty space on the left and right "
-    "edges (the image will be cropped to 9:16). No text, no letters, no logos, no watermarks, no brand names."
+    "gloss. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
 )
 
 SHAPES = ["almond", "almond", "stiletto", "long oval", "almond", "soft stiletto"]
@@ -299,9 +306,16 @@ def build_image_prompt(brief, recipe):
 
 def make_image(client, prompt):
     def call(model):
-        resp = client.images.generate(model=model, prompt=prompt, size="1024x1536",
-                                      quality=IMAGE_QUALITY, n=1)
-        return base64.b64decode(resp.data[0].b64_json)
+        for size in IMAGE_SIZES:
+            try:
+                resp = client.images.generate(model=model, prompt=prompt, size=size,
+                                              quality=IMAGE_QUALITY, n=1)
+                return base64.b64decode(resp.data[0].b64_json)
+            except Exception as e:  # noqa: BLE001
+                if "size" in str(e).lower() and size != IMAGE_SIZES[-1]:
+                    print(f"  size {size} not supported by {model}, trying next size")
+                    continue
+                raise
 
     last = None
     for model in IMAGE_MODELS:
