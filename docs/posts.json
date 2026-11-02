@@ -282,7 +282,9 @@
     "image": "posts/2026-11-01-fall-190707-ea949.jpg",
     "feed_image": "posts/2026-11-01-fall-190707-ea949-feed.jpg",
     "slot": null,
-    "instagram": null,
+    "instagram": {
+      "error": "Instagram API error 400: {\"error\":{\"message\":\"Unsupported post request. Object with ID '17841465658821849' does not exist, cannot be loaded due to missing permissions, or does not support this operation. Please read the Graph API documentation at https:\\/\\/developers.facebook.com\\/docs\\/graph-api\",\""
+    },
     "caption": "Deep merlot, warm burnt sienna and antique gold — a long-oval fall look that reads modern luxury ✨\nTortoiseshell accents, milk-chocolate matte and delicate silver rhinestone clusters for just the right glow.\nDesign inspiration for Modesto this season. Book at Venetian Nail Spa (link in bio) or call 209-408-8597.",
     "hashtags": [
       "#ModestoNails",
