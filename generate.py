@@ -199,12 +199,78 @@ def openai_client():
     return OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
 
+# ---------------------------------------------------------------- spending guard
+USAGE_JSON = DOCS / "usage.json"
+COST_PER_IMAGE = float(os.getenv("COST_PER_IMAGE", "0.30") or 0.30)      # cautious estimate per image
+DAILY_IMAGE_LIMIT = int(os.getenv("DAILY_IMAGE_LIMIT", "10") or 10)       # 2 posts x 3 tries + spare
+COOLDOWN_MIN = int(os.getenv("COOLDOWN_MIN", "10") or 10)                # ignore repeat manual runs
+MONTHLY_BUDGET = float(os.getenv("MONTHLY_BUDGET_USD", "25") or 25)       # stop before going over this
+
+
+class BudgetStop(Exception):
+    """Spending limit reached - stop before calling OpenAI."""
+
+
+def load_usage():
+    try:
+        return json.loads(USAGE_JSON.read_text())
+    except Exception:  # noqa: BLE001
+        return {"days": {}, "months": {}}
+
+
+def usage_now():
+    u = load_usage()
+    now = dt.datetime.now(TZ)
+    d, m = now.date().isoformat(), now.strftime("%Y-%m")
+    return u, u["days"].get(d, {"images": 0, "cost": 0.0}), u["months"].get(m, {"images": 0, "cost": 0.0}), d, m
+
+
+def budget_check():
+    _, day, month, d, m = usage_now()
+    if day["images"] >= DAILY_IMAGE_LIMIT:
+        raise BudgetStop(f"Daily safety limit reached ({day['images']}/{DAILY_IMAGE_LIMIT} images on {d}). "
+                         f"No more images until tomorrow.")
+    if month["cost"] + COST_PER_IMAGE > MONTHLY_BUDGET:
+        raise BudgetStop(f"Monthly budget reached (about ${month['cost']:.2f} of ${MONTHLY_BUDGET:.0f} in {m}). "
+                         f"No more images this month.")
+
+
+def record_image(kind="image"):
+    u, day, month, d, m = usage_now()
+    for bucket in (day, month):
+        bucket["images"] = bucket.get("images", 0) + 1
+        bucket["cost"] = round(bucket.get("cost", 0.0) + COST_PER_IMAGE, 2)
+    u["days"][d], u["months"][m] = day, month
+    u["days"] = dict(sorted(u["days"].items())[-60:])          # keep 60 days
+    u["limits"] = {"daily_images": DAILY_IMAGE_LIMIT, "monthly_budget": MONTHLY_BUDGET,
+                   "cost_per_image_estimate": COST_PER_IMAGE}
+    USAGE_JSON.write_text(json.dumps(u, indent=2))
+
+
+class FatalAPIError(Exception):
+    """Billing / key / quota / policy problems: retrying would only waste time or money."""
+
+
+FATAL_HINTS = ("insufficient_quota", "billing", "hard_limit", "exceeded your current quota",
+               "invalid_api_key", "incorrect api key", "401", "account_deactivated",
+               "content_policy", "moderation_blocked", "safety system")
+
+
+def is_fatal(e):
+    if isinstance(e, (FatalAPIError, BudgetStop)):
+        return True
+    msg = f"{type(e).__name__} {e}".lower()
+    return any(h in msg for h in FATAL_HINTS)
+
+
 def with_retries(fn, label, tries=3):
     last = None
     for attempt in range(1, tries + 1):
         try:
             return fn()
         except Exception as e:  # noqa: BLE001
+            if is_fatal(e):
+                raise FatalAPIError(f"{label}: {str(e)[:300]}") from None
             last = e
             print(f"  {label} attempt {attempt} failed: {type(e).__name__}: {str(e)[:200]}")
             time.sleep(4 * attempt)
@@ -254,6 +320,8 @@ def make_recipe(client, brief):
             r = with_retries(lambda: call(model), f"text model {model}", tries=2)
             r["text_model"] = model
             return r
+        except FatalAPIError:
+            raise
         except Exception:  # noqa: BLE001
             continue
     print("  All text models failed - using built-in backup recipe.")
@@ -358,10 +426,14 @@ def make_image(client, prompt):
         if ref:
             try:
                 return with_retries(lambda: with_ref(model), f"pose-reference image {model}", tries=2), model + "+pose"
+            except FatalAPIError:
+                raise
             except Exception as e:  # noqa: BLE001
                 last = e
         try:
             return with_retries(lambda: text_only(model), f"image model {model}", tries=2), model
+        except FatalAPIError:
+            raise
         except Exception as e:  # noqa: BLE001
             last = e
     raise RuntimeError(f"Image generation failed on all models: {last}")
@@ -412,7 +484,9 @@ MAX_ATTEMPTS = int(os.getenv("MAX_ATTEMPTS", "3"))
 def make_checked_image(client, prompt):
     notes = []
     for attempt in range(1, MAX_ATTEMPTS + 1):
+        budget_check()                       # stop BEFORE spending if a limit is reached
         raw, model = make_image(client, prompt)
+        record_image()
         ok, note = check_hand(client, raw)
         print(f"  attempt {attempt}: {'PASS' if ok else 'REJECTED'} ({note})")
         notes.append(note)
@@ -555,7 +629,10 @@ def make_post(client, day, season, posts, slot=None):
 
 
 def main():
-    mode = os.getenv("MODE", "one").strip().lower() or "one"
+    mode = os.getenv("MODE", "none").strip().lower() or "none"
+    if mode not in ("slot", "one", "samples"):
+        print(f"Mode '{mode}': nothing to make (safety default).")
+        return
     force = os.getenv("FORCE_SEASON", "").strip().lower()
     today = dt.datetime.now(TZ).date()
     posts = load_posts()
@@ -570,6 +647,17 @@ def main():
         if any(p.get("date") == today.isoformat() and p.get("slot") == slot for p in posts):
             print(f"The {slot} post for today already exists - nothing to do.")
             return
+
+    if mode == "one" and posts:
+        try:
+            last = dt.datetime.fromisoformat(posts[-1]["created"])
+            mins = (dt.datetime.now(TZ) - last).total_seconds() / 60
+            if mins < COOLDOWN_MIN:
+                print(f"Last image was made {mins:.0f} min ago - skipping to avoid a double-click duplicate.")
+                write_status(True, f"Skipped: last image was only {mins:.0f} min ago (wait {COOLDOWN_MIN} min).")
+                return
+        except Exception:  # noqa: BLE001
+            pass
 
     if mode == "samples":
         jobs = [(today, s) for s in ("winter", "spring", "summer", "fall")]
@@ -588,6 +676,11 @@ def main():
         (ROOT / ".last_run.json").write_text(json.dumps({"ids": new_ids, "slot": slot}))
         write_status(True, f"Made {made} new post(s).")
         print(f"Done: {made} post(s).")
+    except BudgetStop as e:
+        save_posts(posts)
+        write_status(False, f"Safety stop: {e}")
+        print(f"SAFETY STOP: {e}")
+        sys.exit(1)
     except Exception as e:  # noqa: BLE001
         save_posts(posts)
         write_status(False, f"Made {made} post(s), then failed: {type(e).__name__}: {str(e)[:300]}")

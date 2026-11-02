@@ -73,6 +73,7 @@
   <div class="sub">Daily Looks · auto-posts 9 AM &amp; 6 PM</div>
   <div class="bar">
     <span class="status" id="status">Loading…</span>
+    <span class="status" id="usage"></span>
     <a class="btn ghost" id="makeNow" target="_blank" rel="noopener">＋ Make one now</a>
   </div>
 </header>
@@ -173,6 +174,16 @@ async function load(){
       fetch("posts.json",{cache:"no-store"}).then(r=>r.json()),
       fetch("status.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).catch(()=>null)
     ]);
+    fetch("usage.json",{cache:"no-store"}).then(r=>r.ok?r.json():null).then(u=>{
+      if(!u) return;
+      const now=new Date(new Date().toLocaleString("en-US",{timeZone:"America/Los_Angeles"}));
+      const m=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
+      const d=m+"-"+String(now.getDate()).padStart(2,"0");
+      const mo=(u.months||{})[m]||{images:0,cost:0}, dy=(u.days||{})[d]||{images:0};
+      const L=u.limits||{daily_images:10,monthly_budget:25};
+      $("usage").textContent=`Today ${dy.images}/${L.daily_images} images · This month ~$${mo.cost.toFixed(2)} of $${L.monthly_budget}`;
+      if(mo.cost>=L.monthly_budget*0.8) $("usage").className="status bad";
+    }).catch(()=>{});
     POSTS = posts;
     const st=$("status");
     if(status){ st.textContent=(status.ok?"✓ ":"⚠ ")+status.message+" · "+status.time; st.className="status "+(status.ok?"ok":"bad"); }

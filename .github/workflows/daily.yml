@@ -38,7 +38,7 @@ concurrency:
 jobs:
   generate-and-post:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v5
 
@@ -70,7 +70,10 @@ jobs:
         if: ${{ !contains(github.event.head_commit.message, '[post-latest]') && !contains(github.event.head_commit.message, '[ig-check]') && !contains(github.event.head_commit.message, '[fb-test]') && !contains(github.event.head_commit.message, '[fb-story-test]') }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || 'samples') || github.event.inputs.mode) }}
+          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || (contains(github.event.head_commit.message, '[samples]') && 'samples' || 'none')) || github.event.inputs.mode) }}
+          DAILY_IMAGE_LIMIT: ${{ vars.DAILY_IMAGE_LIMIT || '10' }}
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD || '25' }}
+          COST_PER_IMAGE: ${{ vars.COST_PER_IMAGE || '0.30' }}
           FORCE_SEASON: ${{ github.event.inputs.season != 'auto' && github.event.inputs.season || '' }}
         run: python generate.py
 
