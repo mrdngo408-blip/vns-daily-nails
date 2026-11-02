@@ -644,6 +644,8 @@ def mock_image(brief, recipe):
 
 
 FINE_PRINT = "FOR INSPO PURPOSE ONLY. AI GENERATED IMAGE"
+SHOW_FINE_PRINT = os.getenv("SHOW_FINE_PRINT", "0") == "1"          # off: disclosure is in the caption instead
+AI_DISCLOSURE = "✨ AI-generated design inspiration"
 
 
 def _font(size):
@@ -658,6 +660,8 @@ def _font(size):
 
 
 def add_fine_print(img: Image.Image) -> Image.Image:
+    if not SHOW_FINE_PRINT:
+        return img.convert("RGB")
     """Small white line centered at the very bottom with a soft shadow (no strip)."""
     img = img.convert("RGB")
     w, h = img.size
@@ -746,7 +750,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
 
     question = unique_question(client, recipe, brief, posts)
     welcome = pick_welcome(posts)
-    caption = recipe["caption"].strip() + "\n\n" + question + "\n\n" + welcome
+    caption = recipe["caption"].strip() + "\n\n" + question + "\n\n" + welcome + "\n\n" + AI_DISCLOSURE
     return {
         "id": pid,
         "date": day.isoformat(),
