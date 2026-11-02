@@ -269,7 +269,11 @@
     "image": "posts/2026-11-02-fall-083410-93394.jpg",
     "feed_image": "posts/2026-11-02-fall-083410-93394-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18113902505178809",
+      "posted": "2026-11-02T09:00:08-08:00",
+      "story_id": "18122979436953746"
+    },
     "caption": "Elevate fall with Burnt Sienna, Amber Glow and Warm Cream mapped in rose-gold stained-glass outlines 🍂\nTortoiseshell patchwork and warm metallic panes — long ovals made for cozy, confident evenings in Modesto.\nInspired? Book your Venetian Nail Spa appointment — link in bio or call 209-408-8597",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -283,6 +287,11 @@
     "hand_check": "pose 8/10 - No extra/fused/missing fingers or nails, no visible text/watermark. Slight fabric/background difference from reference.",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, with the fingers softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered in the frame. A thin dainty gold band on the ring finger. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with rose gold chrome accents and small crystals where the design calls for them. All four visible nails form one coordinated salon set. Color palette: Burnt Sienna, Amber Glow, Warm Cream, Rose Gold Metallic. Design: Long oval nails on medium-tan skin, four visible fingers: Index — Burnt Sienna base with a warm-cream triangular panel near the cuticle and a narrow Amber Glow stripe toward the tip, all separated by ultra-fine rose-gold chrome stained-glass outlines; satin-gloss finish. Middle — Amber Glow translucent field with a soft rose-gold metallic veil, divided into geometric panes by the same gold-chrome lines; slight high-shine for depth. Ring (accent) — patchwork stained-glass composition: warm-cream and Burnt Sienna panes interspersed with a small tortoiseshell panel (amber pools with espresso speckles) framed in rose-gold chrome; the largest pane carries a subtle glossy contrast for focal impact. Pinky — Warm Cream base with a diagonal Burnt Sienna shard and a whisper-thin rose-gold metallic inlay, all edged by gold-chrome outlines; consistent long-oval silhouette ties the set together. Technique emphasis: gold chrome stained-glass outlines. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Four fingers visible, each with exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122332140110240822",
+      "posted": "2026-11-02T09:00:25-08:00",
+      "story_id": "1603630230891801"
+    }
   }
 ]
