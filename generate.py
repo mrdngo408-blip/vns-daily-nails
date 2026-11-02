@@ -374,7 +374,29 @@ def fallback_recipe(brief):
     }
 
 
-WELCOME_LINE = "New here? Welcome to Venetian Nail Spa! What nail style are you loving lately?"
+WELCOME_LINES = [
+    "New here? Welcome to Venetian Nail Spa! What nail style are you loving lately?",
+    "Just found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?",
+    "New to our page? Welcome! What colors are you wearing on your nails this season?",
+    "Welcome to all our new friends! What's your dream nail set?",
+    "First time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?",
+    "So happy you found us! What nail look are you planning next?",
+    "New here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?",
+    "Welcome, new friends! What nail trend has caught your eye lately?",
+    "Just discovering us? Welcome! What's your go-to manicure style?",
+    "New to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?",
+    "Hi and welcome if you're new here! What's the last nail color you fell in love with?",
+    "Welcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.",
+]
+
+
+def pick_welcome(posts):
+    """Rotate welcome lines: least recently used first, never the same line twice in a row."""
+    last = {}
+    for i, p in enumerate(posts):
+        if p.get("welcome"):
+            last[p["welcome"]] = i
+    return sorted(WELCOME_LINES, key=lambda w: (last.get(w, -1), random.random()))[0]
 
 BAIT_WORDS = ("tag ", "tag a", "share this", "share with", "like this post", "like if", "hit like", "double tap", "follow", "save this",
               "comment yes", "comment a", "drop a", "type ", "giveaway", "win ")
@@ -718,7 +740,8 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
     question = unique_question(client, recipe, brief, posts)
-    caption = recipe["caption"].strip() + "\n\n" + question + "\n\n" + WELCOME_LINE
+    welcome = pick_welcome(posts)
+    caption = recipe["caption"].strip() + "\n\n" + question + "\n\n" + welcome
     return {
         "id": pid,
         "date": day.isoformat(),
@@ -739,6 +762,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
         "full_caption": caption + "\n.\n" + " ".join(tags),
         "alt_text": alt_text,
         "question": question,
+        "welcome": welcome,
         "image_model": model,
         "hand_check": check_note,
         "pose": pose_name,
