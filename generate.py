@@ -668,9 +668,10 @@ def add_fine_print(img: Image.Image) -> Image.Image:
     tw, th = box[2] - box[0], box[3] - box[1]
     pad = size // 2
     strip_top = h - th - pad * 2 - 6
-    draw.rectangle([0, strip_top, w, h], fill=(0, 0, 0, 90))
-    draw.text(((w - tw) / 2 - box[0], strip_top + pad - box[1] + 3), FINE_PRINT,
-              font=font, fill=(255, 255, 255, 235))
+    draw.rectangle([0, strip_top, w, h], fill=(0, 0, 0, 45))          # lighter strip (was 90)
+    x, y = (w - tw) / 2 - box[0], strip_top + pad - box[1] + 3
+    draw.text((x + 1, y + 1), FINE_PRINT, font=font, fill=(0, 0, 0, 110))   # soft shadow keeps it readable
+    draw.text((x, y), FINE_PRINT, font=font, fill=(255, 255, 255, 235))
     return img
 
 
