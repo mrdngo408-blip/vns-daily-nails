@@ -26,7 +26,7 @@ import time
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 DOCS = ROOT / "docs"
@@ -74,7 +74,8 @@ REALISM_RULES = (
     "fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, "
     "natural proportions, elegant slim fingers, {skin} skin tone. Nails razor sharp and in focus, shallow "
     "depth of field on the background. Soft warm studio lighting with gentle specular highlights on the "
-    "gloss. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
+    "gloss. Symmetry check: left thumb = right thumb, left index = right index, left middle = right middle, "
+    "left ring = right ring, left pinky = right pinky. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
 )
 
 SHAPES = ["almond", "almond", "stiletto", "long oval", "almond", "soft stiletto"]
@@ -344,6 +345,37 @@ def mock_image(brief, recipe):
     return buf.getvalue(), "mock"
 
 
+FINE_PRINT = "FOR INSPO PURPOSE ONLY. AI GENERATED IMAGE"
+
+
+def _font(size):
+    for path in ("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+                 "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf"):
+        if os.path.exists(path):
+            return ImageFont.truetype(path, size)
+    try:
+        return ImageFont.load_default(size=size)
+    except TypeError:
+        return ImageFont.load_default()
+
+
+def add_fine_print(img: Image.Image) -> Image.Image:
+    """Small white line centered at the very bottom on a soft dark strip."""
+    img = img.convert("RGB")
+    w, h = img.size
+    size = max(16, w // 50)          # ~21px on a 1080-wide image
+    font = _font(size)
+    draw = ImageDraw.Draw(img, "RGBA")
+    box = draw.textbbox((0, 0), FINE_PRINT, font=font)
+    tw, th = box[2] - box[0], box[3] - box[1]
+    pad = size // 2
+    strip_top = h - th - pad * 2 - 6
+    draw.rectangle([0, strip_top, w, h], fill=(0, 0, 0, 90))
+    draw.text(((w - tw) / 2 - box[0], strip_top + pad - box[1] + 3), FINE_PRINT,
+              font=font, fill=(255, 255, 255, 235))
+    return img
+
+
 def to_9x16(raw: bytes) -> Image.Image:
     img = Image.open(io.BytesIO(raw)).convert("RGB")
     w, h = img.size
@@ -396,10 +428,10 @@ def make_post(client, day, season, posts, slot=None):
     stamp = dt.datetime.now(TZ).strftime("%H%M%S")
     pid = f"{day.isoformat()}-{season}-{stamp}-{hashlib.md5(prompt.encode()).hexdigest()[:5]}"
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
-    img.save(POSTS_DIR / f"{pid}.jpg", "JPEG", quality=92, optimize=True)
+    add_fine_print(img).save(POSTS_DIR / f"{pid}.jpg", "JPEG", quality=92, optimize=True)
     # Instagram feed posts only accept 4:5 up to 1.91:1, so also save a 4:5 (1080x1350) version
     feed = img.crop((0, (1920 - 1350) // 2, 1080, (1920 - 1350) // 2 + 1350))
-    feed.save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
+    add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
     caption = recipe["caption"].strip()
     return {
