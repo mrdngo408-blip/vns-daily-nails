@@ -26,6 +26,6 @@ for ver in ("v26.0", "v23.0"):
     for path, params in [("me", {"fields": "id,name"}),
                          ("me/permissions", None),
                          (IG_ID, {"fields": "id,username"}),
-                         ("me/accounts", {"fields": "name,instagram_business_account{id,username}"})]:
+                         ("me/accounts", {"fields": "id,name,instagram_business_account{id,username}"})]:
         st, data = get(fb, ver, path, params)
         print(f"{path}: {st} {json.dumps(data)[:400]}")

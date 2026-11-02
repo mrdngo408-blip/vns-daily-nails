@@ -6,6 +6,7 @@ encrypted in secure/ig_token.enc (the key is derived from the IG_ACCESS_TOKEN se
 
 - Feed post: the 4:5 version + full caption with 5 hashtags
 - Story: the full 9:16 version (turn off with POST_STORY=0)
+- Facebook Page: same 4:5 image + caption (turn off with POST_FACEBOOK=0)
 
 Environment:
   IG_ACCESS_TOKEN               required (if missing, posting is skipped)
@@ -188,7 +189,85 @@ def wait_for_slot(slot):
         time.sleep(secs)
 
 
+# ---------------------------------------------------------------- Facebook Page
+FB_GRAPH = f"https://graph.facebook.com/{os.getenv('GRAPH_VERSION', 'v23.0')}"
+_PAGE = None
+
+
+def fb_call(method, path, params, token):
+    data = urllib.parse.urlencode(dict(params, access_token=token)).encode()
+    url = f"{FB_GRAPH}/{path}"
+    req = urllib.request.Request(url + "?" + data.decode()) if method == "GET" else \
+        urllib.request.Request(url, data=data, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            return json.loads(r.read())
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")
+        for t in (token, TOKEN, SECRET_TOKEN):
+            body = body.replace(t, "***") if t else body
+        raise RuntimeError(f"Facebook API error {e.code}: {body[:400]}") from None
+
+
+def facebook_page():
+    """Find the salon's Facebook Page (the one linked to the Instagram account) and its posting token."""
+    global _PAGE
+    if _PAGE is None:
+        _PAGE = False
+        try:
+            pages = fb_call("GET", "me/accounts",
+                            {"fields": "id,name,access_token,instagram_business_account"}, SECRET_TOKEN).get("data", [])
+        except Exception as e:  # noqa: BLE001
+            print(f"Facebook Page lookup failed: {str(e)[:150]}")
+            pages = []
+        linked = [pg for pg in pages if (pg.get("instagram_business_account") or {}).get("id") == IG_USER]
+        pick = (linked or pages or [None])[0]
+        if pick and pick.get("access_token"):
+            _PAGE = pick
+            print(f"Facebook Page: {pick.get('name')}")
+        else:
+            print("Facebook Page not connected yet (token needs pages_manage_posts) - skipping Facebook.")
+    return _PAGE or None
+
+
+def post_to_facebook(p):
+    page = facebook_page()
+    if not page:
+        return None
+    r = fb_call("POST", f"{page['id']}/photos",
+                {"url": public_url(p["feed_image"]), "caption": p["full_caption"], "published": "true"},
+                page["access_token"])
+    return {"post_id": r.get("post_id") or r.get("id"),
+            "posted": dt.datetime.now(TZ).isoformat(timespec="seconds")}
+
+
+def facebook_only():
+    """[fb-test]: share the newest Instagram post to Facebook (if it isn't there yet)."""
+    global IG_USER
+    IG_USER = os.getenv("IG_USER_ID", "").strip()
+    posts = json.loads(POSTS_JSON.read_text())
+    todo = [p for p in posts if p.get("instagram") and not p["instagram"].get("error")
+            and not (p.get("facebook") and not p["facebook"].get("error"))]
+    if not todo:
+        print("Nothing to share to Facebook.")
+        return
+    p = todo[-1]
+    try:
+        res = post_to_facebook(p)
+        if res:
+            p["facebook"] = res
+            print(f"Shared {p['id']} to Facebook: {res}")
+    except Exception as e:  # noqa: BLE001
+        p["facebook"] = {"error": str(e)[:300]}
+        print(f"FAILED Facebook share: {e}")
+        POSTS_JSON.write_text(json.dumps(posts, indent=2, ensure_ascii=False))
+        sys.exit(1)
+    POSTS_JSON.write_text(json.dumps(posts, indent=2, ensure_ascii=False))
+
+
 def main():
+    if os.getenv("FB_TEST") == "1":
+        return facebook_only()
     if LAST_RUN.exists():
         run = json.loads(LAST_RUN.read_text())
     elif os.getenv("POST_LATEST") == "1":
@@ -230,6 +309,16 @@ def main():
                     result["story_error"] = str(e)[:300]
             p["instagram"] = result
             print(f"Posted {p['id']} to Instagram: {result}")
+            if os.getenv("POST_FACEBOOK", "1") != "0":
+                try:
+                    fb = post_to_facebook(p)
+                    if fb:
+                        p["facebook"] = fb
+                        print(f"Shared {p['id']} to Facebook: {fb}")
+                except Exception as e:  # noqa: BLE001
+                    p["facebook"] = {"error": str(e)[:300]}
+                    print(f"FAILED Facebook share for {p['id']}: {e}")
+                    failed = True
         except Exception as e:  # noqa: BLE001
             p["instagram"] = {"error": str(e)[:300]}
             print(f"FAILED to post {p['id']}: {e}")
