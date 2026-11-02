@@ -201,7 +201,8 @@ def openai_client():
 
 # ---------------------------------------------------------------- spending guard
 USAGE_JSON = DOCS / "usage.json"
-COST_PER_IMAGE = float(os.getenv("COST_PER_IMAGE", "0.30") or 0.30)      # cautious estimate per image
+_QUALITY_COST = {"high": 0.30, "medium": 0.08, "low": 0.03}               # cautious estimates per image
+COST_PER_IMAGE = float(os.getenv("COST_PER_IMAGE", "") or _QUALITY_COST.get(os.getenv("IMAGE_QUALITY", "high"), 0.30))
 DAILY_IMAGE_LIMIT = int(os.getenv("DAILY_IMAGE_LIMIT", "10") or 10)       # 2 posts x 3 tries + spare
 COOLDOWN_MIN = int(os.getenv("COOLDOWN_MIN", "10") or 10)                # ignore repeat manual runs
 MONTHLY_BUDGET = float(os.getenv("MONTHLY_BUDGET_USD", "25") or 25)       # stop before going over this
@@ -630,7 +631,7 @@ def make_post(client, day, season, posts, slot=None):
 
 def main():
     mode = os.getenv("MODE", "none").strip().lower() or "none"
-    if mode not in ("slot", "one", "samples"):
+    if mode not in ("slot", "one", "samples", "test"):
         print(f"Mode '{mode}': nothing to make (safety default).")
         return
     force = os.getenv("FORCE_SEASON", "").strip().lower()
@@ -661,6 +662,8 @@ def main():
 
     if mode == "samples":
         jobs = [(today, s) for s in ("winter", "spring", "summer", "fall")]
+    elif mode == "test":
+        jobs = [(today, season_for(today))] * 2
     else:
         jobs = [(today, force if force in SEASONS else season_for(today))]
 
@@ -669,6 +672,9 @@ def main():
     try:
         for day, season in jobs:
             post = make_post(client, day, season, posts, slot)
+            post["quality"] = IMAGE_QUALITY
+            if mode == "test":
+                post["test"] = True              # test images are never posted
             posts.append(post)
             new_ids.append(post["id"])
             save_posts(posts)

@@ -317,8 +317,8 @@ def main():
     if LAST_RUN.exists():
         run = json.loads(LAST_RUN.read_text())
     elif os.getenv("POST_LATEST") == "1":
-        latest = [p for p in json.loads(POSTS_JSON.read_text())
-                  if not (p.get("instagram") and not p["instagram"].get("error"))]
+        latest = [p for p in json.loads(POSTS_JSON.read_text()) if not p.get("test")
+                  and not (p.get("instagram") and not p["instagram"].get("error"))]
         if not latest:
             print("Nothing waiting to be posted.")
             return
@@ -343,7 +343,7 @@ def main():
     posts = json.loads(POSTS_JSON.read_text())
     failed = False
     for p in posts:
-        if p["id"] not in run["ids"] or (p.get("instagram") and not p["instagram"].get("error")):
+        if p["id"] not in run["ids"] or p.get("test") or (p.get("instagram") and not p["instagram"].get("error")):
             continue
         try:
             feed_id = publish(public_url(p["feed_image"]), caption=p["full_caption"])

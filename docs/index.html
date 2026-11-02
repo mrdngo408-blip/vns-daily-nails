@@ -140,7 +140,7 @@ function render(){
     const d = new Date((p.created||p.date)).toLocaleString("en-US",{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
     const slot = p.slot ? (p.slot==="morning"?" · 9 AM post":" · 6 PM post") : "";
     return `<article class="card">
-      <div class="imgwrap"><img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title)}"><span class="tag">${esc(p.season)}${p.holiday?" · "+esc(p.holiday.split(" (")[0]):""}</span>${igBadge(p)}</div>
+      <div class="imgwrap"><img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title)}"><span class="tag">${p.test?"TEST · ":""}${p.quality&&p.quality!=="high"?esc(p.quality)+" · ":""}${esc(p.season)}${p.holiday?" · "+esc(p.holiday.split(" (")[0]):""}</span>${igBadge(p)}</div>
       <div class="body">
         <h2 class="title">${esc(p.title)}</h2>
         <div class="meta">${esc(d)}${slot} · ${esc(p.technique)}</div>
