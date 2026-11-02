@@ -130,5 +130,137 @@
     "image_model": "gpt-image-2",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial macro photograph. Two elegant feminine hands softly overlapped in a relaxed natural pose, nails as the clear hero of the shot. Long stiletto nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail is divided into flowing curved 'stained glass' sections outlined in raised rose gold chrome lines, filled with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every nail is slightly different but the full set is one coordinated design. Color palette: Wine Burgundy, Burnt Amber, Champagne Gold, Ivory Cream. Design: Long stiletto nails painted with a cat-eye magnetic gel: wine burgundy and burnt amber bases pulled into luminous vertical cat-eye beams that catch light. Accent ring and thumb nails feature hand-painted tortoiseshell panels in amber and espresso, thin rose-gold metallic striping framing the pattern, and scattered micro champagne-gold leaf at the cuticle; finish is high-gloss on cat-eye and tortoiseshell sections, satin-cream on the ivory accent for contrast. Technique emphasis: cat-eye magnetic gel. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream faux fur, out of focus. Anatomically correct hands: exactly five fingers on each hand, natural knuckles, realistic skin texture and pores, natural proportions, deep brown skin tone. Nails razor sharp and in focus, shallow depth of field on the background. Soft warm studio lighting with gentle specular highlights on the gloss. Tall vertical composition with the hands centered and empty space on the left and right edges (the image will be cropped to 9:16). No text, no letters, no logos, no watermarks, no brand names."
+  },
+  {
+    "id": "2026-11-01-winter-183919-408d1",
+    "date": "2026-11-01",
+    "created": "2026-11-01T18:39:19-08:00",
+    "season": "winter",
+    "holiday": null,
+    "title": "Glacial Negative-Space Stilettos",
+    "palette": [
+      "Glacial Teal",
+      "Ice Pearl",
+      "Platinum Frost",
+      "Crystal Silver"
+    ],
+    "palette_text": "Glacial Teal, Ice Pearl, Platinum Frost, Crystal Silver",
+    "technique": "negative-space design",
+    "background": "white faux fur",
+    "image": "posts/2026-11-01-winter-183919-408d1.jpg",
+    "feed_image": "posts/2026-11-01-winter-183919-408d1-feed.jpg",
+    "slot": null,
+    "instagram": null,
+    "caption": "Winter-inspired geometry in glacial teal, pearl frost and silver crystal ❄️\nNegative-space windows, velvet frost and tiny snowflake crystals for soft stiletto glam.\nSeasonal inspiration for Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.",
+    "hashtags": [
+      "#VenetianNailSpa",
+      "#ModestoNails",
+      "#NegativeSpaceNails",
+      "#SoftStiletto",
+      "#WinterFrost"
+    ],
+    "full_caption": "Winter-inspired geometry in glacial teal, pearl frost and silver crystal ❄️\nNegative-space windows, velvet frost and tiny snowflake crystals for soft stiletto glam.\nSeasonal inspiration for Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n.\n#VenetianNailSpa #ModestoNails #NegativeSpaceNails #SoftStiletto #WinterFrost",
+    "image_model": "gpt-image-2",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of a woman's two hands, shot from slightly above. POSE: the left hand lies flat and relaxed, back of the hand facing the camera, and the right hand rests gently on top of it, crossing over at an angle so its fingers drape across the lower hand's fingers. Both hands run diagonally from the upper right of the frame down toward the lower left, fingers relaxed, softly separated and fanned out, gently curved, nails pointing down and to the left. All ten nails are clearly visible, separate and fully in frame, five on each hand, none hidden or overlapping each other. The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail is divided into flowing curved 'stained glass' sections outlined in raised silver chrome lines, filled with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every nail is slightly different but the full set is one coordinated design. Color palette: Glacial Teal, Ice Pearl, Platinum Frost, Crystal Silver. Design: Soft stiletto nails start with a sheer nude negative-space base; crisp diagonal and crescent windows are filled with Glacial Teal and edged in thin Platinum Frost metallic liner. Alternate nails have an Ice Pearl matte velvet frost, while others wear a translucent Crystal Silver micro-glitter gradient from tip to mid-nail; two accent nails feature tiny layered silver crystal snowflakes at the cuticle. Finish alternates between high-gloss panels and matte sections to amplify the geometry and frosted-metal sparkle. Technique emphasis: negative-space design. Seasonal mood (winter): snowflake and crystal accents, velvet and frost effects. Background: soft white faux fur, out of focus. Anatomically perfect hands: exactly two hands, exactly five fingers on each hand (one thumb and four fingers), every finger clearly separate and attached naturally, no extra, missing, fused or tangled fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, natural proportions, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, shallow depth of field on the background. Soft warm studio lighting with gentle specular highlights on the gloss. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
+  },
+  {
+    "id": "2026-11-01-spring-184046-df198",
+    "date": "2026-11-01",
+    "created": "2026-11-01T18:40:46-08:00",
+    "season": "spring",
+    "holiday": null,
+    "title": "Sage Pearl Spring Stiletto",
+    "palette": [
+      "Soft Sage Green",
+      "Ivory Cream",
+      "Rose Gold Pearl",
+      "Pearlescent White"
+    ],
+    "palette_text": "Soft Sage Green, Ivory Cream, Rose Gold Pearl, Pearlescent White",
+    "technique": "glazed pearl chrome",
+    "background": "white marble",
+    "image": "posts/2026-11-01-spring-184046-df198.jpg",
+    "feed_image": "posts/2026-11-01-spring-184046-df198-feed.jpg",
+    "slot": null,
+    "instagram": null,
+    "caption": "Spring stiletto inspo in soft sage, ivory and rose‑gold pearl ✨\nGlazed pearl chrome, hand-painted mini florals and pearl accents—elegant, wearable luxury for the season.\nInspired look for Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.",
+    "hashtags": [
+      "#ModestoNails",
+      "#VenetianNailSpa",
+      "#StilettoNails",
+      "#PearlChrome",
+      "#SpringNails"
+    ],
+    "full_caption": "Spring stiletto inspo in soft sage, ivory and rose‑gold pearl ✨\nGlazed pearl chrome, hand-painted mini florals and pearl accents—elegant, wearable luxury for the season.\nInspired look for Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n.\n#ModestoNails #VenetianNailSpa #StilettoNails #PearlChrome #SpringNails",
+    "image_model": "gpt-image-2",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of a woman's two hands, shot from slightly above. POSE: the left hand lies flat and relaxed, back of the hand facing the camera, and the right hand rests gently on top of it, crossing over at an angle so its fingers drape across the lower hand's fingers. Both hands run diagonally from the upper right of the frame down toward the lower left, fingers relaxed, softly separated and fanned out, gently curved, nails pointing down and to the left. All ten nails are clearly visible, separate and fully in frame, five on each hand, none hidden or overlapping each other. The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail is divided into flowing curved 'stained glass' sections outlined in raised gold chrome lines, filled with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every nail is slightly different but the full set is one coordinated design. Color palette: Soft Sage Green, Ivory Cream, Rose Gold Pearl, Pearlescent White. Design: Sharp stiletto nails with an alternating base: Soft Sage Green on thumb/index/pinky and Ivory Cream on middle/ring. The sage nails receive a glazed rose-gold pearl chrome ombré that intensifies toward the tips; the ivory nails are hand-painted with delicate white and blush micro-floral branches along one side, each bloom centered with a tiny flat pearl. A narrow rose-gold metallic crescent (modern French twist) hugs the free edge of every nail and subtle rose-gold micro-foil specks near the cuticle catch the light against a white marble background. Technique emphasis: glazed pearl chrome. Seasonal mood (spring): soft florals, pearls, delicate French tips with a twist. Background: soft white marble, out of focus. Anatomically perfect hands: exactly two hands, exactly five fingers on each hand (one thumb and four fingers), every finger clearly separate and attached naturally, no extra, missing, fused or tangled fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, natural proportions, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, shallow depth of field on the background. Soft warm studio lighting with gentle specular highlights on the gloss. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
+  },
+  {
+    "id": "2026-11-01-summer-184206-f9be9",
+    "date": "2026-11-01",
+    "created": "2026-11-01T18:42:06-08:00",
+    "season": "summer",
+    "holiday": null,
+    "title": "Tropical Mirage French",
+    "palette": [
+      "Mango Sorbet",
+      "Seafoam Teal Chrome",
+      "Opaline Pearl",
+      "24K Satin Gold"
+    ],
+    "palette_text": "Mango Sorbet, Seafoam Teal Chrome, Opaline Pearl, 24K Satin Gold",
+    "technique": "modern French tip variation",
+    "background": "white marble",
+    "image": "posts/2026-11-01-summer-184206-f9be9.jpg",
+    "feed_image": "posts/2026-11-01-summer-184206-f9be9-feed.jpg",
+    "slot": null,
+    "instagram": null,
+    "caption": "Sunlit mango tips meet seafoam chrome and opalescent shimmer. ✨\nA modern French reimagined with satin-gold detail—summer inspiration for almond nails in Modesto.\nBook this look at Venetian Nail Spa (link in bio) or call 209-408-8597",
+    "hashtags": [
+      "#VenetianNailSpa",
+      "#ModestoNails",
+      "#TropicalFrench",
+      "#AlmondNails",
+      "#SummerNails"
+    ],
+    "full_caption": "Sunlit mango tips meet seafoam chrome and opalescent shimmer. ✨\nA modern French reimagined with satin-gold detail—summer inspiration for almond nails in Modesto.\nBook this look at Venetian Nail Spa (link in bio) or call 209-408-8597\n.\n#VenetianNailSpa #ModestoNails #TropicalFrench #AlmondNails #SummerNails",
+    "image_model": "gpt-image-2",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of a woman's two hands, shot from slightly above. POSE: the left hand lies flat and relaxed, back of the hand facing the camera, and the right hand rests gently on top of it, crossing over at an angle so its fingers drape across the lower hand's fingers. Both hands run diagonally from the upper right of the frame down toward the lower left, fingers relaxed, softly separated and fanned out, gently curved, nails pointing down and to the left. All ten nails are clearly visible, separate and fully in frame, five on each hand, none hidden or overlapping each other. The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail is divided into flowing curved 'stained glass' sections outlined in raised gold chrome lines, filled with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every nail is slightly different but the full set is one coordinated design. Color palette: Mango Sorbet, Seafoam Teal Chrome, Opaline Pearl, 24K Satin Gold. Design: Almond nails on warm golden-tan skin photographed over white marble. Sheer opaline pearl base with a modern French tip variation: tapered Mango Sorbet tips that melt into a Seafoam Teal chrome ombré at the very edge, separated from the base by a hairline 24K satin-gold stripe. Accent nails are full Mango Sorbet with scattered iridescent micro-glitter and tiny gold speck highlights near the cuticle; all nails finished with a high-gloss gel topcoat. Technique emphasis: modern French tip variation. Seasonal mood (summer): tropical and ocean themes, chrome and aura effects, a touch of neon. Background: soft white marble, out of focus. Anatomically perfect hands: exactly two hands, exactly five fingers on each hand (one thumb and four fingers), every finger clearly separate and attached naturally, no extra, missing, fused or tangled fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, natural proportions, elegant slim fingers, warm golden tan skin tone. Nails razor sharp and in focus, shallow depth of field on the background. Soft warm studio lighting with gentle specular highlights on the gloss. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
+  },
+  {
+    "id": "2026-11-01-fall-184328-e8492",
+    "date": "2026-11-01",
+    "created": "2026-11-01T18:43:28-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Tortoiseshell Rose Gold Bloom",
+    "palette": [
+      "Tortoiseshell Brown",
+      "Espresso Noir",
+      "Cream Latte",
+      "Rose Gold Leaf"
+    ],
+    "palette_text": "Tortoiseshell Brown, Espresso Noir, Cream Latte, Rose Gold Leaf",
+    "technique": "3D gel florals",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-01-fall-184328-e8492.jpg",
+    "feed_image": "posts/2026-11-01-fall-184328-e8492-feed.jpg",
+    "slot": null,
+    "instagram": null,
+    "caption": "Warm tortoiseshell and espresso, polished with rose-gold bloom — this fall’s elevated look for soft stiletto lovers. 🍂\n3D gel florals and foil accents keep it luxe and wearable for Modesto days and nights.\nInspired? Book your Venetian Nail Spa set (link in bio) or call 209-408-8597.",
+    "hashtags": [
+      "#ModestoNails",
+      "#VenetianNailSpa",
+      "#TortoiseshellNails",
+      "#SoftStiletto",
+      "#FallNails"
+    ],
+    "full_caption": "Warm tortoiseshell and espresso, polished with rose-gold bloom — this fall’s elevated look for soft stiletto lovers. 🍂\n3D gel florals and foil accents keep it luxe and wearable for Modesto days and nights.\nInspired? Book your Venetian Nail Spa set (link in bio) or call 209-408-8597.\n.\n#ModestoNails #VenetianNailSpa #TortoiseshellNails #SoftStiletto #FallNails",
+    "image_model": "gpt-image-2",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of a woman's two hands, shot from slightly above. POSE: the left hand lies flat and relaxed, back of the hand facing the camera, and the right hand rests gently on top of it, crossing over at an angle so its fingers drape across the lower hand's fingers. Both hands run diagonally from the upper right of the frame down toward the lower left, fingers relaxed, softly separated and fanned out, gently curved, nails pointing down and to the left. All ten nails are clearly visible, separate and fully in frame, five on each hand, none hidden or overlapping each other. The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail is divided into flowing curved 'stained glass' sections outlined in raised rose gold chrome lines, filled with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every nail is slightly different but the full set is one coordinated design. Color palette: Tortoiseshell Brown, Espresso Noir, Cream Latte, Rose Gold Leaf. Design: Soft stiletto nails with alternating bases: glossy cream latte on index and middle, deep espresso noir on the thumb and pinky, and hand-painted tortoiseshell marbling on the ring finger. Layered 3D gel florals in warm mocha and caramel bloom across the ring and middle nails with sculpted petals; each flower center is accented with delicate rose-gold leaf flakes and a single micro-pearl. Finishes alternate high-gloss and soft-satin to create depth, with a thin rose-gold foil crescent at the cuticle for a luxe frame. Technique emphasis: 3D gel florals. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect hands: exactly two hands, exactly five fingers on each hand (one thumb and four fingers), every finger clearly separate and attached naturally, no extra, missing, fused or tangled fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, natural proportions, elegant slim fingers, rich medium brown skin tone. Nails razor sharp and in focus, shallow depth of field on the background. Soft warm studio lighting with gentle specular highlights on the gloss. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
   }
 ]
