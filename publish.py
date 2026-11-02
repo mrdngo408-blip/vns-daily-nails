@@ -38,7 +38,8 @@ SECRET_TOKEN = os.getenv("IG_ACCESS_TOKEN", "").strip()
 IG_LOGIN = SECRET_TOKEN.startswith("IG")
 GRAPH_HOST = "https://graph.instagram.com" if IG_LOGIN else "https://graph.facebook.com"
 GRAPH = f"{GRAPH_HOST}/{os.getenv('GRAPH_VERSION', 'v23.0')}"
-IG_USER = os.getenv("IG_USER_ID", "").strip() or ("me" if IG_LOGIN else "")
+# Instagram-login tokens always post as "me"; Facebook tokens need the IG business account ID.
+IG_USER = "me" if IG_LOGIN else os.getenv("IG_USER_ID", "").strip()
 TOKEN_FILE = ROOT / "secure" / "ig_token.enc"
 TOKEN = SECRET_TOKEN
 
@@ -109,6 +110,22 @@ def api(method, path, params):
         raise RuntimeError(f"Instagram API error {e.code}: {body[:400]}") from None
 
 
+def check_account():
+    """Confirm which Instagram account we're posting to (works out the right ID by itself)."""
+    if IG_LOGIN:
+        me = api("GET", "me", {"fields": "user_id,username"})
+        print(f"Posting as @{me.get('username')}")
+        return "me"
+    if IG_USER:
+        try:
+            info = api("GET", IG_USER, {"fields": "username"})
+            print(f"Posting as @{info.get('username')}")
+            return IG_USER
+        except Exception as e:  # noqa: BLE001
+            print(f"Saved account ID didn't work ({str(e)[:120]}) - looking it up instead.")
+    return find_ig_account()
+
+
 def find_ig_account():
     """For Facebook/system-user tokens: find the Instagram business account automatically."""
     data = api("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
@@ -173,16 +190,16 @@ def main():
         print("Instagram is not connected yet (IG_ACCESS_TOKEN missing) - skipping.")
         return
     global IG_USER
+    print("Token type:", "Instagram login" if IG_LOGIN else "Facebook / system user")
     if IG_LOGIN:
         maybe_refresh(load_token())
-    if not IG_USER:
-        IG_USER = find_ig_account()
+    IG_USER = check_account()
 
     wait_for_slot(slot)
     posts = json.loads(POSTS_JSON.read_text())
     failed = False
     for p in posts:
-        if p["id"] not in run["ids"] or p.get("instagram"):
+        if p["id"] not in run["ids"] or (p.get("instagram") and not p["instagram"].get("error")):
             continue
         try:
             feed_id = publish(public_url(p["feed_image"]), caption=p["full_caption"])
