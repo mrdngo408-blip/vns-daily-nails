@@ -161,13 +161,42 @@ def wait_ready(container_id):
     raise RuntimeError("Instagram took too long to process the image")
 
 
-def publish(image_url, caption=None, story=False):
+LOCATION_ID = os.getenv("IG_LOCATION_ID", "").strip() or os.getenv("FB_PAGE_ID", "").strip()
+
+
+def _create_container(params):
+    """Try with location + alt text; if Instagram rejects them, drop them one at a time (never lose the post)."""
+    tries = [params,
+             {k: v for k, v in params.items() if k != "location_id"},
+             {k: v for k, v in params.items() if k != "alt_text"},
+             {k: v for k, v in params.items() if k not in ("location_id", "alt_text")}]
+    seen, last = [], None
+    for t in tries:
+        if t in seen:
+            continue
+        seen.append(t)
+        try:
+            cid = api("POST", f"{IG_USER}/media", t)["id"]
+            dropped = [k for k in ("location_id", "alt_text") if k in params and k not in t]
+            if dropped:
+                print(f"  Instagram didn't accept {', '.join(dropped)} - posted without it.")
+            return cid
+        except RuntimeError as e:
+            last = e
+    raise last
+
+
+def publish(image_url, caption=None, story=False, alt_text=None):
     params = {"image_url": image_url}
     if story:
         params["media_type"] = "STORIES"
     else:
         params["caption"] = caption
-    container = api("POST", f"{IG_USER}/media", params)["id"]
+        if LOCATION_ID:
+            params["location_id"] = LOCATION_ID
+        if alt_text:
+            params["alt_text"] = alt_text
+    container = _create_container(params)
     wait_ready(container)
     media_id = api("POST", f"{IG_USER}/media_publish", {"creation_id": container})["id"]
     return media_id
@@ -237,9 +266,22 @@ def post_to_facebook(p):
     page = facebook_page()
     if not page:
         return None
-    r = fb_call("POST", f"{page['id']}/photos",
-                {"url": public_url(p["feed_image"]), "caption": p["full_caption"], "published": "true"},
-                page["access_token"])
+    base = {"url": public_url(p["feed_image"]), "caption": p["full_caption"], "published": "true"}
+    extra = {}
+    if p.get("alt_text"):
+        extra["alt_text_custom"] = p["alt_text"]
+    extra["place"] = page["id"]                      # check in at the salon
+    r, last = None, None
+    for opt in (extra, {k: v for k, v in extra.items() if k != "place"}, {}):
+        try:
+            r = fb_call("POST", f"{page['id']}/photos", {**base, **opt}, page["access_token"])
+            if opt != extra:
+                print(f"  Facebook didn't accept {', '.join(k for k in extra if k not in opt)} - posted without it.")
+            break
+        except RuntimeError as e:
+            last = e
+    if r is None:
+        raise last
     return {"post_id": r.get("post_id") or r.get("id"),
             "posted": dt.datetime.now(TZ).isoformat(timespec="seconds")}
 
@@ -346,7 +388,7 @@ def main():
         if p["id"] not in run["ids"] or p.get("test") or (p.get("instagram") and not p["instagram"].get("error")):
             continue
         try:
-            feed_id = publish(public_url(p["feed_image"]), caption=p["full_caption"])
+            feed_id = publish(public_url(p["feed_image"]), caption=p["full_caption"], alt_text=p.get("alt_text"))
             result = {"feed_id": feed_id, "posted": dt.datetime.now(TZ).isoformat(timespec="seconds")}
             if os.getenv("POST_STORY", "1") != "0":
                 try:

@@ -450,7 +450,10 @@ Reject the new photo (ok=false) if ANY of these are true:
 - wrong number of nails, a nail on the wrong place, or a nail cut off by the frame
 - the pose clearly differs from the reference (one hand from the back, fingers pointing left, curled over fabric, thumb hidden)
 - any visible text, logo or watermark
-Return ONLY JSON: {"ok": true/false, "pose_match": 1-10, "issues": "short description"}"""
+Also write alt text for image 2 for people who are blind or have low vision: 1-2 plain sentences, under 250 characters,
+describing what is actually visible (one hand, skin tone, nail shape and length, the colors and design on the nails,
+any ring, the fabric/background). No hashtags, no emojis, no marketing words. End with "AI-generated image."
+Return ONLY JSON: {"ok": true/false, "pose_match": 1-10, "issues": "short description", "alt_text": "..."}"""
 
 
 def _data_url(raw, max_h=768):
@@ -460,6 +463,11 @@ def _data_url(raw, max_h=768):
     buf = io.BytesIO()
     im.save(buf, "JPEG", quality=85)
     return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def alt_from_recipe(brief, recipe):
+    return (f"Close-up of one {brief['skin']} hand resting on {brief['background']}, with long {brief['shape']} "
+            f"nails in {', '.join(recipe.get('palette', []))} with {brief['metal']} accents. AI-generated image.")[:300]
 
 
 def check_hand(client, raw):
@@ -475,6 +483,7 @@ def check_hand(client, raw):
                                                   messages=[{"role": "user", "content": content}])
             r = json.loads(resp.choices[0].message.content)
             ok = bool(r.get("ok")) and int(r.get("pose_match", 0) or 0) >= 7
+            check_hand.last_alt = (r.get("alt_text") or "").strip()[:300]
             return ok, f"pose {r.get('pose_match')}/10 - {r.get('issues', '')}"
         except Exception as e:  # noqa: BLE001
             print(f"  hand check with {model} failed: {str(e)[:120]}")
@@ -590,11 +599,13 @@ def make_post(client, day, season, posts, slot=None):
     tags = clean_hashtags(recipe.get("hashtags"), season, brief["shape"])
     prompt = build_image_prompt(brief, recipe)
 
+    check_hand.last_alt = ""
     if MOCK:
         raw, model = mock_image(brief, recipe)
         check_note = "mock"
     else:
         raw, model, check_note = make_checked_image(client, prompt)
+    alt_text = check_hand.last_alt or alt_from_recipe(brief, recipe)
     img = to_9x16(raw)
 
     stamp = dt.datetime.now(TZ).strftime("%H%M%S")
@@ -624,6 +635,7 @@ def make_post(client, day, season, posts, slot=None):
         "caption": caption,
         "hashtags": tags,
         "full_caption": caption + "\n.\n" + " ".join(tags),
+        "alt_text": alt_text,
         "image_model": model,
         "hand_check": check_note,
         "text_model": recipe.get("text_model", ""),
