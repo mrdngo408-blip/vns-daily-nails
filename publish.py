@@ -220,8 +220,10 @@ def facebook_page():
         except Exception as e:  # noqa: BLE001
             print(f"Facebook Page lookup failed: {str(e)[:150]}")
             pages = []
+        want = os.getenv("FB_PAGE_ID", "").strip()
+        exact = [pg for pg in pages if want and pg.get("id") == want]
         linked = [pg for pg in pages if (pg.get("instagram_business_account") or {}).get("id") == IG_USER]
-        pick = (linked or pages or [None])[0]
+        pick = (exact or linked or pages or [None])[0]
         if pick and pick.get("access_token"):
             _PAGE = pick
             print(f"Facebook Page: {pick.get('name')}")

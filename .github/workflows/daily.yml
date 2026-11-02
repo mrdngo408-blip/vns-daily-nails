@@ -95,6 +95,7 @@ jobs:
           POST_LATEST: ${{ contains(github.event.head_commit.message, '[post-latest]') && '1' || '0' }}
           FB_TEST: ${{ contains(github.event.head_commit.message, '[fb-test]') && '1' || '0' }}
           POST_FACEBOOK: ${{ vars.POST_FACEBOOK || '1' }}
+          FB_PAGE_ID: '61557224685386'   # Venetian Nail Spa Facebook Page
         run: python publish.py
 
       - name: Save Instagram result
