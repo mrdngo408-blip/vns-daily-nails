@@ -81,7 +81,7 @@ jobs:
       - name: Post to Instagram
         if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one')
         env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID || '17841465658821849' }}   # venetian.nailspa_modesto
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           POST_NOW: ${{ github.event.inputs.post_to_instagram == 'true' && '1' || '0' }}
           POST_STORY: ${{ vars.POST_STORY || '1' }}
