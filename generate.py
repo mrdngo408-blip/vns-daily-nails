@@ -374,6 +374,8 @@ def fallback_recipe(brief):
     }
 
 
+WELCOME_LINE = "New here? Welcome to Venetian Nail Spa! What nail style are you loving lately?"
+
 BAIT_WORDS = ("tag ", "tag a", "share this", "share with", "like this post", "like if", "hit like", "double tap", "follow", "save this",
               "comment yes", "comment a", "drop a", "type ", "giveaway", "win ")
 QUESTION_ANGLES = [
@@ -716,7 +718,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
     question = unique_question(client, recipe, brief, posts)
-    caption = recipe["caption"].strip() + "\n\n" + question
+    caption = recipe["caption"].strip() + "\n\n" + question + "\n\n" + WELCOME_LINE
     return {
         "id": pid,
         "date": day.isoformat(),
