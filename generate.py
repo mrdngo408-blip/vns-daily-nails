@@ -322,6 +322,7 @@ def build_brief(day: dt.date, season: str, holiday, recent):
         "skin": rnd.choice(SKIN_TONES),
         "metal": rnd.choice(METALS),
         "avoid_recent": [p.get("palette_text", "") + " / " + p.get("technique", "") for p in recent[-30:]],
+        "local_phrase": pick_seo(recent),
         "avoid_questions": [p["question"] for p in recent if p.get("question")][-80:],
     }
 
@@ -331,7 +332,7 @@ Return ONLY JSON with these keys:
   "title": short name for the look (3-6 words)
   "palette": list of 3-4 specific named colors
   "design": describe the set on the visible nails of ONE hand, vivid and concrete for an image generator; all nails must look like one coordinated salon set (an accent nail on the ring finger is fine)
-  "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; mention Modesto now and then. Do NOT put hashtags in the caption.
+  "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; and work the exact phrase given in local_phrase into one sentence naturally (it helps people find us in Instagram search). Do NOT put hashtags in the caption.
   "question": ONE short, friendly, open-ended question for the end of the caption that invites a genuine reply about nails, this design, colors, seasons, self-care or style (e.g. asking which detail they'd pick, what color they wear in a season, what occasion they'd wear it to). It must be different from every question in avoid_questions. NEVER ask people to like, share, save, tag friends, follow, or comment a specific word/emoji/number, and never promise anything in return for engaging.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
 Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""
@@ -372,6 +373,40 @@ def fallback_recipe(brief):
         "hashtags": [],
         "text_model": "backup",
     }
+
+
+SEO_PHRASES = [
+    "nail salon in Modesto", "Modesto nail art", "gel nails in Modesto", "Modesto manicure",
+    "acrylic nails in Modesto", "nail spa on McHenry Ave", "Central Valley nail salon",
+    "luxury nails in Modesto", "Modesto nail designs", "best nails in Modesto, CA",
+]
+SEO_FALLBACK = {
+    "nail salon in Modesto": "Visit our nail salon in Modesto to make this look yours.",
+    "Modesto nail art": "Custom Modesto nail art, made just for you.",
+    "gel nails in Modesto": "Looking for gel nails in Modesto? We've got you.",
+    "Modesto manicure": "Treat yourself to a Modesto manicure that turns heads.",
+    "acrylic nails in Modesto": "Want acrylic nails in Modesto that last? Come see us.",
+    "nail spa on McHenry Ave": "Find us at our nail spa on McHenry Ave.",
+    "Central Valley nail salon": "Your favorite Central Valley nail salon is ready for you.",
+    "luxury nails in Modesto": "Luxury nails in Modesto, done with care.",
+    "Modesto nail designs": "New Modesto nail designs every week.",
+    "best nails in Modesto, CA": "Come see why clients call these the best nails in Modesto, CA.",
+}
+
+
+def pick_seo(posts):
+    last = {}
+    for i, p in enumerate(posts):
+        if p.get("seo_phrase"):
+            last[p["seo_phrase"]] = i
+    return sorted(SEO_PHRASES, key=lambda x: (last.get(x, -1), random.random()))[0]
+
+
+def ensure_seo(caption, phrase):
+    """Make sure the caption naturally contains the local search phrase."""
+    if phrase.lower() in caption.lower():
+        return caption
+    return caption.rstrip() + "\n" + SEO_FALLBACK.get(phrase, f"Find us for {phrase}.")
 
 
 WELCOME_LINES = [
@@ -749,6 +784,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     feed = img.crop((0, (1920 - 1350) // 2, 1080, (1920 - 1350) // 2 + 1350))  # hand is centered
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
+    recipe["caption"] = ensure_seo(recipe["caption"], brief["local_phrase"])
     question = unique_question(client, recipe, brief, posts)
     welcome = pick_welcome(posts)
     caption = recipe["caption"].strip() + "\n\n" + question + "\n\n" + welcome + "\n\n" + AI_DISCLOSURE
@@ -773,6 +809,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
         "alt_text": alt_text,
         "question": question,
         "welcome": welcome,
+        "seo_phrase": brief["local_phrase"],
         "image_model": model,
         "hand_check": check_note,
         "pose": pose_name,
