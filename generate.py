@@ -322,6 +322,7 @@ def build_brief(day: dt.date, season: str, holiday, recent):
         "skin": rnd.choice(SKIN_TONES),
         "metal": rnd.choice(METALS),
         "avoid_recent": [p.get("palette_text", "") + " / " + p.get("technique", "") for p in recent[-30:]],
+        "avoid_questions": [p["question"] for p in recent if p.get("question")][-80:],
     }
 
 
@@ -331,6 +332,7 @@ Return ONLY JSON with these keys:
   "palette": list of 3-4 specific named colors
   "design": describe the set on the visible nails of ONE hand, vivid and concrete for an image generator; all nails must look like one coordinated salon set (an accent nail on the ring finger is fine)
   "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; mention Modesto now and then. Do NOT put hashtags in the caption.
+  "question": ONE short, friendly, open-ended question for the end of the caption that invites a genuine reply about nails, this design, colors, seasons, self-care or style (e.g. asking which detail they'd pick, what color they wear in a season, what occasion they'd wear it to). It must be different from every question in avoid_questions. NEVER ask people to like, share, save, tag friends, follow, or comment a specific word/emoji/number, and never promise anything in return for engaging.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
 Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""
 
@@ -372,6 +374,68 @@ def fallback_recipe(brief):
     }
 
 
+BAIT_WORDS = ("tag ", "tag a", "share this", "share with", "like this post", "like if", "hit like", "double tap", "follow", "save this",
+              "comment yes", "comment a", "drop a", "type ", "giveaway", "win ")
+QUESTION_ANGLES = [
+    "Which nail in this set would you pick as your accent nail?",
+    "What occasion would you wear this {title} look to?",
+    "Would you wear these {colors} shades long or short?",
+    "What's your go-to nail color when {season} rolls around?",
+    "Gold accents or silver accents with {colors}: what's your vibe?",
+    "Almond, coffin or square: which shape would you choose for this {title} set?",
+    "What's one nail trend you'd love to try this {season}?",
+    "Matte or glossy: how would you wear {colors}?",
+    "Which color in this {title} set catches your eye first?",
+    "Would you rock this {title} look for a holiday party or everyday?",
+    "What's the boldest nail color you've ever worn?",
+    "If you could add one charm or gem to this set, where would it go?",
+]
+
+
+def _norm_q(q):
+    return "".join(ch for ch in q.lower() if ch.isalnum())
+
+
+def is_bait(q):
+    ql = " " + q.lower() + " "
+    return any(w in ql for w in BAIT_WORDS)
+
+
+def unique_question(client, recipe, brief, posts):
+    """Make sure the caption question is new (never used before) and not engagement bait."""
+    used = {_norm_q(p["question"]) for p in posts if p.get("question")}
+    q = (recipe.get("question") or "").strip()
+    if q and _norm_q(q) not in used and not is_bait(q):
+        return q
+    if client is not None:
+        for model in TEXT_MODELS[:2]:
+            for _ in range(2):
+                try:
+                    resp = client.chat.completions.create(model=model, response_format={"type": "json_object"},
+                        messages=[{"role": "user", "content": json.dumps({
+                            "task": "Write ONE new short, friendly, open-ended question for a nail salon Instagram caption "
+                                    "about this design. Must be different from every question in used_questions. Never ask "
+                                    "to like/share/save/tag/follow or to comment a specific word or emoji. Return JSON {\"question\": \"...\"}",
+                            "design": recipe.get("title"), "colors": recipe.get("palette"), "season": brief["season"],
+                            "used_questions": [p["question"] for p in posts if p.get("question")][-120:]})}])
+                    q = json.loads(resp.choices[0].message.content).get("question", "").strip()
+                    if q and _norm_q(q) not in used and not is_bait(q):
+                        return q
+                except Exception:  # noqa: BLE001
+                    break
+    colors = " and ".join((recipe.get("palette") or ["these"])[:2]).lower()
+    for tmpl in random.sample(QUESTION_ANGLES, len(QUESTION_ANGLES)):
+        q = tmpl.format(title=recipe.get("title", "this"), colors=colors, season=brief["season"])
+        if _norm_q(q) not in used:
+            return q
+    n = 1
+    while True:
+        q = f"What would you name this {recipe.get('title', 'look')} set? (#{len(used) + n})"
+        if _norm_q(q) not in used:
+            return q
+        n += 1
+
+
 def clean_hashtags(tags, season, shape):
     out = []
     for t in tags or []:
@@ -411,7 +475,7 @@ POSE_PROMPT = (
     "The attached photo is the POSE REFERENCE. Recreate its hand pose, finger positions, finger curl, camera "
     "angle, crop and composition exactly, as a new ultra-realistic photo. Change ONLY these things: the nail "
     "design, the fabric/background, the skin tone and the lighting, as described below. Do not copy the "
-    "reference nail design. "
+    "reference nail design, and never copy any text, website name or watermark from the reference. "
 )
 
 
@@ -649,7 +713,8 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     feed = img.crop((0, (1920 - 1350) // 2, 1080, (1920 - 1350) // 2 + 1350))  # hand is centered
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
-    caption = recipe["caption"].strip()
+    question = unique_question(client, recipe, brief, posts)
+    caption = recipe["caption"].strip() + "\n\n" + question
     return {
         "id": pid,
         "date": day.isoformat(),
@@ -669,6 +734,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
         "hashtags": tags,
         "full_caption": caption + "\n.\n" + " ".join(tags),
         "alt_text": alt_text,
+        "question": question,
         "image_model": model,
         "hand_check": check_note,
         "pose": pose_name,
