@@ -51,24 +51,43 @@ BUSINESS = {
 LOCAL_TAGS = ["#ModestoNails", "#VenetianNailSpaModesto", "#ModestoCA", "#CentralValleyNails"]
 
 # ---------------------------------------------------------------- style
-REFERENCE_POSE = ROOT / "refs" / "pose.jpg"   # David's pose reference photo
+POSES_DIR = ROOT / "refs" / "poses"   # reference photos (NN-name.jpg) + descriptions (NN-name.txt)
+
+
+def load_poses():
+    poses = []
+    for img in sorted(POSES_DIR.glob("*.jpg")) + sorted(POSES_DIR.glob("*.png")):
+        txt = img.with_suffix(".txt")
+        poses.append({"name": img.stem, "path": img,
+                      "desc": txt.read_text().strip() if txt.exists() else "the same hand pose as the reference photo"})
+    return poses
+
+
+def pick_pose(posts):
+    """Rotate poses: use the one used least recently (never the same pose twice in a row if there are 2+)."""
+    poses = load_poses()
+    if not poses:
+        return None
+    last_used = {}
+    for i, p in enumerate(posts):
+        if p.get("pose"):
+            last_used[p["pose"]] = i
+    return sorted(poses, key=lambda x: (last_used.get(x["name"], -1), random.random()))[0]
+
+
+CURRENT_POSE = {"pose": None}
 
 REFERENCE_STYLE = (
     "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference "
-    "photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers "
-    "pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index "
-    "finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more "
-    "curled, with the fingers softly separated so all four nails are fully visible. The thumb is tucked behind "
-    "the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand "
-    "centered in the frame. A thin dainty gold band on the ring finger. "
+    "photo exactly): {pose} "
     "NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with "
-    "{metal} chrome accents and small crystals where the design calls for them. All four visible nails form "
+    "{metal} chrome accents and small crystals where the design calls for them. All visible nails form "
     "one coordinated salon set."
 )
 
 REALISM_RULES = (
-    "Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Four fingers "
-    "visible, each with exactly three natural segments and natural knuckle creases, attached naturally to the "
+    "Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every "
+    "visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the "
     "hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky "
     "shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, "
     "elegant slim fingers, {skin} skin tone. Nails razor sharp and in focus, background softly out of focus. "
@@ -302,7 +321,7 @@ RECIPE_SYSTEM = f"""You design daily luxury nail-art Instagram posts for {BUSINE
 Return ONLY JSON with these keys:
   "title": short name for the look (3-6 words)
   "palette": list of 3-4 specific named colors
-  "design": describe the set on the four visible nails of ONE hand (index, middle, ring, pinky; the thumb is hidden), vivid and concrete for an image generator; the four nails must look like one coordinated salon set (an accent nail on the ring finger is fine)
+  "design": describe the set on the visible nails of ONE hand, vivid and concrete for an image generator; all nails must look like one coordinated salon set (an accent nail on the ring finger is fine)
   "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; mention Modesto now and then. Do NOT put hashtags in the caption.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
 Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""
@@ -367,7 +386,8 @@ def clean_hashtags(tags, season, shape):
 
 def build_image_prompt(brief, recipe):
     parts = [
-        REFERENCE_STYLE.format(shape=brief["shape"], metal=brief["metal"]),
+        REFERENCE_STYLE.format(shape=brief["shape"], metal=brief["metal"],
+                               pose=(CURRENT_POSE["pose"] or {}).get("desc", "a single relaxed hand")),
         f"Color palette: {', '.join(recipe['palette'])}.",
         f"Design: {recipe['design']}",
         f"Technique emphasis: {brief['technique']}. Seasonal mood ({brief['season']}): {brief['seasonal_accents']}.",
@@ -400,11 +420,13 @@ def _try_sizes(fn):
 
 def make_image(client, prompt):
     """Uses the pose reference photo (image edit) so the pose matches; falls back to text only."""
-    ref = REFERENCE_POSE.read_bytes() if REFERENCE_POSE.exists() else None
+    pose = CURRENT_POSE["pose"]
+    ref = pose["path"].read_bytes() if pose else None
 
     def with_ref(model):
         def go(size):
-            kw = dict(model=model, image=("pose.jpg", ref, "image/jpeg"), prompt=POSE_PROMPT + prompt,
+            mime = "image/png" if pose["path"].suffix.lower() == ".png" else "image/jpeg"
+            kw = dict(model=model, image=(pose["path"].name, ref, mime), prompt=POSE_PROMPT + prompt,
                       size=size, quality=IMAGE_QUALITY, n=1)
             try:
                 resp = client.images.edit(**kw, input_fidelity="high")
@@ -448,7 +470,7 @@ Reject the new photo (ok=false) if ANY of these are true:
 - more than one hand, or any extra/stray fingers or hand parts
 - any finger that is fused, duplicated, missing a segment, bent unnaturally, too long/short, or attached wrong
 - wrong number of nails, a nail on the wrong place, or a nail cut off by the frame
-- the pose clearly differs from the reference (one hand from the back, fingers pointing left, curled over fabric, thumb hidden)
+- the pose clearly differs from the reference ({pose_desc})
 - any visible text, logo or watermark
 Also write alt text for image 2 for people who are blind or have low vision: 1-2 plain sentences, under 250 characters,
 describing what is actually visible (one hand, skin tone, nail shape and length, the colors and design on the nails,
@@ -472,10 +494,11 @@ def alt_from_recipe(brief, recipe):
 
 def check_hand(client, raw):
     """Vision check for anatomy + pose. Returns (ok, notes). If the checker itself fails, accept."""
-    if not REFERENCE_POSE.exists():
+    pose = CURRENT_POSE["pose"]
+    if not pose:
         return True, "no reference"
-    content = [{"type": "text", "text": HAND_CHECK},
-               {"type": "image_url", "image_url": {"url": _data_url(REFERENCE_POSE.read_bytes())}},
+    content = [{"type": "text", "text": HAND_CHECK.replace("{pose_desc}", pose["desc"][:300])},
+               {"type": "image_url", "image_url": {"url": _data_url(pose["path"].read_bytes())}},
                {"type": "image_url", "image_url": {"url": _data_url(raw)}}]
     for model in TEXT_MODELS:
         try:
@@ -589,7 +612,9 @@ def make_post(client, day, season, posts, slot=None):
     if holiday and random.random() < 0.5:
         holiday = None  # about half the posts near a holiday lean into it
     brief = build_brief(day, season, holiday, posts)
-    print(f"- {day} | {season} | holiday: {holiday} | {brief['technique']} | {brief['background']}")
+    CURRENT_POSE["pose"] = pick_pose(posts)
+    pose_name = CURRENT_POSE["pose"]["name"] if CURRENT_POSE["pose"] else None
+    print(f"- {day} | {season} | holiday: {holiday} | pose: {pose_name} | {brief['technique']} | {brief['background']}")
 
     if MOCK:
         recipe = fallback_recipe(brief)
@@ -638,6 +663,7 @@ def make_post(client, day, season, posts, slot=None):
         "alt_text": alt_text,
         "image_model": model,
         "hand_check": check_note,
+        "pose": pose_name,
         "text_model": recipe.get("text_model", ""),
         "prompt": prompt,
     }
