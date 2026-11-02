@@ -67,7 +67,7 @@ jobs:
         run: python ig_check.py
 
       - name: Make image + caption
-        if: ${{ !contains(github.event.head_commit.message, '[post-latest]') && !contains(github.event.head_commit.message, '[ig-check]') && !contains(github.event.head_commit.message, '[fb-test]') }}
+        if: ${{ !contains(github.event.head_commit.message, '[post-latest]') && !contains(github.event.head_commit.message, '[ig-check]') && !contains(github.event.head_commit.message, '[fb-test]') && !contains(github.event.head_commit.message, '[fb-story-test]') }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || 'samples') || github.event.inputs.mode) }}
@@ -86,7 +86,7 @@ jobs:
           git push
 
       - name: Post to Instagram
-        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') || contains(github.event.head_commit.message, '[post-latest]') || contains(github.event.head_commit.message, '[fb-test]')))
+        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') || contains(github.event.head_commit.message, '[post-latest]') || contains(github.event.head_commit.message, '[fb-test]') || contains(github.event.head_commit.message, '[fb-story-test]')))
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || '17841465658821849' }}   # venetian.nailspa_modesto
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -95,6 +95,8 @@ jobs:
           POST_LATEST: ${{ contains(github.event.head_commit.message, '[post-latest]') && '1' || '0' }}
           FB_TEST: ${{ contains(github.event.head_commit.message, '[fb-test]') && '1' || '0' }}
           POST_FACEBOOK: ${{ vars.POST_FACEBOOK || '1' }}
+          POST_FB_STORY: ${{ vars.POST_FB_STORY || '1' }}
+          FB_STORY_TEST: ${{ contains(github.event.head_commit.message, '[fb-story-test]') && '1' || '0' }}
           FB_PAGE_ID: '271116699414616'   # Venetian Nail Spa Facebook Page (profile.php?id=61557224685386)
         run: python publish.py
 

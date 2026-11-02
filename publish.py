@@ -7,6 +7,7 @@ encrypted in secure/ig_token.enc (the key is derived from the IG_ACCESS_TOKEN se
 - Feed post: the 4:5 version + full caption with 5 hashtags
 - Story: the full 9:16 version (turn off with POST_STORY=0)
 - Facebook Page: same 4:5 image + caption (turn off with POST_FACEBOOK=0)
+- Facebook Page Story: the full 9:16 version (turn off with POST_FB_STORY=0)
 
 Environment:
   IG_ACCESS_TOKEN               required (if missing, posting is skipped)
@@ -243,6 +244,47 @@ def post_to_facebook(p):
             "posted": dt.datetime.now(TZ).isoformat(timespec="seconds")}
 
 
+def post_fb_story(p):
+    """Facebook Page Story with the full 9:16 image (upload unpublished photo, then publish as a story)."""
+    page = facebook_page()
+    if not page:
+        return None
+    photo = fb_call("POST", f"{page['id']}/photos",
+                    {"url": public_url(p["image"]), "published": "false"}, page["access_token"])
+    r = fb_call("POST", f"{page['id']}/photo_stories", {"photo_id": photo["id"]}, page["access_token"])
+    return r.get("post_id") or r.get("id") or True
+
+
+def add_fb_story(p):
+    if os.getenv("POST_FB_STORY", "1") == "0" or not p.get("facebook") or p["facebook"].get("error"):
+        return
+    try:
+        sid = post_fb_story(p)
+        if sid:
+            p["facebook"]["story_id"] = sid
+            p["facebook"].pop("story_error", None)
+            print(f"Shared {p['id']} to Facebook Story: {sid}")
+    except Exception as e:  # noqa: BLE001
+        p["facebook"]["story_error"] = str(e)[:300]
+        print(f"Facebook Story failed for {p['id']}: {e}")
+
+
+def facebook_story_only():
+    """[fb-story-test]: add a Facebook Story for the newest post already on the Facebook Page."""
+    global IG_USER
+    IG_USER = os.getenv("IG_USER_ID", "").strip()
+    posts = json.loads(POSTS_JSON.read_text())
+    todo = [p for p in posts if p.get("facebook") and not p["facebook"].get("error")
+            and not p["facebook"].get("story_id")]
+    if not todo:
+        print("Nothing to share to Facebook Stories.")
+        return
+    add_fb_story(todo[-1])
+    POSTS_JSON.write_text(json.dumps(posts, indent=2, ensure_ascii=False))
+    if todo[-1]["facebook"].get("story_error"):
+        sys.exit(1)
+
+
 def facebook_only():
     """[fb-test]: share the newest Instagram post to Facebook (if it isn't there yet)."""
     global IG_USER
@@ -268,6 +310,8 @@ def facebook_only():
 
 
 def main():
+    if os.getenv("FB_STORY_TEST") == "1":
+        return facebook_story_only()
     if os.getenv("FB_TEST") == "1":
         return facebook_only()
     if LAST_RUN.exists():
@@ -317,6 +361,7 @@ def main():
                     if fb:
                         p["facebook"] = fb
                         print(f"Shared {p['id']} to Facebook: {fb}")
+                        add_fb_story(p)
                 except Exception as e:  # noqa: BLE001
                     p["facebook"] = {"error": str(e)[:300]}
                     print(f"FAILED Facebook share for {p['id']}: {e}")
