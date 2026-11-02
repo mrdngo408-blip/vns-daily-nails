@@ -430,7 +430,8 @@ def make_post(client, day, season, posts, slot=None):
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     add_fine_print(img).save(POSTS_DIR / f"{pid}.jpg", "JPEG", quality=92, optimize=True)
     # Instagram feed posts only accept 4:5 up to 1.91:1, so also save a 4:5 (1080x1350) version
-    feed = img.crop((0, (1920 - 1350) // 2, 1080, (1920 - 1350) // 2 + 1350))
+    # nails sit low in the frame (pointing down), so keep the bottom and trim the wrists at the top
+    feed = img.crop((0, 1920 - 1350 - 30, 1080, 1920 - 30))
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
     caption = recipe["caption"].strip()
