@@ -32,10 +32,13 @@ LAST_RUN = ROOT / ".last_run.json"
 TZ = ZoneInfo("America/Los_Angeles")
 SLOT_HOURS = {"morning": 9, "evening": 18}
 
-GRAPH_HOST = "https://graph.instagram.com"
-GRAPH = f"{GRAPH_HOST}/{os.getenv('GRAPH_VERSION', 'v23.0')}"
-IG_USER = os.getenv("IG_USER_ID", "").strip() or "me"
 SECRET_TOKEN = os.getenv("IG_ACCESS_TOKEN", "").strip()
+# Instagram-login tokens start with "IG" and use graph.instagram.com (60 days, auto-renewed).
+# Facebook / system-user tokens (never expire) use graph.facebook.com with the IG business account ID.
+IG_LOGIN = SECRET_TOKEN.startswith("IG")
+GRAPH_HOST = "https://graph.instagram.com" if IG_LOGIN else "https://graph.facebook.com"
+GRAPH = f"{GRAPH_HOST}/{os.getenv('GRAPH_VERSION', 'v23.0')}"
+IG_USER = os.getenv("IG_USER_ID", "").strip() or ("me" if IG_LOGIN else "")
 TOKEN_FILE = ROOT / "secure" / "ig_token.enc"
 TOKEN = SECRET_TOKEN
 
@@ -106,6 +109,17 @@ def api(method, path, params):
         raise RuntimeError(f"Instagram API error {e.code}: {body[:400]}") from None
 
 
+def find_ig_account():
+    """For Facebook/system-user tokens: find the Instagram business account automatically."""
+    data = api("GET", "me/accounts", {"fields": "name,instagram_business_account{id,username}"})
+    for page in data.get("data", []):
+        ig = page.get("instagram_business_account")
+        if ig:
+            print(f"Using Instagram account @{ig.get('username', '?')} (via page {page.get('name')})")
+            return ig["id"]
+    raise RuntimeError("No Instagram business account found for this token - add IG_USER_ID secret.")
+
+
 def wait_ready(container_id):
     for _ in range(30):
         st = api("GET", container_id, {"fields": "status_code"}).get("status_code")
@@ -158,7 +172,11 @@ def main():
     if not SECRET_TOKEN:
         print("Instagram is not connected yet (IG_ACCESS_TOKEN missing) - skipping.")
         return
-    maybe_refresh(load_token())
+    global IG_USER
+    if IG_LOGIN:
+        maybe_refresh(load_token())
+    if not IG_USER:
+        IG_USER = find_ig_account()
 
     wait_for_slot(slot)
     posts = json.loads(POSTS_JSON.read_text())
