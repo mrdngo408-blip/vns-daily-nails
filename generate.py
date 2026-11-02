@@ -61,8 +61,11 @@ REFERENCE_STYLE = (
     "The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. "
     "NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail "
     "is divided into flowing curved 'stained glass' sections outlined in raised {metal} chrome lines, filled "
-    "with rich color, with small clustered rhinestones and crystals placed along the metallic lines. Every "
-    "nail is slightly different but the full set is one coordinated design."
+    "with rich color, with small clustered rhinestones and crystals placed along the metallic lines. "
+    "MATCHING SET: the two hands wear an identical mirrored set. Each finger's nail matches the same finger on "
+    "the other hand exactly: both thumbs identical, both index fingers identical, both middle fingers identical, "
+    "both ring fingers identical, both pinkies identical (same colors, same pattern, same crystals, mirrored). "
+    "Different fingers on the same hand can have different designs, like a professional salon set."
 )
 
 REALISM_RULES = (
@@ -231,7 +234,7 @@ RECIPE_SYSTEM = f"""You design daily luxury nail-art Instagram posts for {BUSINE
 Return ONLY JSON with these keys:
   "title": short name for the look (3-6 words)
   "palette": list of 3-4 specific named colors
-  "design": 2-3 sentences describing exactly what is painted on the nails (sections, finishes, glitter, accents), vivid and concrete for an image generator
+  "design": describe the set finger by finger (thumb, index, middle, ring, pinky), vivid and concrete for an image generator; state clearly that both hands are identical mirror images so each finger matches the same finger on the other hand
   "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; mention Modesto now and then. Do NOT put hashtags in the caption.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
 Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""

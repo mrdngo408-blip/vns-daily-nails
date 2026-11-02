@@ -110,20 +110,31 @@ def api(method, path, params):
         raise RuntimeError(f"Instagram API error {e.code}: {body[:400]}") from None
 
 
+def _use_host(host):
+    global GRAPH_HOST, GRAPH
+    GRAPH_HOST = host
+    GRAPH = f"{host}/{os.getenv('GRAPH_VERSION', 'v23.0')}"
+
+
 def check_account():
-    """Confirm which Instagram account we're posting to (works out the right ID by itself)."""
-    if IG_LOGIN:
-        me = api("GET", "me", {"fields": "user_id,username"})
-        print(f"Posting as @{me.get('username')}")
-        return "me"
+    """Work out which Instagram server + account ID this token works with."""
+    fb, ig = "https://graph.facebook.com", "https://graph.instagram.com"
+    attempts = []
     if IG_USER:
+        attempts.append((fb, IG_USER, {"fields": "username"}))
+    attempts.append((ig, "me", {"fields": "user_id,username"}))
+    attempts.append((fb, "me/accounts", None))
+    for host, obj, params in attempts:
+        _use_host(host)
         try:
-            info = api("GET", IG_USER, {"fields": "username"})
-            print(f"Posting as @{info.get('username')}")
-            return IG_USER
+            if params is None:
+                return find_ig_account()
+            info = api("GET", obj, params)
+            print(f"Posting as @{info.get('username')} via {host.split('//')[1]}")
+            return obj
         except Exception as e:  # noqa: BLE001
-            print(f"Saved account ID didn't work ({str(e)[:120]}) - looking it up instead.")
-    return find_ig_account()
+            print(f"  {host.split('//')[1]} / {obj}: no ({str(e)[:110]})")
+    raise RuntimeError("This token can't reach the Instagram account - it may be missing publish permission.")
 
 
 def find_ig_account():
@@ -178,10 +189,18 @@ def wait_for_slot(slot):
 
 
 def main():
-    if not LAST_RUN.exists():
+    if LAST_RUN.exists():
+        run = json.loads(LAST_RUN.read_text())
+    elif os.getenv("POST_LATEST") == "1":
+        latest = [p for p in json.loads(POSTS_JSON.read_text())
+                  if not (p.get("instagram") and not p["instagram"].get("error"))]
+        if not latest:
+            print("Nothing waiting to be posted.")
+            return
+        run = {"ids": [latest[-1]["id"]], "slot": None}
+    else:
         print("No new post this run.")
         return
-    run = json.loads(LAST_RUN.read_text())
     slot = run.get("slot")
     if not slot and os.getenv("POST_NOW") != "1":
         print("Manual run without 'post to Instagram' - skipping Instagram.")

@@ -61,6 +61,7 @@ jobs:
           EOF
 
       - name: Make image + caption
+        if: ${{ !contains(github.event.head_commit.message, '[post-latest]') }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || 'samples') || github.event.inputs.mode) }}
@@ -79,12 +80,13 @@ jobs:
           git push
 
       - name: Post to Instagram
-        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && contains(github.event.head_commit.message, '[post-now]'))
+        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') || contains(github.event.head_commit.message, '[post-latest]')))
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || '17841465658821849' }}   # venetian.nailspa_modesto
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           POST_NOW: ${{ (github.event.inputs.post_to_instagram == 'true' || contains(github.event.head_commit.message, '[post-now]')) && '1' || '0' }}
           POST_STORY: ${{ vars.POST_STORY || '1' }}
+          POST_LATEST: ${{ contains(github.event.head_commit.message, '[post-latest]') && '1' || '0' }}
         run: python publish.py
 
       - name: Save Instagram result
