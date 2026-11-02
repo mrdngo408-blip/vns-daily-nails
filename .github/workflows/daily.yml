@@ -84,7 +84,7 @@ jobs:
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || '17841465658821849' }}   # venetian.nailspa_modesto
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          POST_NOW: ${{ (github.event.inputs.post_to_instagram == 'true' || contains(github.event.head_commit.message, '[post-now]')) && '1' || '0' }}
+          POST_NOW: ${{ (github.event.inputs.post_to_instagram == 'true' || contains(github.event.head_commit.message, '[post-now]') || contains(github.event.head_commit.message, '[post-latest]')) && '1' || '0' }}
           POST_STORY: ${{ vars.POST_STORY || '1' }}
           POST_LATEST: ${{ contains(github.event.head_commit.message, '[post-latest]') && '1' || '0' }}
         run: python publish.py
