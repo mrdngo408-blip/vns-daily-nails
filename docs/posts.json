@@ -350,7 +350,11 @@
     "image": "posts/2026-11-01-fall-200044-8779a.jpg",
     "feed_image": "posts/2026-11-01-fall-200044-8779a-feed.jpg",
     "slot": null,
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18109878551577533",
+      "posted": "2026-11-01T20:01:00-08:00",
+      "story_id": "18229647874327019"
+    },
     "caption": "This season’s luxe fall ombré — mocha into salted caramel with a champagne glow ✨\nStiletto shape with a painterly gold-veined accent, Modesto-ready inspiration.\nBook your look at Venetian Nail Spa (link in bio) or call 209-408-8597.",
     "hashtags": [
       "#VenetianNailSpa",
