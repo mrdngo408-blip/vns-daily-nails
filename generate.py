@@ -37,7 +37,7 @@ TZ = ZoneInfo("America/Los_Angeles")
 
 IMAGE_MODELS = [m for m in os.getenv("IMAGE_MODELS", "gpt-image-2,gpt-image-1.5,gpt-image-1").split(",") if m]
 TEXT_MODELS = [m for m in os.getenv("TEXT_MODELS", "gpt-5-mini,gpt-4.1-mini,gpt-4o-mini").split(",") if m]
-IMAGE_QUALITY = os.getenv("IMAGE_QUALITY", "high")
+IMAGE_QUALITY = os.getenv("IMAGE_QUALITY", "medium") or "medium"
 IMAGE_SIZES = ["1088x1920", "1024x1536"]  # true 9:16 first, then the standard tall size
 MOCK = os.getenv("MOCK") == "1"
 
@@ -201,11 +201,13 @@ def openai_client():
 
 # ---------------------------------------------------------------- spending guard
 USAGE_JSON = DOCS / "usage.json"
-_QUALITY_COST = {"high": 0.30, "medium": 0.08, "low": 0.03}               # cautious estimates per image
-COST_PER_IMAGE = float(os.getenv("COST_PER_IMAGE", "") or _QUALITY_COST.get(os.getenv("IMAGE_QUALITY", "high"), 0.30))
-DAILY_IMAGE_LIMIT = int(os.getenv("DAILY_IMAGE_LIMIT", "10") or 10)       # 2 posts x 3 tries + spare
+_QUALITY_COST = {"high": 0.30, "medium": 0.08, "low": 0.03}
+_q = os.getenv("IMAGE_QUALITY", "medium") or "medium"               # cautious estimates per image
+COST_PER_IMAGE = float(os.getenv("COST_PER_IMAGE", "") or _QUALITY_COST.get(_q, 0.30))
+DAILY_IMAGE_LIMIT = int(os.getenv("DAILY_IMAGE_LIMIT", "6") or 6)         # 2 posts x 2 tries + 2 spare
 COOLDOWN_MIN = int(os.getenv("COOLDOWN_MIN", "10") or 10)                # ignore repeat manual runs
-MONTHLY_BUDGET = float(os.getenv("MONTHLY_BUDGET_USD", "25") or 25)       # stop before going over this
+MONTHLY_BUDGET = float(os.getenv("MONTHLY_BUDGET_USD", "12") or 12)       # stop before going over this
+MANUAL_DAILY_LIMIT = int(os.getenv("MANUAL_DAILY_LIMIT", "2") or 2)       # "Make one now" images per day
 
 
 class BudgetStop(Exception):
@@ -479,7 +481,7 @@ def check_hand(client, raw):
     return True, "checker unavailable"
 
 
-MAX_ATTEMPTS = int(os.getenv("MAX_ATTEMPTS", "3"))
+MAX_ATTEMPTS = int(os.getenv("MAX_ATTEMPTS", "2"))
 
 
 def make_checked_image(client, prompt):
@@ -647,6 +649,28 @@ def main():
             return
         if any(p.get("date") == today.isoformat() and p.get("slot") == slot for p in posts):
             print(f"The {slot} post for today already exists - nothing to do.")
+            return
+
+    if mode in ("one", "test", "samples"):
+        manual_today = [p for p in posts if p.get("date") == today.isoformat() and not p.get("slot")]
+        need = {"one": 1, "test": 2, "samples": 4}[mode]
+        if len(manual_today) + need > MANUAL_DAILY_LIMIT and mode == "one":
+            msg = f"Manual limit reached ({len(manual_today)} made today, max {MANUAL_DAILY_LIMIT}). Try tomorrow."
+            print(msg); write_status(False, "Safety stop: " + msg); sys.exit(1)
+
+    if mode == "slot":
+        cutoff = dt.datetime.now(TZ) - dt.timedelta(hours=24)
+        waiting = [p for p in posts if not p.get("test") and p.get("slot")
+                   and (not p.get("instagram") or p["instagram"].get("error"))
+                   and dt.datetime.fromisoformat(p["created"]) > cutoff]
+        if waiting:
+            p = waiting[-1]
+            print(f"Re-using unposted image {p['id']} instead of paying for a new one.")
+            p["slot"] = slot
+            p["date"] = today.isoformat()
+            save_posts(posts)
+            (ROOT / ".last_run.json").write_text(json.dumps({"ids": [p["id"]], "slot": slot}))
+            write_status(True, "Re-used an unposted image (no new cost).")
             return
 
     if mode == "one" and posts:

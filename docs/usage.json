@@ -17,8 +17,8 @@
   },
   "note": "Nov 1 setup/testing estimated at 18 images",
   "limits": {
-    "daily_images": 10,
-    "monthly_budget": 25.0,
+    "daily_images": 6,
+    "monthly_budget": 12,
     "cost_per_image_estimate": 0.08
   }
 }
