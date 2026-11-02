@@ -643,7 +643,7 @@ def mock_image(brief, recipe):
     return buf.getvalue(), "mock"
 
 
-FINE_PRINT = "Images are AI-generated design inspiration."
+FINE_PRINT = "FOR INSPO PURPOSE ONLY. AI GENERATED IMAGE"
 
 
 def _font(size):
