@@ -48,7 +48,7 @@ BUSINESS = {
     "booking": "https://book.gocheckin.net/v3/nails/venetian-nail-spa-17058/choose-service",
 }
 
-LOCAL_TAGS = ["#ModestoNails", "#VenetianNailSpa", "#ModestoCA", "#CentralValleyNails"]
+LOCAL_TAGS = ["#ModestoNails", "#VenetianNailSpaModesto", "#ModestoCA", "#CentralValleyNails"]
 
 # ---------------------------------------------------------------- style
 REFERENCE_POSE = ROOT / "refs" / "pose.jpg"   # David's pose reference photo
@@ -278,6 +278,8 @@ def clean_hashtags(tags, season, shape):
     out = []
     for t in tags or []:
         t = "#" + "".join(ch for ch in str(t) if ch.isalnum())
+        if t.lower() == "#venetiannailspa":
+            t = "#VenetianNailSpaModesto"
         if len(t) > 2 and t.lower() not in [o.lower() for o in out]:
             out.append(t)
     if not any(t.lower() in [l.lower() for l in LOCAL_TAGS] for t in out):
