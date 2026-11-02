@@ -247,7 +247,7 @@ def usage_now():
     return u, u["days"].get(d, {"images": 0, "cost": 0.0}), u["months"].get(m, {"images": 0, "cost": 0.0}), d, m
 
 
-TEST_DAILY_LIMIT = int(os.getenv("TEST_DAILY_LIMIT", "8") or 8)
+TEST_DAILY_LIMIT = int(os.getenv("TEST_DAILY_LIMIT", "12") or 12)
 TESTING = {"on": False}
 
 
@@ -542,7 +542,9 @@ Reject the new photo (ok=false) if ANY of these are true:
 - more than one hand, or any extra/stray fingers or hand parts
 - any finger that is fused, duplicated, missing a segment, bent unnaturally, too long/short, or attached wrong
 - wrong number of nails, a nail on the wrong place, or a nail cut off by the frame
-- the pose clearly differs from the reference ({pose_desc})
+- the HAND POSE clearly differs from the reference ({pose_desc})
+Judge the pose ONLY by hand orientation, finger arrangement/curl and camera angle. The nail design, nail colors,
+background, fabric, props, number of rings, skin tone and lighting are SUPPOSED to be different - never reject for those.
 - any visible text, logo or watermark
 Also write alt text for image 2 for people who are blind or have low vision: 1-2 plain sentences, under 250 characters,
 describing what is actually visible (one hand, skin tone, nail shape and length, the colors and design on the nails,
@@ -801,7 +803,8 @@ def main():
     elif mode == "test":
         jobs = [(today, season_for(today))] * 2
     elif mode == "test-poses":
-        new_poses = [p for p in load_poses() if not p["name"].startswith("01-")]   # pose 01 is already proven
+        tried = {p.get("pose") for p in posts}
+        new_poses = [p for p in load_poses() if not p["name"].startswith("01-") and p["name"] not in tried]
         jobs = [(today, season_for(today))] * len(new_poses)
     else:
         jobs = [(today, force if force in SEASONS else season_for(today))]
@@ -809,10 +812,21 @@ def main():
 
     made = 0
     new_ids = []
+    failed_poses = []
     try:
         for day, season in jobs:
-            post = make_post(client, day, season, posts, slot,
-                             force_pose=(new_poses[made] if mode == "test-poses" else None))
+            if mode == "test-poses":
+                pose_now = new_poses[len(new_ids) + len(failed_poses)]
+                try:
+                    post = make_post(client, day, season, posts, slot, force_pose=pose_now)
+                except BudgetStop:
+                    raise
+                except Exception as e:  # noqa: BLE001
+                    failed_poses.append(pose_now["name"])
+                    print(f"  pose {pose_now['name']} failed: {str(e)[:160]}")
+                    continue
+            else:
+                post = make_post(client, day, season, posts, slot)
             post["quality"] = IMAGE_QUALITY
             if mode in ("test", "test-poses"):
                 post["test"] = True              # test images are never posted
@@ -821,7 +835,7 @@ def main():
             save_posts(posts)
             made += 1
         (ROOT / ".last_run.json").write_text(json.dumps({"ids": new_ids, "slot": slot}))
-        write_status(True, f"Made {made} new post(s).")
+        write_status(True, f"Made {made} new post(s)." + (f" Poses that failed: {', '.join(failed_poses)}" if failed_poses else ""))
         print(f"Done: {made} post(s).")
     except BudgetStop as e:
         save_posts(posts)
