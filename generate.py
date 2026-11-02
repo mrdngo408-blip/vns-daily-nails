@@ -51,31 +51,29 @@ BUSINESS = {
 LOCAL_TAGS = ["#ModestoNails", "#VenetianNailSpa", "#ModestoCA", "#CentralValleyNails"]
 
 # ---------------------------------------------------------------- style
+REFERENCE_POSE = ROOT / "refs" / "pose.jpg"   # David's pose reference photo
+
 REFERENCE_STYLE = (
-    "Ultra-realistic luxury beauty-editorial close-up photograph of a woman's two hands, shot from slightly "
-    "above. POSE: the left hand lies flat and relaxed, back of the hand facing the camera, and the right hand "
-    "rests gently on top of it, crossing over at an angle so its fingers drape across the lower hand's fingers. "
-    "Both hands run diagonally from the upper right of the frame down toward the lower left, fingers relaxed, "
-    "softly separated and fanned out, gently curved, nails pointing down and to the left. All ten nails are "
-    "clearly visible, separate and fully in frame, five on each hand, none hidden or overlapping each other. "
-    "The hands fill the frame from the wrists to the nail tips, like a professional nail-salon portfolio shot. "
-    "NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish. Each nail "
-    "is divided into flowing curved 'stained glass' sections outlined in raised {metal} chrome lines, filled "
-    "with rich color, with small clustered rhinestones and crystals placed along the metallic lines. "
-    "MATCHING SET: the two hands wear an identical mirrored set. Each finger's nail matches the same finger on "
-    "the other hand exactly: both thumbs identical, both index fingers identical, both middle fingers identical, "
-    "both ring fingers identical, both pinkies identical (same colors, same pattern, same crystals, mirrored). "
-    "Different fingers on the same hand can have different designs, like a professional salon set."
+    "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference "
+    "photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers "
+    "pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index "
+    "finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more "
+    "curled, with the fingers softly separated so all four nails are fully visible. The thumb is tucked behind "
+    "the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand "
+    "centered in the frame. A thin dainty gold band on the ring finger. "
+    "NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with "
+    "{metal} chrome accents and small crystals where the design calls for them. All four visible nails form "
+    "one coordinated salon set."
 )
 
 REALISM_RULES = (
-    "Anatomically perfect hands: exactly two hands, exactly five fingers on each hand (one thumb and four "
-    "fingers), every finger clearly separate and attached naturally, no extra, missing, fused or tangled "
-    "fingers, no interlaced fingers, no extra hands. Natural knuckles, realistic skin texture and fine lines, "
-    "natural proportions, elegant slim fingers, {skin} skin tone. Nails razor sharp and in focus, shallow "
-    "depth of field on the background. Soft warm studio lighting with gentle specular highlights on the "
-    "gloss. Symmetry check: left thumb = right thumb, left index = right index, left middle = right middle, "
-    "left ring = right ring, left pinky = right pinky. Tall vertical 9:16 portrait composition. No text, no letters, no logos, no watermarks, no brand names."
+    "Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Four fingers "
+    "visible, each with exactly three natural segments and natural knuckle creases, attached naturally to the "
+    "hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky "
+    "shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, "
+    "elegant slim fingers, {skin} skin tone. Nails razor sharp and in focus, background softly out of focus. "
+    "Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. "
+    "No text, no letters, no logos, no watermarks, no brand names."
 )
 
 SHAPES = ["almond", "almond", "stiletto", "long oval", "almond", "soft stiletto"]
@@ -95,27 +93,27 @@ SEASONS = {
                      "emerald, gold and milky white", "midnight navy, silver glitter and ice white",
                      "black cherry, rose gold and blush"],
         "accents": "snowflake and crystal accents, velvet and frost effects",
-        "backgrounds": ["white faux fur", "champagne silk", "dark emerald velvet", "white marble with gold veins"],
+        "backgrounds": ["ivory chunky knit sweater", "charcoal cashmere sweater", "deep emerald velvet", "white faux fur throw"],
     },
     "spring": {
         "palettes": ["pastel lavender, blush pink and pearl", "mint, butter yellow and white",
                      "soft peach, lilac and gold", "baby blue, blush and pearl chrome",
                      "sage green, cream and rose gold"],
         "accents": "soft florals, pearls, delicate French tips with a twist",
-        "backgrounds": ["cream satin", "white marble", "blush pink silk", "white faux fur with a few petals"],
+        "backgrounds": ["cream satin", "blush pink knit sweater", "soft white linen", "lavender cashmere"],
     },
     "summer": {
         "palettes": ["coral, turquoise and gold", "hot pink, citrus orange and gold",
                      "ocean blue, aqua and pearl", "neon pink, lilac and chrome", "sunset orange, magenta and gold"],
         "accents": "tropical and ocean themes, chrome and aura effects, a touch of neon",
-        "backgrounds": ["white marble", "champagne silk", "cream satin", "white faux fur"],
+        "backgrounds": ["white linen shirt", "champagne silk", "cream satin", "light beige knit"],
     },
     "fall": {
         "palettes": ["burgundy, burnt orange and gold", "mocha, caramel and champagne",
                      "deep plum, olive and gold", "tortoiseshell, espresso and gold leaf",
                      "copper, wine red and cream"],
         "accents": "tortoiseshell, gold leaf, cat-eye shimmer, warm metallics",
-        "backgrounds": ["mocha velvet", "cream faux fur", "champagne silk", "dark marble with gold veins"],
+        "backgrounds": ["chocolate brown ribbed knit sweater", "camel cashmere", "mocha velvet", "cream cable-knit sweater"],
     },
 }
 
@@ -235,7 +233,7 @@ RECIPE_SYSTEM = f"""You design daily luxury nail-art Instagram posts for {BUSINE
 Return ONLY JSON with these keys:
   "title": short name for the look (3-6 words)
   "palette": list of 3-4 specific named colors
-  "design": describe the set finger by finger (thumb, index, middle, ring, pinky), vivid and concrete for an image generator; state clearly that both hands are identical mirror images so each finger matches the same finger on the other hand
+  "design": describe the set on the four visible nails of ONE hand (index, middle, ring, pinky; the thumb is hidden), vivid and concrete for an image generator; the four nails must look like one coordinated salon set (an accent nail on the ring finger is fine)
   "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; mention Modesto now and then. Do NOT put hashtags in the caption.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
 Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""
@@ -308,26 +306,117 @@ def build_image_prompt(brief, recipe):
     return " ".join(parts)
 
 
+POSE_PROMPT = (
+    "The attached photo is the POSE REFERENCE. Recreate its hand pose, finger positions, finger curl, camera "
+    "angle, crop and composition exactly, as a new ultra-realistic photo. Change ONLY these things: the nail "
+    "design, the fabric/background, the skin tone and the lighting, as described below. Do not copy the "
+    "reference nail design. "
+)
+
+
+def _try_sizes(fn):
+    for size in IMAGE_SIZES:
+        try:
+            return fn(size)
+        except Exception as e:  # noqa: BLE001
+            if "size" in str(e).lower() and size != IMAGE_SIZES[-1]:
+                print(f"  size {size} not supported, trying next size")
+                continue
+            raise
+
+
 def make_image(client, prompt):
-    def call(model):
-        for size in IMAGE_SIZES:
+    """Uses the pose reference photo (image edit) so the pose matches; falls back to text only."""
+    ref = REFERENCE_POSE.read_bytes() if REFERENCE_POSE.exists() else None
+
+    def with_ref(model):
+        def go(size):
+            kw = dict(model=model, image=("pose.jpg", ref, "image/jpeg"), prompt=POSE_PROMPT + prompt,
+                      size=size, quality=IMAGE_QUALITY, n=1)
             try:
-                resp = client.images.generate(model=model, prompt=prompt, size=size,
-                                              quality=IMAGE_QUALITY, n=1)
-                return base64.b64decode(resp.data[0].b64_json)
+                resp = client.images.edit(**kw, input_fidelity="high")
+            except TypeError:
+                resp = client.images.edit(**kw)
             except Exception as e:  # noqa: BLE001
-                if "size" in str(e).lower() and size != IMAGE_SIZES[-1]:
-                    print(f"  size {size} not supported by {model}, trying next size")
-                    continue
-                raise
+                if "input_fidelity" in str(e):
+                    resp = client.images.edit(**kw)
+                else:
+                    raise
+            return base64.b64decode(resp.data[0].b64_json)
+        return _try_sizes(go)
+
+    def text_only(model):
+        def go(size):
+            resp = client.images.generate(model=model, prompt=prompt, size=size, quality=IMAGE_QUALITY, n=1)
+            return base64.b64decode(resp.data[0].b64_json)
+        return _try_sizes(go)
 
     last = None
     for model in IMAGE_MODELS:
+        if ref:
+            try:
+                return with_retries(lambda: with_ref(model), f"pose-reference image {model}", tries=2), model + "+pose"
+            except Exception as e:  # noqa: BLE001
+                last = e
         try:
-            return with_retries(lambda: call(model), f"image model {model}", tries=3), model
+            return with_retries(lambda: text_only(model), f"image model {model}", tries=2), model
         except Exception as e:  # noqa: BLE001
             last = e
     raise RuntimeError(f"Image generation failed on all models: {last}")
+
+
+HAND_CHECK = """You are a strict photo editor checking an AI-generated nail photo before it goes on Instagram.
+Image 1 is the POSE REFERENCE. Image 2 is the NEW photo to check.
+Reject the new photo (ok=false) if ANY of these are true:
+- more than one hand, or any extra/stray fingers or hand parts
+- any finger that is fused, duplicated, missing a segment, bent unnaturally, too long/short, or attached wrong
+- wrong number of nails, a nail on the wrong place, or a nail cut off by the frame
+- the pose clearly differs from the reference (one hand from the back, fingers pointing left, curled over fabric, thumb hidden)
+- any visible text, logo or watermark
+Return ONLY JSON: {"ok": true/false, "pose_match": 1-10, "issues": "short description"}"""
+
+
+def _data_url(raw, max_h=768):
+    im = Image.open(io.BytesIO(raw)).convert("RGB")
+    if im.height > max_h:
+        im = im.resize((int(im.width * max_h / im.height), max_h))
+    buf = io.BytesIO()
+    im.save(buf, "JPEG", quality=85)
+    return "data:image/jpeg;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def check_hand(client, raw):
+    """Vision check for anatomy + pose. Returns (ok, notes). If the checker itself fails, accept."""
+    if not REFERENCE_POSE.exists():
+        return True, "no reference"
+    content = [{"type": "text", "text": HAND_CHECK},
+               {"type": "image_url", "image_url": {"url": _data_url(REFERENCE_POSE.read_bytes())}},
+               {"type": "image_url", "image_url": {"url": _data_url(raw)}}]
+    for model in TEXT_MODELS:
+        try:
+            resp = client.chat.completions.create(model=model, response_format={"type": "json_object"},
+                                                  messages=[{"role": "user", "content": content}])
+            r = json.loads(resp.choices[0].message.content)
+            ok = bool(r.get("ok")) and int(r.get("pose_match", 0) or 0) >= 7
+            return ok, f"pose {r.get('pose_match')}/10 - {r.get('issues', '')}"
+        except Exception as e:  # noqa: BLE001
+            print(f"  hand check with {model} failed: {str(e)[:120]}")
+    return True, "checker unavailable"
+
+
+MAX_ATTEMPTS = int(os.getenv("MAX_ATTEMPTS", "3"))
+
+
+def make_checked_image(client, prompt):
+    notes = []
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        raw, model = make_image(client, prompt)
+        ok, note = check_hand(client, raw)
+        print(f"  attempt {attempt}: {'PASS' if ok else 'REJECTED'} ({note})")
+        notes.append(note)
+        if ok:
+            return raw, model, note
+    raise RuntimeError("Every image failed the hand check, so nothing was saved or posted: " + " | ".join(notes))
 
 
 def mock_image(brief, recipe):
@@ -422,7 +511,11 @@ def make_post(client, day, season, posts, slot=None):
     tags = clean_hashtags(recipe.get("hashtags"), season, brief["shape"])
     prompt = build_image_prompt(brief, recipe)
 
-    raw, model = mock_image(brief, recipe) if MOCK else make_image(client, prompt)
+    if MOCK:
+        raw, model = mock_image(brief, recipe)
+        check_note = "mock"
+    else:
+        raw, model, check_note = make_checked_image(client, prompt)
     img = to_9x16(raw)
 
     stamp = dt.datetime.now(TZ).strftime("%H%M%S")
@@ -430,8 +523,7 @@ def make_post(client, day, season, posts, slot=None):
     POSTS_DIR.mkdir(parents=True, exist_ok=True)
     add_fine_print(img).save(POSTS_DIR / f"{pid}.jpg", "JPEG", quality=92, optimize=True)
     # Instagram feed posts only accept 4:5 up to 1.91:1, so also save a 4:5 (1080x1350) version
-    # nails sit low in the frame (pointing down), so keep the bottom and trim the wrists at the top
-    feed = img.crop((0, 1920 - 1350 - 30, 1080, 1920 - 30))
+    feed = img.crop((0, (1920 - 1350) // 2, 1080, (1920 - 1350) // 2 + 1350))  # hand is centered
     add_fine_print(feed).save(POSTS_DIR / f"{pid}-feed.jpg", "JPEG", quality=92, optimize=True)
 
     caption = recipe["caption"].strip()
@@ -454,6 +546,7 @@ def make_post(client, day, season, posts, slot=None):
         "hashtags": tags,
         "full_caption": caption + "\n.\n" + " ".join(tags),
         "image_model": model,
+        "hand_check": check_note,
         "text_model": recipe.get("text_model", ""),
         "prompt": prompt,
     }
