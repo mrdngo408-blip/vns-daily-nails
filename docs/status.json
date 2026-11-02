@@ -1,5 +1,5 @@
 {
-  "ok": true,
-  "message": "Made 1 new post(s).",
-  "time": "2026-11-02 08:34 AM PT"
+  "ok": false,
+  "message": "Made 1 post(s), then failed: RuntimeError: Every image failed the hand check, so nothing was saved or posted: pose 8/10 - Pose mismatch: reference shows two gold rings but the new photo shows only one; otherwise single hand, finger positioning and background are similar. | pose 6/10 - Pose differs from reference: fingertips are not resting n",
+  "time": "2026-11-02 10:18 AM PT"
 }
