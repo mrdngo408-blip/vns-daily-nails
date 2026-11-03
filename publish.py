@@ -32,7 +32,7 @@ ROOT = Path(__file__).resolve().parent
 POSTS_JSON = ROOT / "docs" / "posts.json"
 LAST_RUN = ROOT / ".last_run.json"
 TZ = ZoneInfo("America/Los_Angeles")
-SLOT_HOURS = {"morning": 9, "evening": 18}
+SLOT_HOURS = {"morning": 9, "noon": 12, "evening": 18}
 
 SECRET_TOKEN = os.getenv("IG_ACCESS_TOKEN", "").strip()
 # Instagram-login tokens start with "IG" and use graph.instagram.com (60 days, auto-renewed).

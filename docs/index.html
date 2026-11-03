@@ -70,7 +70,7 @@
 
 <header>
   <h1 class="brand">Venetian <em>Nail Spa</em></h1>
-  <div class="sub">Daily Looks · auto-posts 9 AM &amp; 6 PM</div>
+  <div class="sub">Daily Looks · auto-posts 9 AM · 12 PM · 6 PM</div>
   <div class="bar">
     <span class="status" id="status">Loading…</span>
     <span class="status" id="usage"></span>
@@ -138,7 +138,7 @@ function render(){
   }
   $("grid").innerHTML = list.map(p=>{
     const d = new Date((p.created||p.date)).toLocaleString("en-US",{weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"});
-    const slot = p.slot ? (p.slot==="morning"?" · 9 AM post":" · 6 PM post") : "";
+    const slot = p.slot ? ({morning:" · 9 AM post",noon:" · 12 PM post",evening:" · 6 PM post"}[p.slot]||"") : "";
     return `<article class="card">
       <div class="imgwrap"><img loading="lazy" src="${esc(p.image)}" alt="${esc(p.title)}"><span class="tag">${p.test?"TEST · ":""}${p.quality&&p.quality!=="high"?esc(p.quality)+" · ":""}${esc(p.season)}${p.holiday?" · "+esc(p.holiday.split(" (")[0]):""}</span>${igBadge(p)}</div>
       <div class="body">

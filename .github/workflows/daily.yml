@@ -1,4 +1,4 @@
-name: Nail Posts (9 AM + 6 PM)
+name: Nail Posts (9 AM + 12 PM + 6 PM)
 
 on:
   schedule:
@@ -7,6 +7,8 @@ on:
     # makes the post, then waits until exactly 9:00 / 6:00 to publish.
     - cron: "35 15 * * *"   # morning (summer time)
     - cron: "35 16 * * *"   # morning (winter time)
+    - cron: "35 18 * * *"   # noon (summer time)
+    - cron: "35 19 * * *"   # noon (winter time)
     - cron: "35 0 * * *"    # evening (summer time)
     - cron: "35 1 * * *"    # evening (winter time)
   push:
@@ -72,8 +74,8 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || (contains(github.event.head_commit.message, '[samples]') && 'samples' || (contains(github.event.head_commit.message, '[test-medium]') && 'test' || (contains(github.event.head_commit.message, '[test-poses]') && 'test-poses' || (contains(github.event.head_commit.message, '[test-french]') && 'test' || 'none'))))) || github.event.inputs.mode) }}
           IMAGE_QUALITY: ${{ contains(github.event.head_commit.message, '[test-medium]') && 'medium' || (vars.IMAGE_QUALITY || 'medium') }}
-          DAILY_IMAGE_LIMIT: ${{ vars.DAILY_IMAGE_LIMIT || '6' }}
-          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD || '12' }}
+          DAILY_IMAGE_LIMIT: ${{ vars.DAILY_IMAGE_LIMIT || '8' }}
+          MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD || '15' }}
           COST_PER_IMAGE: ${{ vars.COST_PER_IMAGE || '' }}
           FORCE_STYLE: ${{ contains(github.event.head_commit.message, '[test-french]') && 'french' || '' }}
           FORCE_SEASON: ${{ github.event.inputs.season != 'auto' && github.event.inputs.season || '' }}

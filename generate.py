@@ -245,9 +245,9 @@ USAGE_JSON = DOCS / "usage.json"
 _QUALITY_COST = {"high": 0.30, "medium": 0.08, "low": 0.03}
 _q = os.getenv("IMAGE_QUALITY", "medium") or "medium"               # cautious estimates per image
 COST_PER_IMAGE = float(os.getenv("COST_PER_IMAGE", "") or _QUALITY_COST.get(_q, 0.30))
-DAILY_IMAGE_LIMIT = int(os.getenv("DAILY_IMAGE_LIMIT", "6") or 6)         # 2 posts x 2 tries + 2 spare
+DAILY_IMAGE_LIMIT = int(os.getenv("DAILY_IMAGE_LIMIT", "8") or 8)         # 3 posts x 2 tries + 2 spare
 COOLDOWN_MIN = int(os.getenv("COOLDOWN_MIN", "10") or 10)                # ignore repeat manual runs
-MONTHLY_BUDGET = float(os.getenv("MONTHLY_BUDGET_USD", "12") or 12)       # stop before going over this
+MONTHLY_BUDGET = float(os.getenv("MONTHLY_BUDGET_USD", "15") or 15)       # stop before going over this
 MANUAL_DAILY_LIMIT = int(os.getenv("MANUAL_DAILY_LIMIT", "2") or 2)       # "Make one now" images per day
 
 
@@ -767,7 +767,7 @@ def to_9x16(raw: bytes) -> Image.Image:
 
 
 # ---------------------------------------------------------------- schedule
-SLOTS = {"morning": 9, "evening": 18}  # 9 AM and 6 PM Pacific
+SLOTS = {"morning": 9, "noon": 12, "evening": 18}  # 9 AM, 12 PM and 6 PM Pacific
 
 
 def current_slot(now=None):
