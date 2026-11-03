@@ -10,22 +10,22 @@
       "test_images": 11
     },
     "2026-11-03": {
-      "images": 4,
-      "cost": 0.32,
+      "images": 5,
+      "cost": 0.4,
       "test_images": 2
     }
   },
   "months": {
     "2026-11": {
-      "images": 35,
-      "cost": 6.76,
+      "images": 36,
+      "cost": 6.84,
       "test_images": 11
     }
   },
   "note": "Nov 1 setup/testing estimated at 18 images",
   "limits": {
     "daily_images": 8,
-    "monthly_budget": 15,
+    "monthly_budget": 15.0,
     "cost_per_image_estimate": 0.08
   }
 }

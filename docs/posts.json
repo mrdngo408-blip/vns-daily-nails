@@ -709,5 +709,45 @@
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: a CLASSIC FRENCH TIP set on medium almond nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (thin micro-French white tips). Add a small, delicate design accent on only one or two nails (fine hand-painted line art); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Warm Latte, Micro French White, Champagne Gold. Design: One visible hand, medium almond nails on warm golden-tan skin set against a mocha velvet background. All five nails wear a sheer warm-latte base with crisp, thin micro-French white tips. The ring finger is the accent: a fine, hand-painted champagne-gold single-line vine that arcs gently from the smile line toward the cuticle, finished with a tiny gold dot at the base. All nails are high-gloss, edges immaculate and cuticles polished for a cohesive, understated luxury. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, warm golden tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
     "quality": "medium",
     "test": true
+  },
+  {
+    "id": "2026-11-03-fall-122157-9bfa0",
+    "date": "2026-11-03",
+    "created": "2026-11-03T12:21:57-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Plum-Gold Modern French",
+    "palette": [
+      "Sheer Warm Nude",
+      "Deep Plum",
+      "22K Gold"
+    ],
+    "palette_text": "Sheer Warm Nude, Deep Plum, 22K Gold",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-03-fall-122157-9bfa0.jpg",
+    "feed_image": "posts/2026-11-03-fall-122157-9bfa0-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Plum-tipped modern French with a fine 22K-gold vine—sheer warmth meets fall richness. ✨\nA seasonal twist on a classic: deep plum tips on a sheer warm nude base, perfect gel nails in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nAre you more drawn to bold colored tips or soft neutrals this season?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#PlumFrench",
+      "#SoftSquare",
+      "#FallNails"
+    ],
+    "full_caption": "Plum-tipped modern French with a fine 22K-gold vine—sheer warmth meets fall richness. ✨\nA seasonal twist on a classic: deep plum tips on a sheer warm nude base, perfect gel nails in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nAre you more drawn to bold colored tips or soft neutrals this season?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #PlumFrench #SoftSquare #FallNails",
+    "alt_text": "One hand with medium-tan skin seen from the back, long almond-shaped nails with a nude base and dark burgundy French tips and a thin gold vine accent on the ring finger, resting on a cream knit sweater. AI-generated image.",
+    "question": "Are you more drawn to bold colored tips or soft neutrals this season?",
+    "welcome": "Hi and welcome if you're new here! What's the last nail color you fell in love with?",
+    "seo_phrase": "gel nails in Modesto",
+    "style": "french",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 8/10 - none",
+    "pose": "05-draped-over-edge",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: a CLASSIC FRENCH TIP set on soft square nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (seasonal colored tips in Sheer Warm Nude). Add a small, delicate design accent on only one or two nails (fine hand-painted line art); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Warm Nude, Deep Plum, 22K Gold. Design: One hand, soft-square tips on warm golden-tan skin, photographed resting on a cream cable-knit sweater in soft natural window light. All nails have a sheer warm nude base; crisp seasonal colored tips in deep plum follow a classic French smile line—slightly rounded at the corners for a modern, elegant silhouette. The ring finger is the sole accent: a delicate, hand-painted 22K-gold vine that traces the smile line and tapers into a tiny gold dot near the cuticle. High-gloss finish across the set so the plum tips gleam and the fine gold line catches the light. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, warm golden tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
