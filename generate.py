@@ -80,10 +80,32 @@ CURRENT_POSE = {"pose": None}
 REFERENCE_STYLE = (
     "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference "
     "photo exactly): {pose} "
-    "NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with "
-    "{metal} chrome accents and small crystals where the design calls for them. All visible nails form "
-    "one coordinated salon set."
+    "{nails}"
 )
+
+LUXE_NAILS = ("NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with "
+              "{metal} chrome accents and small crystals where the design calls for them. All visible nails form "
+              "one coordinated salon set.")
+FRENCH_NAILS = ("NAILS: a CLASSIC FRENCH TIP set on {shape} nails: sheer natural pink/nude base on every nail with a "
+                "crisp, clean, evenly curved tip line ({tip}). Add a small, delicate design accent on only one or two "
+                "nails ({accent}); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. "
+                "Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns.")
+FRENCH_TIPS = ["bright white tips", "soft milky white tips", "thin micro-French white tips", "deep French white tips",
+               "seasonal colored tips in {color}", "double-line French with a thin {metal} line under white tips"]
+FRENCH_ACCENTS = ["fine hand-painted line art", "tiny seasonal florals", "a few micro pearls", "a single small gem",
+                  "a delicate {metal} foil fleck", "a tiny bow", "a minimalist leaf or vine", "a small heart",
+                  "subtle dotted detail along the smile line", "a soft swirl"]
+FRENCH_SHAPES = ["almond", "almond", "medium almond", "soft square", "oval", "short almond"]
+
+
+def want_french(posts):
+    """Classic French tip every 3-4 real posts."""
+    since = 0
+    for p in reversed([x for x in posts if not x.get("test")]):
+        if p.get("style") == "french":
+            break
+        since += 1
+    return since >= 4 or (since >= 3 and random.random() < 0.5)
 
 REALISM_RULES = (
     "Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every "
@@ -321,6 +343,7 @@ def build_brief(day: dt.date, season: str, holiday, recent):
         "shape": rnd.choice(SHAPES),
         "skin": rnd.choice(SKIN_TONES),
         "metal": rnd.choice(METALS),
+        "style": "luxe",
         "avoid_recent": [p.get("palette_text", "") + " / " + p.get("technique", "") for p in recent[-30:]],
         "local_phrase": pick_seo(recent),
         "avoid_questions": [p["question"] for p in recent if p.get("question")][-80:],
@@ -335,6 +358,7 @@ Return ONLY JSON with these keys:
   "caption": Instagram caption, 2-4 short lines, warm and luxurious and confident, 1-2 tasteful emojis max, describes the colors and design so people want it, presents it as design inspiration or this season's look (never claim it is a real client's set), ends with a call to action to book at {BUSINESS['name']} (link in bio) or call {BUSINESS['phone']}; and work the exact phrase given in local_phrase into one sentence naturally (it helps people find us in Instagram search). Do NOT put hashtags in the caption.
   "question": ONE short, friendly, open-ended question for the end of the caption that invites a genuine reply about nails, this design, colors, seasons, self-care or style (e.g. asking which detail they'd pick, what color they wear in a season, what occasion they'd wear it to). It must be different from every question in avoid_questions. NEVER ask people to like, share, save, tag friends, follow, or comment a specific word/emoji/number, and never promise anything in return for engaging.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
+If style is "french": design a CLASSIC FRENCH TIP set (sheer nude/pink base, crisp tips as given in french_tip, a small accent as given in french_accent on 1-2 nails only); the palette is the base + tip + accent colors; the caption should celebrate a timeless French with a modern twist. Do not describe heavy chrome or big crystals for French sets.
 Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""
 
 
@@ -515,10 +539,19 @@ def clean_hashtags(tags, season, shape):
     return out[:5]
 
 
+def nails_text(brief, recipe):
+    if brief.get("style") == "french":
+        color = (recipe.get("palette") or ["a soft seasonal shade"])[0]
+        tip = brief["french_tip"].format(color=color, metal=brief["metal"])
+        accent = brief["french_accent"].format(metal=brief["metal"])
+        return FRENCH_NAILS.format(shape=brief["shape"], tip=tip, accent=accent)
+    return LUXE_NAILS.format(shape=brief["shape"], metal=brief["metal"])
+
+
 def build_image_prompt(brief, recipe):
     parts = [
-        REFERENCE_STYLE.format(shape=brief["shape"], metal=brief["metal"],
-                               pose=(CURRENT_POSE["pose"] or {}).get("desc", "a single relaxed hand")),
+        REFERENCE_STYLE.format(pose=(CURRENT_POSE["pose"] or {}).get("desc", "a single relaxed hand"),
+                               nails=nails_text(brief, recipe)),
         f"Color palette: {', '.join(recipe['palette'])}.",
         f"Design: {recipe['design']}",
         f"Technique emphasis: {brief['technique']}. Seasonal mood ({brief['season']}): {brief['seasonal_accents']}.",
@@ -754,6 +787,12 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     if holiday and random.random() < 0.5:
         holiday = None  # about half the posts near a holiday lean into it
     brief = build_brief(day, season, holiday, posts)
+    if os.getenv("FORCE_STYLE") == "french" or (os.getenv("FORCE_STYLE") != "luxe" and want_french(posts)):
+        brief["style"] = "french"
+        brief["shape"] = random.choice(FRENCH_SHAPES)
+        brief["technique"] = "classic French tip with a delicate design accent"
+        brief["french_tip"] = random.choice(FRENCH_TIPS)
+        brief["french_accent"] = random.choice(FRENCH_ACCENTS)
     CURRENT_POSE["pose"] = force_pose or pick_pose(posts)
     pose_name = CURRENT_POSE["pose"]["name"] if CURRENT_POSE["pose"] else None
     print(f"- {day} | {season} | holiday: {holiday} | pose: {pose_name} | {brief['technique']} | {brief['background']}")
@@ -810,6 +849,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
         "question": question,
         "welcome": welcome,
         "seo_phrase": brief["local_phrase"],
+        "style": brief.get("style", "luxe"),
         "image_model": model,
         "hand_check": check_note,
         "pose": pose_name,
