@@ -578,5 +578,45 @@
       "posted": "2026-11-02T18:00:27-08:00",
       "story_id": "963841223471064"
     }
+  },
+  {
+    "id": "2026-11-03-fall-082821-313b9",
+    "date": "2026-11-03",
+    "created": "2026-11-03T08:28:22-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Plum & Olive Stained Glass",
+    "palette": [
+      "Deep Plum",
+      "Moss Olive",
+      "Antique Gold",
+      "Cream Cable"
+    ],
+    "palette_text": "Deep Plum, Moss Olive, Antique Gold, Cream Cable",
+    "technique": "gold chrome stained-glass outlines",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-03-fall-082821-313b9.jpg",
+    "feed_image": "posts/2026-11-03-fall-082821-313b9-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "A luxe plum + olive stained-glass moment for chilly days 🍂\nA rich antique gold outline lifts the color story — Modesto nail designs for this season.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597 to reserve your appointment.\n\nWould you choose glossy or a soft matte finish for this stained-glass look?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#StainedGlassNails",
+      "#AlmondNails",
+      "#FallNails"
+    ],
+    "full_caption": "A luxe plum + olive stained-glass moment for chilly days 🍂\nA rich antique gold outline lifts the color story — Modesto nail designs for this season.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597 to reserve your appointment.\n\nWould you choose glossy or a soft matte finish for this stained-glass look?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #StainedGlassNails #AlmondNails #FallNails",
+    "alt_text": "Single hand with medium-dark skin showing four long almond-shaped nails in olive green and deep burgundy with gold metallic accents, small rhinestones, and a gold lattice design on the ring finger, resting on cream knit fabric. AI-generated image.",
+    "question": "Would you choose glossy or a soft matte finish for this stained-glass look?",
+    "welcome": "Welcome, new friends! What nail trend has caught your eye lately?",
+    "seo_phrase": "Modesto nail designs",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 10/10 - none",
+    "pose": "02-diagonal-on-knit",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with gold chrome accents and small crystals where the design calls for them. All visible nails form one coordinated salon set. Color palette: Deep Plum, Moss Olive, Antique Gold, Cream Cable. Design: One almond-shaped hand (rich medium brown skin) posed on a cream cable-knit sweater. Index and pinky nails are deep plum with a high-gloss finish and a whisper of cat-eye shimmer running down the center. Middle and thumb are moss olive with a satin-gloss base and warm metallic micro-sheen. The ring finger is an accent: antique gold chrome base broken into asymmetrical stained-glass panes of deep plum and moss olive, each pane edged with ultra-fine gold chrome stained-glass outlines that catch the light. All nails have neat, tapered almond tips and a polished, salon-finished look—cohesive, luxe and fall-ready. Technique emphasis: gold chrome stained-glass outlines. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, rich medium brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
