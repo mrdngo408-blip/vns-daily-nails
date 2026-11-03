@@ -771,14 +771,19 @@ SLOTS = {"morning": 9, "noon": 12, "evening": 18}  # 9 AM, 12 PM and 6 PM Pacifi
 
 
 def current_slot(now=None):
-    """GitHub's clock is UTC and ignores daylight saving, so the workflow runs at
-    two UTC times per slot. Only the run that lands 8:00-10:59 (or 5:00-7:59 PM)
-    Pacific does the work."""
+    """GitHub's scheduler often starts runs late (sometimes ~1 hour), so the workflow
+    runs every hour. A run picks the next slot starting within 2 hours (made early,
+    then published exactly on time), or a slot that was missed less than 1 hour ago."""
     now = now or dt.datetime.now(TZ)
+    upcoming, late = None, None
     for name, hour in SLOTS.items():
-        if hour - 1 <= now.hour <= hour + 1:
-            return name
-    return None
+        target = now.replace(hour=hour, minute=0, second=0, microsecond=0)
+        mins = (target - now).total_seconds() / 60
+        if 0 <= mins <= 120:
+            upcoming = upcoming or name
+        elif -60 <= mins < 0:
+            late = name
+    return upcoming or late
 
 
 # ---------------------------------------------------------------- main

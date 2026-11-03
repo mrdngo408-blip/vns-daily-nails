@@ -2,15 +2,11 @@ name: Nail Posts (9 AM + 12 PM + 6 PM)
 
 on:
   schedule:
-    # GitHub uses UTC and ignores daylight saving, so each slot has two run times.
-    # The script only works on the one that lands just before 9 AM / 6 PM Pacific,
-    # makes the post, then waits until exactly 9:00 / 6:00 to publish.
-    - cron: "35 15 * * *"   # morning (summer time)
-    - cron: "35 16 * * *"   # morning (winter time)
-    - cron: "35 18 * * *"   # noon (summer time)
-    - cron: "35 19 * * *"   # noon (winter time)
-    - cron: "35 0 * * *"    # evening (summer time)
-    - cron: "35 1 * * *"    # evening (winter time)
+    # Every hour from about 6:35 AM to 7:35 PM Pacific (UTC times; GitHub often runs late).
+    # The app works out which post (9 AM, 12 PM or 6 PM) is due, makes it early,
+    # and publishes exactly on time. Extra runs exit in seconds and cost nothing.
+    - cron: "35 14-23 * * *"
+    - cron: "35 0-3 * * *"
   push:
     paths: ["triggers/**"]   # lets Claude start runs: run-samples.txt = 4 samples, post-now.txt = 1 post to Instagram
   workflow_dispatch:
@@ -40,7 +36,7 @@ concurrency:
 jobs:
   generate-and-post:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v5
 
@@ -72,7 +68,7 @@ jobs:
         if: ${{ !contains(github.event.head_commit.message, '[post-latest]') && !contains(github.event.head_commit.message, '[ig-check]') && !contains(github.event.head_commit.message, '[fb-test]') && !contains(github.event.head_commit.message, '[fb-story-test]') }}
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          MODE: ${{ github.event_name == 'schedule' && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || (contains(github.event.head_commit.message, '[samples]') && 'samples' || (contains(github.event.head_commit.message, '[test-medium]') && 'test' || (contains(github.event.head_commit.message, '[test-poses]') && 'test-poses' || (contains(github.event.head_commit.message, '[test-french]') && 'test' || 'none'))))) || github.event.inputs.mode) }}
+          MODE: ${{ (github.event_name == 'schedule' || contains(github.event.head_commit.message, '[slot-now]')) && 'slot' || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') && 'one' || (contains(github.event.head_commit.message, '[samples]') && 'samples' || (contains(github.event.head_commit.message, '[test-medium]') && 'test' || (contains(github.event.head_commit.message, '[test-poses]') && 'test-poses' || (contains(github.event.head_commit.message, '[test-french]') && 'test' || 'none'))))) || github.event.inputs.mode) }}
           IMAGE_QUALITY: ${{ contains(github.event.head_commit.message, '[test-medium]') && 'medium' || (vars.IMAGE_QUALITY || 'medium') }}
           DAILY_IMAGE_LIMIT: ${{ vars.DAILY_IMAGE_LIMIT || '8' }}
           MONTHLY_BUDGET_USD: ${{ vars.MONTHLY_BUDGET_USD || '15' }}
@@ -93,7 +89,7 @@ jobs:
           git push
 
       - name: Post to Instagram
-        if: github.event_name == 'schedule' || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') || contains(github.event.head_commit.message, '[post-latest]') || contains(github.event.head_commit.message, '[fb-test]') || contains(github.event.head_commit.message, '[fb-story-test]')))
+        if: github.event_name == 'schedule' || contains(github.event.head_commit.message, '[slot-now]') || (github.event.inputs.post_to_instagram == 'true' && github.event.inputs.mode == 'one') || (github.event_name == 'push' && (contains(github.event.head_commit.message, '[post-now]') || contains(github.event.head_commit.message, '[post-latest]') || contains(github.event.head_commit.message, '[fb-test]') || contains(github.event.head_commit.message, '[fb-story-test]')))
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID || '17841465658821849' }}   # venetian.nailspa_modesto
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
