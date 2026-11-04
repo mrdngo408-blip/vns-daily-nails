@@ -151,8 +151,8 @@ SHORT_TECHNIQUES = ["soft ombre", "cat-eye magnetic gel", "aura airbrush glow", 
                     "velvet suede-look matte", "gold wire-line geometric art", "glitter fade from the tip",
                     "micro-pearl border along the cuticle", "classic plaid / tartan accent nail"]
 
-# ---- Red & burgundy push: November 1 through December 31 (about 7 in 10 posts)
-RED_SHARE = float(os.getenv("RED_SHARE", "0.7") or 0.7)
+# ---- Red & burgundy push: November 1 through December 31 (about 3 in 10 posts)
+RED_SHARE = float(os.getenv("RED_SHARE", "0.3") or 0.3)
 RED_PALETTES_FALL = [
     "deep wine, burgundy and gold", "cranberry, oxblood and gold leaf",
     "cherry red, black cherry and champagne gold", "oxblood, mocha and gold chrome",
