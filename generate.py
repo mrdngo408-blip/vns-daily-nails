@@ -83,9 +83,12 @@ REFERENCE_STYLE = (
     "{nails}"
 )
 
-LUXE_NAILS = ("NAILS: long {shape} nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with "
-              "{metal} chrome accents and small crystals where the design calls for them. All visible nails form "
-              "one coordinated salon set.")
+LUXE_NAILS = ("NAILS: {length} {shape} nails, perfectly manicured, clean cuticles, flawless {finish} gel finish, with "
+              "{metal} accents where the design calls for them. All visible nails form one coordinated salon set.")
+LONG_EXTRA = " Small crystals are fine where the design calls for them."
+SHORT_EXTRA = (" These are SHORT, natural-length nails (just past the fingertip) - wearable everyday nails. Keep the "
+               "design flat and refined: no long extensions, no big 3D pieces, no large crystals. Copy only the hand pose "
+               "from the reference; if the pose description mentions long nails, make them short anyway.")
 FRENCH_NAILS = ("NAILS: a CLASSIC FRENCH TIP set on {shape} nails: sheer natural pink/nude base on every nail with a "
                 "crisp, clean, evenly curved tip line ({tip}). Add a small, delicate design accent on only one or two "
                 "nails ({accent}); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. "
@@ -95,7 +98,10 @@ FRENCH_TIPS = ["bright white tips", "soft milky white tips", "thin micro-French 
 FRENCH_ACCENTS = ["fine hand-painted line art", "tiny seasonal florals", "a few micro pearls", "a single small gem",
                   "a delicate {metal} foil fleck", "a tiny bow", "a minimalist leaf or vine", "a small heart",
                   "subtle dotted detail along the smile line", "a soft swirl"]
-FRENCH_SHAPES = ["almond", "almond", "medium almond", "soft square", "oval", "short almond"]
+FRENCH_SHAPES = ["almond", "coffin", "square", "stiletto", "oval", "medium almond"]
+SHORT_SHAPES = ["short almond", "short square", "short squoval", "short oval", "short round", "short coffin"]
+RED_FRENCH_TIPS = ["deep burgundy tips", "cherry red tips", "wine red tips with a thin gold line underneath",
+                   "oxblood tips", "cranberry tips with a fine gold edge"]
 
 
 def want_french(posts):
@@ -117,16 +123,61 @@ REALISM_RULES = (
     "No text, no letters, no logos, no watermarks, no brand names."
 )
 
-SHAPES = ["almond", "almond", "stiletto", "long oval", "almond", "soft stiletto"]
-SKIN_TONES = ["fair", "light olive", "medium tan", "warm golden tan", "deep brown", "rich medium brown"]
+# Long shapes rotate evenly (least recently used first) so almond, coffin, square and stiletto all show up.
+SHAPES = ["almond", "coffin", "square", "stiletto", "ballerina coffin", "tapered square", "soft stiletto", "long oval"]
+SKIN_TONES = ["fair porcelain", "fair", "light olive", "medium olive", "medium tan", "warm golden tan",
+              "caramel", "rich medium brown", "deep brown", "deep espresso"]
 METALS = ["gold", "gold", "rose gold", "champagne gold", "silver", "gold"]
+FINISHES = ["high-gloss", "soft matte with glossy accents", "velvet cat-eye", "mirror chrome", "sheer jelly",
+            "glazed pearl", "high-gloss"]
 
 TECHNIQUES = [
     "gold chrome stained-glass outlines", "cat-eye magnetic gel", "aura airbrush glow", "soft ombre",
     "marble with metallic veins", "modern French tip variation", "3D gel florals", "gold leaf flakes",
     "rhinestone clusters", "glazed pearl chrome", "abstract flowing swirls", "negative-space design",
     "jelly glass effect", "galaxy sparkle ombre", "velvet cat-eye shimmer",
+    "tortoiseshell with gold flecks", "delicate lace pattern", "3D chrome water droplets",
+    "hand-painted fine-line florals", "classic plaid / tartan accent nail", "cozy sweater-knit 3D texture",
+    "gold caviar bead accents", "encapsulated dried flowers", "abstract painterly brush strokes",
+    "micro-pearl border along the cuticle", "smoky marble", "reverse French (color at the cuticle)",
+    "chrome cuff at the cuticle line", "gradient that deepens finger by finger", "mismatched skittle shades",
+    "velvet suede-look matte", "gold wire-line geometric art", "crackled gold foil", "glitter fade from the tip",
 ]
+SHORT_TECHNIQUES = ["soft ombre", "cat-eye magnetic gel", "aura airbrush glow", "marble with metallic veins",
+                    "gold leaf flakes", "glazed pearl chrome", "negative-space design", "jelly glass effect",
+                    "tortoiseshell with gold flecks", "hand-painted fine-line florals", "smoky marble",
+                    "reverse French (color at the cuticle)", "chrome cuff at the cuticle line",
+                    "gradient that deepens finger by finger", "mismatched skittle shades",
+                    "velvet suede-look matte", "gold wire-line geometric art", "glitter fade from the tip",
+                    "micro-pearl border along the cuticle", "classic plaid / tartan accent nail"]
+
+# ---- Red & burgundy push: November 1 through December 31 (about 7 in 10 posts)
+RED_SHARE = float(os.getenv("RED_SHARE", "0.7") or 0.7)
+RED_PALETTES_FALL = [
+    "deep wine, burgundy and gold", "cranberry, oxblood and gold leaf",
+    "cherry red, black cherry and champagne gold", "oxblood, mocha and gold chrome",
+    "burgundy velvet cat-eye with gold", "wine red, cream and gold foil",
+    "black cherry, burgundy and rose gold", "cranberry, deep wine and antique gold",
+]
+RED_PALETTES_DECEMBER = [
+    "Christmas red, gold and festive sparkle", "cherry red, silver sparkle and snow white",
+    "dark cherry with white snowflake accents and gold", "burgundy, emerald and gold",
+    "deep wine, champagne gold and pearl", "oxblood, gold and crystal sparkle",
+]
+
+
+def red_window(d: dt.date) -> bool:
+    return d.month in (11, 12)
+
+
+def pick_lru(options, posts, field):
+    """Least recently used option first, so every option gets its turn (ties broken randomly)."""
+    opts = list(dict.fromkeys(options))
+    last = {}
+    for i, p in enumerate(posts):
+        if p.get(field):
+            last[p[field]] = i
+    return sorted(opts, key=lambda x: (last.get(x, -1), random.random()))[0]
 
 SEASONS = {
     "winter": {
@@ -329,22 +380,32 @@ def with_retries(fn, label, tries=3):
     raise last
 
 
-def build_brief(day: dt.date, season: str, holiday, recent):
+def build_brief(day: dt.date, season: str, holiday, recent, short=False):
     s = SEASONS[season]
     rnd = random.Random(f"{day.isoformat()}-{season}-{len(recent)}-{random.random()}")
+    palettes = s["palettes"]
+    color_focus = None
+    if red_window(day) and season == season_for(day) and rnd.random() < RED_SHARE:
+        palettes = RED_PALETTES_DECEMBER if day.month == 12 else RED_PALETTES_FALL
+        color_focus = pick_lru(palettes, recent, "color_focus")
     return {
         "date": day.strftime("%A, %B %d, %Y"),
         "season": season,
         "holiday": holiday,
-        "suggested_palettes": s["palettes"],
+        "suggested_palettes": palettes,
+        "color_focus": color_focus,
         "seasonal_accents": s["accents"],
-        "technique": rnd.choice(TECHNIQUES),
-        "background": rnd.choice(s["backgrounds"]),
-        "shape": rnd.choice(SHAPES),
-        "skin": rnd.choice(SKIN_TONES),
+        "technique": pick_lru(SHORT_TECHNIQUES if short else TECHNIQUES, recent, "technique"),
+        "background": pick_lru(s["backgrounds"], recent, "background"),
+        "length": "short" if short else "long",
+        "shape": pick_lru(SHORT_SHAPES if short else SHAPES, recent, "shape"),
+        "skin": pick_lru(SKIN_TONES, recent, "skin"),
+        "finish": pick_lru(FINISHES, recent, "finish"),
         "metal": rnd.choice(METALS),
         "style": "luxe",
         "avoid_recent": [p.get("palette_text", "") + " / " + p.get("technique", "") for p in recent[-30:]],
+        "avoid_recent_titles": [p.get("title", "") for p in recent[-30:] if p.get("title")],
+        "avoid_recent_designs": [p.get("design", "")[:160] for p in recent[-12:] if p.get("design")],
         "local_phrase": pick_seo(recent),
         "avoid_questions": [p["question"] for p in recent if p.get("question")][-80:],
     }
@@ -359,7 +420,11 @@ Return ONLY JSON with these keys:
   "question": ONE short, friendly, open-ended question for the end of the caption that invites a genuine reply about nails, this design, colors, seasons, self-care or style (e.g. asking which detail they'd pick, what color they wear in a season, what occasion they'd wear it to). It must be different from every question in avoid_questions. NEVER ask people to like, share, save, tag friends, follow, or comment a specific word/emoji/number, and never promise anything in return for engaging.
   "hashtags": exactly 5 hashtags. 1-2 local from {LOCAL_TAGS}, the rest about this design, shape and season. No repeats of the exact same set used recently.
 If style is "french": design a CLASSIC FRENCH TIP set (sheer nude/pink base, crisp tips as given in french_tip, a small accent as given in french_accent on 1-2 nails only); the palette is the base + tip + accent colors; the caption should celebrate a timeless French with a modern twist. Do not describe heavy chrome or big crystals for French sets.
-Rules: if a holiday is given, lean into it elegantly (never cartoonish). The palette and technique combination must be different from everything in avoid_recent. You may invent a fresh palette beyond the suggestions as long as it fits the season."""
+If color_focus is given: build the palette around it (reds and burgundies such as deep wine, cranberry, cherry, oxblood and burgundy, usually with gold accents); keep it rich and elegant.
+If length is "short": design for SHORT natural-length nails - flat, wearable and refined (no long extensions, no big 3D pieces or large crystals); the caption can mention it is perfect for shorter, everyday nails.
+Use the given shape, finish and technique.
+VARIETY IS CRITICAL - the feed must never look like it is repeating: the title, palette, layout and art concept must be clearly different from everything in avoid_recent, avoid_recent_titles and avoid_recent_designs (do not reuse the same layout, such as stained-glass outlines, two posts in a row, and do not reuse title words). Be inventive: mix art styles, textures, finishes and accents in a fresh way.
+Rules: if a holiday is given, lean into it elegantly (never cartoonish). You may invent a fresh palette beyond the suggestions as long as it fits the season."""
 
 
 def make_recipe(client, brief):
@@ -544,8 +609,12 @@ def nails_text(brief, recipe):
         color = (recipe.get("palette") or ["a soft seasonal shade"])[0]
         tip = brief["french_tip"].format(color=color, metal=brief["metal"])
         accent = brief["french_accent"].format(metal=brief["metal"])
-        return FRENCH_NAILS.format(shape=brief["shape"], tip=tip, accent=accent)
-    return LUXE_NAILS.format(shape=brief["shape"], metal=brief["metal"])
+        text = FRENCH_NAILS.format(shape=brief["shape"], tip=tip, accent=accent)
+        return text + (SHORT_EXTRA if brief.get("length") == "short" else "")
+    short = brief.get("length") == "short"
+    text = LUXE_NAILS.format(length="short" if short else "long", shape=brief["shape"].replace("short ", ""),
+                             finish=brief.get("finish", "high-gloss"), metal=brief["metal"])
+    return text + (SHORT_EXTRA if short else LONG_EXTRA)
 
 
 def build_image_prompt(brief, recipe):
@@ -654,7 +723,8 @@ def _data_url(raw, max_h=768):
 
 
 def alt_from_recipe(brief, recipe):
-    return (f"Close-up of one {brief['skin']} hand resting on {brief['background']}, with long {brief['shape']} "
+    shape = brief["shape"] if brief["shape"].startswith("short") else f"long {brief['shape']}"
+    return (f"Close-up of one {brief['skin']} hand resting on {brief['background']}, with {shape} "
             f"nails in {', '.join(recipe.get('palette', []))} with {brief['metal']} accents. AI-generated image.")[:300]
 
 
@@ -791,16 +861,24 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     holiday = upcoming_holiday(day) if season == season_for(day) else None
     if holiday and random.random() < 0.5:
         holiday = None  # about half the posts near a holiday lean into it
-    brief = build_brief(day, season, holiday, posts)
+    # One short-nail design every day: the 12 PM post (FORCE_LENGTH=short/long overrides for tests)
+    force_len = os.getenv("FORCE_LENGTH", "").strip().lower()
+    short = force_len == "short" or (force_len != "long" and slot == "noon")
+    brief = build_brief(day, season, holiday, posts, short=short)
     if os.getenv("FORCE_STYLE") == "french" or (os.getenv("FORCE_STYLE") != "luxe" and want_french(posts)):
         brief["style"] = "french"
-        brief["shape"] = random.choice(FRENCH_SHAPES)
+        brief["shape"] = pick_lru(SHORT_SHAPES if short else FRENCH_SHAPES, posts, "shape")
+        brief["finish"] = "high-gloss"
         brief["technique"] = "classic French tip with a delicate design accent"
-        brief["french_tip"] = random.choice(FRENCH_TIPS)
+        if brief.get("color_focus") and random.random() < 0.5:
+            brief["french_tip"] = random.choice(RED_FRENCH_TIPS)
+        else:
+            brief["french_tip"] = random.choice(FRENCH_TIPS)
         brief["french_accent"] = random.choice(FRENCH_ACCENTS)
     CURRENT_POSE["pose"] = force_pose or pick_pose(posts)
     pose_name = CURRENT_POSE["pose"]["name"] if CURRENT_POSE["pose"] else None
-    print(f"- {day} | {season} | holiday: {holiday} | pose: {pose_name} | {brief['technique']} | {brief['background']}")
+    print(f"- {day} | {season} | holiday: {holiday} | pose: {pose_name} | {brief['technique']} | {brief['background']} | "
+          f"{brief['shape'] if brief['length'] == 'short' else 'long ' + brief['shape']} | {brief['skin']} | {brief.get('finish')} | red: {brief.get('color_focus')}")
 
     if MOCK:
         recipe = fallback_recipe(brief)
@@ -855,6 +933,12 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
         "welcome": welcome,
         "seo_phrase": brief["local_phrase"],
         "style": brief.get("style", "luxe"),
+        "length": brief.get("length", "long"),
+        "shape": brief["shape"],
+        "skin": brief["skin"],
+        "finish": brief.get("finish"),
+        "color_focus": brief.get("color_focus"),
+        "design": recipe.get("design", ""),
         "image_model": model,
         "hand_check": check_note,
         "pose": pose_name,
