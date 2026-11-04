@@ -10,15 +10,15 @@
       "test_images": 11
     },
     "2026-11-03": {
-      "images": 5,
-      "cost": 0.4,
+      "images": 6,
+      "cost": 0.48,
       "test_images": 2
     }
   },
   "months": {
     "2026-11": {
-      "images": 36,
-      "cost": 6.84,
+      "images": 37,
+      "cost": 6.92,
       "test_images": 11
     }
   },

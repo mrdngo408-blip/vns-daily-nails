@@ -758,5 +758,46 @@
       "posted": "2026-11-03T12:22:57-08:00",
       "story_id": "1700931854975482"
     }
+  },
+  {
+    "id": "2026-11-03-fall-161205-2d32b",
+    "date": "2026-11-03",
+    "created": "2026-11-03T16:12:05-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Burgundy Ember Glow",
+    "palette": [
+      "Burgundy Merlot",
+      "Burnt Sienna Orange",
+      "Antique Gold Leaf",
+      "Cream Cashmere"
+    ],
+    "palette_text": "Burgundy Merlot, Burnt Sienna Orange, Antique Gold Leaf, Cream Cashmere",
+    "technique": "aura airbrush glow",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-03-fall-161205-2d32b.jpg",
+    "feed_image": "posts/2026-11-03-fall-161205-2d32b-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Burgundy melting into ember-orange with a soft aura airbrush glow, finished with antique gold leaf accents — fall in a manicure. 🍂\nA luxe almond set that reads warm, radiant, and utterly seasonal.\nLooking for a Central Valley nail salon with this kind of glow? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer a soft glowing halo or bold metallic accents on your fall nails?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#AutumnNails",
+      "#AlmondNails",
+      "#GoldLeafNails"
+    ],
+    "full_caption": "Burgundy melting into ember-orange with a soft aura airbrush glow, finished with antique gold leaf accents — fall in a manicure. 🍂\nA luxe almond set that reads warm, radiant, and utterly seasonal.\nLooking for a Central Valley nail salon with this kind of glow? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer a soft glowing halo or bold metallic accents on your fall nails?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #AutumnNails #AlmondNails #GoldLeafNails",
+    "alt_text": "One hand with medium skin tone and long almond-shaped nails in a red-orange gradient with small gold studs and gold marbling on the ring nail. Two gold rings on adjacent fingers and a beige ribbed sweater cuff against a soft brown background. AI-generated image.",
+    "question": "Do you prefer a soft glowing halo or bold metallic accents on your fall nails?",
+    "welcome": "Welcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.",
+    "seo_phrase": "Central Valley nail salon",
+    "style": "luxe",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with rose gold chrome accents and small crystals where the design calls for them. All visible nails form one coordinated salon set. Color palette: Burgundy Merlot, Burnt Sienna Orange, Antique Gold Leaf, Cream Cashmere. Design: One hand, five almond nails with an aura airbrush glow: each nail fades from a deep Burgundy Merlot at the cuticle into a warm Burnt Sienna Orange at the tip, the colors blended with a soft luminous halo so the nails look lit from within. High-gloss finish with a whisper of micro-gold shimmer across the surface. Ring finger accent: irregular Antique Gold Leaf veins running diagonally, finished with a tiny rose-gold metallic crescent at the cuticle for a luxe focal point. Thumb and pinky carry the lightest cream cashmere vignette near the free edge to balance the set; overall elegant, warm, and cohesive against a camel cashmere background on light olive skin. Technique emphasis: aura airbrush glow. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light olive skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
