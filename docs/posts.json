@@ -878,7 +878,11 @@
     "image": "posts/2026-11-04-fall-102659-5c6fd.jpg",
     "feed_image": "posts/2026-11-04-fall-102659-5c6fd-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17873456379646256",
+      "posted": "2026-11-04T12:00:10-08:00",
+      "story_id": "17980600760917433"
+    },
     "caption": "Merlot, sable taupe and copper — stained-glass elegance on long ovals. ✨\nFine rose-gold chrome outlines with a copper-foil accent make this the fall inspiration you didn’t know you needed.\nSeasonal inspiration — luxury nails in Modesto. Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer this stained-glass look in richer Merlot tones or softer sable taupe for fall?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -898,6 +902,11 @@
     "pose": "01-curled-over-fabric",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless high-gloss gel finish, with rose gold chrome accents and small crystals where the design calls for them. All visible nails form one coordinated salon set. Color palette: Merlot, Sable Taupe, Copper Bronze, Rose Gold Chrome. Design: One hand in long oval shape, glossy finish. Base on the index, middle and pinky nails is a deep translucent Merlot with soft Sable Taupe panels veined and blended like warm fall glass. Each nail is segmented into irregular, painterly panes separated by ultra-fine rose-gold chrome stained-glass outlines that catch the light. The ring finger is the accent: a full Copper Bronze mirror-foil block framed by delicate rose-gold chrome borders and a whisper of Merlot veining. Tiny hammered copper flecks sit near the cuticles on the middle nail for depth. Hand posed over camel cashmere, skin light olive, jewelry minimal so the nails remain the focal point. Technique emphasis: gold chrome stained-glass outlines. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light olive skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122332543172240822",
+      "posted": "2026-11-04T12:00:30-08:00",
+      "story_id": "1773385880383953"
+    }
   }
 ]
