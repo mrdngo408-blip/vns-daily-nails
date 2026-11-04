@@ -861,9 +861,8 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
     holiday = upcoming_holiday(day) if season == season_for(day) else None
     if holiday and random.random() < 0.5:
         holiday = None  # about half the posts near a holiday lean into it
-    # One short-nail design every day: the 12 PM post (FORCE_LENGTH=short/long overrides for tests)
-    force_len = os.getenv("FORCE_LENGTH", "").strip().lower()
-    short = force_len == "short" or (force_len != "long" and slot == "noon")
+    # All posts are long nails (short nails only if FORCE_LENGTH=short is set by hand)
+    short = os.getenv("FORCE_LENGTH", "").strip().lower() == "short"
     brief = build_brief(day, season, holiday, posts, short=short)
     if os.getenv("FORCE_STYLE") == "french" or (os.getenv("FORCE_STYLE") != "luxe" and want_french(posts)):
         brief["style"] = "french"
