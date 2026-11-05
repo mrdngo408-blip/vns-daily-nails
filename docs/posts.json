@@ -983,7 +983,11 @@
     "image": "posts/2026-11-05-fall-072909-5364b.jpg",
     "feed_image": "posts/2026-11-05-fall-072909-5364b-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18115484212864852",
+      "posted": "2026-11-05T09:00:16-08:00",
+      "story_id": "18178179274459810"
+    },
     "caption": "A luxe fall stiletto: wine-red velvet cat-eye meets cream painterly strokes and antique gold foil ✨\nLooking for acrylic nails in Modesto? This rich, wearable set is perfect for sweater weather and evening glow.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhich accent would you pick — gold-foil marbling or bold painterly wine strokes?\n\nJust discovering us? Welcome! What's your go-to manicure style?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1009,6 +1013,11 @@
     "pose": "03-curled-claw-denim",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Wine Red (deep garnet), Cream Cashmere, Antique Gold Foil. Design: One long, soft stiletto hand against a cream cable-knit sweater. Base nails alternate: three nails in a deep wine-red velvet cat-eye with a subtle diagonal cat-eye shimmer running tip-to-cuticle; two nails in warm cream cashmere with loose, abstract painterly brush strokes in wine-red and thin streaks of antique gold foil layered on top. The ring finger is the accent: a cream-to-wine painterly canvas with a small, painterly tortoiseshell wash near the tip—warm browns blended into the wine-red—and scattered antique gold foil flakes that catch the light. All edges are tapered soft stiletto, surface finished in a plush velvet cat-eye glow with delicate gold leaf flecks integrated into the strokes for a cohesive, luxe fall look. Technique emphasis: abstract painterly brush strokes. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep espresso skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122332716914240822",
+      "posted": "2026-11-05T09:00:37-08:00",
+      "story_id": "1598748918140477"
+    }
   }
 ]
