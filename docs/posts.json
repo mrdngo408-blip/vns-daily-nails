@@ -1039,7 +1039,11 @@
     "image": "posts/2026-11-05-fall-101448-8baa3.jpg",
     "feed_image": "posts/2026-11-05-fall-101448-8baa3-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18063014753535222",
+      "posted": "2026-11-05T12:00:13-08:00",
+      "story_id": "17956464774267935"
+    },
     "caption": "Long-square luxe with cherry, black-cherry cat-eye and champagne gold—glazed pearl perfection. ✨\nSearching for the best nails in Modesto, CA? This mismatched skittle set mixes tortoiseshell warmth and rose-gold leaf for an elegant fall statement.\nbook at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhich skittle detail would you wear first—tortoiseshell, cat-eye shimmer, or gold leaf?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1065,6 +1069,11 @@
     "pose": "04-flat-on-knee",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long square nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cherry Red, Black Cherry, Champagne Gold, Rose Gold Metallic. Design: One hand with long square tips on deep brown skin, resting on a chocolate brown ribbed knit sweater. Mismatched skittle set: thumb and pinky are glossy cherry red with a glazed-pearl sheen; index is a translucent tortoiseshell in warm amber and black layers with a soft pearl overlay and tiny rose-gold specks; middle is deep black-cherry cat-eye with a slender diagonal rose-gold metallic stripe catching the light; ring is a champagne-gold glazed-pearl base scattered with delicate rose-gold leaf shards and a micro crescent of negative space near the cuticle. All nails share a luminous glazed pearl finish and clean, luxe edges—balanced, coordinated, and richly textured. Technique emphasis: mismatched skittle shades. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122332736636240822",
+      "posted": "2026-11-05T12:00:31-08:00",
+      "story_id": "2198234070809856"
+    }
   }
 ]
