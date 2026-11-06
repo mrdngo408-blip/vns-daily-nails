@@ -1208,7 +1208,11 @@
     "image": "posts/2026-11-06-fall-102033-0c3d8.jpg",
     "feed_image": "posts/2026-11-06-fall-102033-0c3d8-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18144040456613215",
+      "posted": "2026-11-06T12:00:12-08:00",
+      "story_id": "17915074755548667"
+    },
     "caption": "Long-oval plum-to-mocha glaze with a tortoiseshell accent and a soft mirror-silver sheen ✨\nA luxe, cozy fall statement — Modesto nail art inspiration.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich mood does this set give you — cozy luxe or evening glam?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1235,6 +1239,11 @@
     "pose": "07-resting-at-table",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting on a soft knit fabric at a cozy table setting, seen from the back, fingers relaxed and gently curved, pointing down toward the lower left and slightly spread so all four nails are clearly visible; the thumb is hidden; a gold ring with a deep red stone on one finger and a thin gold band on another; warm candle-lit, softly blurred background. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Plum, Mocha Latte, Amber Tortoiseshell, Silver Mirror. Design: One visible hand (light tan skin) posed on a cream cable-knit sweater. Long oval nails with a rich deep-plum at the free edge that softly melts into warm mocha toward the cuticle, all finished under a glazed pearl chrome overlay for a luminous, mirror-silver glow. Ring finger is the accent: a hand-painted tortoiseshell crescent at the base with layered amber and espresso tones, scattered micro gold-leaf flakes for warmth, and a tiny silver crescent near the cuticle for metallic contrast. Middle nail features a narrow diagonal cat-eye shimmer stripe that shifts plum-to-warm copper beneath the chrome. All nails have a flawless mirror chrome finish and a luxe, cohesive look—long, gently rounded tips with refined, wearable artistry. Technique emphasis: glazed pearl chrome. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122332982756240822",
+      "posted": "2026-11-06T12:00:28-08:00",
+      "story_id": "1777928380177331"
+    }
   }
 ]
