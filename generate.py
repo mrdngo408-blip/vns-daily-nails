@@ -131,6 +131,7 @@ SKIN_CYCLE = [
     ("light tan", "light tan"),
     ("medium tan", "medium tan"),
     ("dark tan", "dark tan, deep warm brown"),
+    ("black", "deep dark brown, a Black woman's"),
 ]
 
 
@@ -415,7 +416,8 @@ def build_brief(day: dt.date, season: str, holiday, recent, short=False):
         "background": pick_lru(s["backgrounds"], recent, "background"),
         "length": "short" if short else "long",
         "shape": pick_lru(SHORT_SHAPES if short else SHAPES, recent, "shape"),
-        "skin": pick_lru(SKIN_TONES, recent, "skin"),
+        "skin_step": next_skin(recent)[0],
+        "skin": next_skin(recent)[1],
         "finish": pick_lru(FINISHES, recent, "finish"),
         "metal": rnd.choice(METALS),
         "style": "luxe",
