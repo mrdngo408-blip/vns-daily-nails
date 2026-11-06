@@ -125,6 +125,22 @@ REALISM_RULES = (
 
 # Long shapes rotate evenly (least recently used first) so almond, coffin, square and stiletto all show up.
 SHAPES = ["almond", "coffin", "square", "stiletto", "ballerina coffin", "tapered square", "soft stiletto", "long oval"]
+# Fixed rotation, in this order, one step per real post (tests don't advance it)
+SKIN_CYCLE = [
+    ("white", "fair white"),
+    ("light tan", "light tan"),
+    ("medium tan", "medium tan"),
+    ("dark tan", "dark tan, deep warm brown"),
+]
+
+
+def next_skin(posts):
+    last = next((p.get("skin_step") for p in reversed(posts) if not p.get("test") and p.get("skin_step")), None)
+    names = [n for n, _ in SKIN_CYCLE]
+    i = (names.index(last) + 1) % len(names) if last in names else 0
+    return SKIN_CYCLE[i]
+
+
 SKIN_TONES = ["fair porcelain", "fair", "light olive", "medium olive", "medium tan", "warm golden tan",
               "caramel", "rich medium brown", "deep brown", "deep espresso"]
 METALS = ["gold", "gold", "rose gold", "champagne gold", "silver", "gold"]
@@ -932,6 +948,7 @@ def make_post(client, day, season, posts, slot=None, force_pose=None):
         "welcome": welcome,
         "seo_phrase": brief["local_phrase"],
         "style": brief.get("style", "luxe"),
+        "skin_step": brief["skin_step"],
         "length": brief.get("length", "long"),
         "shape": brief["shape"],
         "skin": brief["skin"],
