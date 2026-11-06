@@ -1131,5 +1131,53 @@
       "posted": "2026-11-05T18:00:26-08:00",
       "story_id": "1132849339466318"
     }
+  },
+  {
+    "id": "2026-11-06-fall-071901-c7fae",
+    "date": "2026-11-06",
+    "created": "2026-11-06T07:19:02-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Oxblood Vine French",
+    "palette": [
+      "Sheer Mocha Latte",
+      "Oxblood Burgundy",
+      "Antique Gold",
+      "Warm Tortoiseshell Brown"
+    ],
+    "palette_text": "Sheer Mocha Latte, Oxblood Burgundy, Antique Gold, Warm Tortoiseshell Brown",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-06-fall-071901-c7fae.jpg",
+    "feed_image": "posts/2026-11-06-fall-071901-c7fae-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Sheer mocha base with crisp oxblood tips and a delicate antique-gold vine accent — luxe fall French. 🍂\nA tiny tortoiseshell leaf on the ring finger adds seasonal warmth.\nFind this cozy-yet-polished inspiration at our nail spa on McHenry Ave.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWould you keep the vine on one nail or repeat it across two for extra detail?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#AutumnFrench",
+      "#OvalNails",
+      "#HighGlossMani"
+    ],
+    "full_caption": "Sheer mocha base with crisp oxblood tips and a delicate antique-gold vine accent — luxe fall French. 🍂\nA tiny tortoiseshell leaf on the ring finger adds seasonal warmth.\nFind this cozy-yet-polished inspiration at our nail spa on McHenry Ave.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWould you keep the vine on one nail or repeat it across two for extra detail?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #AutumnFrench #OvalNails #HighGlossMani",
+    "alt_text": "One light-skinned hand with medium almond nails, nude base and dark burgundy French tips and a small gold accent on one nail, two gold rhinestone rings, brown ribbed sleeve and dark velvet background. AI-generated image.",
+    "question": "Would you keep the vine on one nail or repeat it across two for extra detail?",
+    "welcome": "New here? Welcome to Venetian Nail Spa! What nail style are you loving lately?",
+    "seo_phrase": "nail spa on McHenry Ave",
+    "style": "french",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "oval",
+    "skin": "fair white",
+    "finish": "high-gloss",
+    "color_focus": null,
+    "design": "One visible hand with long, elegant oval nails and a high-gloss finish. Each nail has a sheer mocha-latte base that lets the natural nail glow; crisp, slightly curved oxblood burgundy tips form a classic colored French across every finger. The ring finger is an accent: a hairline antique-gold vine starts at the cuticle and curves toward the tip, with a single micro tortoiseshell brown leaf near the middle for warm seasonal contrast. Tips are neat and uniform, vine hand-painted in fine detail, overall polished and cohesive — luxe fall French with a modern, organic accent.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 10/10 - none",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: a CLASSIC FRENCH TIP set on oval nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (seasonal colored tips in Sheer Mocha Latte). Add a small, delicate design accent on only one or two nails (a minimalist leaf or vine); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Mocha Latte, Oxblood Burgundy, Antique Gold, Warm Tortoiseshell Brown. Design: One visible hand with long, elegant oval nails and a high-gloss finish. Each nail has a sheer mocha-latte base that lets the natural nail glow; crisp, slightly curved oxblood burgundy tips form a classic colored French across every finger. The ring finger is an accent: a hairline antique-gold vine starts at the cuticle and curves toward the tip, with a single micro tortoiseshell brown leaf near the middle for warm seasonal contrast. Tips are neat and uniform, vine hand-painted in fine detail, overall polished and cohesive — luxe fall French with a modern, organic accent. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
