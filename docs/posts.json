@@ -1358,5 +1358,53 @@
       "posted": "2026-11-07T09:00:35-08:00",
       "story_id": "2302077187238508"
     }
+  },
+  {
+    "id": "2026-11-07-fall-100846-dbe40",
+    "date": "2026-11-07",
+    "created": "2026-11-07T10:08:46-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Cranberry Crescent French",
+    "palette": [
+      "Sheer Caramel Blush",
+      "Cherry Red",
+      "Deep Cranberry",
+      "Antique Gold"
+    ],
+    "palette_text": "Sheer Caramel Blush, Cherry Red, Deep Cranberry, Antique Gold",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-07-fall-100846-dbe40.jpg",
+    "feed_image": "posts/2026-11-07-fall-100846-dbe40-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Timeless French with a warm, seasonal update.\nSheer caramel-blush base, crisp cherry-red crescents and a delicate antique-gold vine with deep-cranberry accents. ✨\nSee this season’s look at Venetian Nail Spa, a nail salon in Modesto — book (link in bio) or call 209-408-8597.\n\nWhich detail draws you in most—the precision cherry tip or the tiny antique-gold vine?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#ClassicFrench",
+      "#AlmondNails",
+      "#FallNails"
+    ],
+    "full_caption": "Timeless French with a warm, seasonal update.\nSheer caramel-blush base, crisp cherry-red crescents and a delicate antique-gold vine with deep-cranberry accents. ✨\nSee this season’s look at Venetian Nail Spa, a nail salon in Modesto — book (link in bio) or call 209-408-8597.\n\nWhich detail draws you in most—the precision cherry tip or the tiny antique-gold vine?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #ClassicFrench #AlmondNails #FallNails",
+    "alt_text": "One dark-skinned hand with long almond nails shown from the back, fingers loosely curled and stacked toward the camera; nude base nails with red French tips and a small gold leaf accent on one nail, two gold rings, brown velvet background. AI-generated image.",
+    "question": "Which detail draws you in most—the precision cherry tip or the tiny antique-gold vine?",
+    "welcome": "Hi and welcome if you're new here! What's the last nail color you fell in love with?",
+    "seo_phrase": "nail salon in Modesto",
+    "style": "french",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "medium almond",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "high-gloss",
+    "color_focus": "cranberry, deep wine and antique gold",
+    "design": "One visible hand (deep dark brown skin) posed on mocha velvet. Long, medium-almond nails with a glossy, sheer caramel-blush base that lets the nail bed glow. Each nail has a crisp, classic cherry-red French tip—clean, slightly elongated crescents that follow the natural smile line. Ring finger is the delicate accent: a fine antique-gold vine painted along the distal half with two tiny deep-cranberry berry dots near the cuticle for a subtle pop. High-gloss finish across the set for polished, fall-ready luxury.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - No issues found.",
+    "pose": "03-curled-claw-denim",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: a CLASSIC FRENCH TIP set on medium almond nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (cherry red tips). Add a small, delicate design accent on only one or two nails (a minimalist leaf or vine); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Caramel Blush, Cherry Red, Deep Cranberry, Antique Gold. Design: One visible hand (deep dark brown skin) posed on mocha velvet. Long, medium-almond nails with a glossy, sheer caramel-blush base that lets the nail bed glow. Each nail has a crisp, classic cherry-red French tip—clean, slightly elongated crescents that follow the natural smile line. Ring finger is the delicate accent: a fine antique-gold vine painted along the distal half with two tiny deep-cranberry berry dots near the cuticle for a subtle pop. High-gloss finish across the set for polished, fall-ready luxury. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
