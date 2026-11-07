@@ -1302,5 +1302,52 @@
       "posted": "2026-11-06T18:00:22-08:00",
       "story_id": "1451465613840931"
     }
+  },
+  {
+    "id": "2026-11-07-fall-071526-3d343",
+    "date": "2026-11-07",
+    "created": "2026-11-07T07:15:26-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Crimson Knit Stiletto",
+    "palette": [
+      "Burgundy Velvet Cat-Eye",
+      "Champagne Gold Foil",
+      "Cream Cashmere"
+    ],
+    "palette_text": "Burgundy Velvet Cat-Eye, Champagne Gold Foil, Cream Cashmere",
+    "technique": "cozy sweater-knit 3D texture",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-07-fall-071526-3d343.jpg",
+    "feed_image": "posts/2026-11-07-fall-071526-3d343-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Deep burgundy velvet cat-eye with a warm champagne-gold glow — fall stiletto luxury with a cozy twist. The ring finger's 3D cream knit adds tactile elegance and seasonal texture ✨\nThis is a fresh seasonal look from your Central Valley nail salon. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhich would you try — the cozy raised knit or the all-over velvet cat-eye?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#StilettoNails",
+      "#VelvetCatEye",
+      "#FallNails"
+    ],
+    "full_caption": "Deep burgundy velvet cat-eye with a warm champagne-gold glow — fall stiletto luxury with a cozy twist. The ring finger's 3D cream knit adds tactile elegance and seasonal texture ✨\nThis is a fresh seasonal look from your Central Valley nail salon. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhich would you try — the cozy raised knit or the all-over velvet cat-eye?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #StilettoNails #VelvetCatEye #FallNails",
+    "alt_text": "One dark-skinned hand shown from the back with long stiletto nails; three nails painted metallic burgundy with small gold accents and one nail textured cream knit design, resting on a cream knit fabric. AI-generated image.",
+    "question": "Which would you try — the cozy raised knit or the all-over velvet cat-eye?",
+    "welcome": "New to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?",
+    "seo_phrase": "Central Valley nail salon",
+    "style": "luxe",
+    "skin_step": "dark tan",
+    "length": "long",
+    "shape": "stiletto",
+    "skin": "dark tan, deep warm brown",
+    "finish": "velvet cat-eye",
+    "color_focus": "burgundy velvet cat-eye with gold",
+    "design": "One visible hand (dark tan skin) with long stiletto tips. Most nails are a deep burgundy velvet cat-eye — a silky, shifting central shimmer that catches light in a slender, luminous band. Delicate champagne-gold foil accents trace a thin diagonal line on the index and a tiny crescent at the cuticle of the middle finger. The ring finger is a raised 3D cozy sweater-knit sculpt in cream cashmere sitting over a soft burgundy base, with micro champagne-gold specks tucked into the knit ribs for a luxe glow. Pinky and thumb remain pure velvet cat-eye to keep the set cohesive, glossy but plush in appearance.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "02-diagonal-on-knit",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Burgundy Velvet Cat-Eye, Champagne Gold Foil, Cream Cashmere. Design: One visible hand (dark tan skin) with long stiletto tips. Most nails are a deep burgundy velvet cat-eye — a silky, shifting central shimmer that catches light in a slender, luminous band. Delicate champagne-gold foil accents trace a thin diagonal line on the index and a tiny crescent at the cuticle of the middle finger. The ring finger is a raised 3D cozy sweater-knit sculpt in cream cashmere sitting over a soft burgundy base, with micro champagne-gold specks tucked into the knit ribs for a luxe glow. Pinky and thumb remain pure velvet cat-eye to keep the set cohesive, glossy but plush in appearance. Technique emphasis: cozy sweater-knit 3D texture. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
