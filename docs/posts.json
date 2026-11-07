@@ -1245,5 +1245,53 @@
       "posted": "2026-11-06T12:00:28-08:00",
       "story_id": "1777928380177331"
     }
+  },
+  {
+    "id": "2026-11-06-fall-160952-20bcf",
+    "date": "2026-11-06",
+    "created": "2026-11-06T16:09:52-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Rose-Gold Cherry Coffin",
+    "palette": [
+      "Black Cherry",
+      "Deep Burgundy",
+      "Rose Gold Metallic",
+      "Warm Tortoiseshell Amber"
+    ],
+    "palette_text": "Black Cherry, Deep Burgundy, Rose Gold Metallic, Warm Tortoiseshell Amber",
+    "technique": "tortoiseshell with gold flecks",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-06-fall-160952-20bcf.jpg",
+    "feed_image": "posts/2026-11-06-fall-160952-20bcf-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Deep black-cherry and burgundy, softened into a luxe matte with glossy rose-gold tortoise accents.\nA glossy tortoiseshell ring finger with scattered rose-gold leaf makes it fall-ready and refined. 🌹\nLooking for gel nails in Modesto? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich color would you reach for first — black cherry or deep burgundy?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#CoffinNails",
+      "#TortoiseshellNails",
+      "#FallNails"
+    ],
+    "full_caption": "Deep black-cherry and burgundy, softened into a luxe matte with glossy rose-gold tortoise accents.\nA glossy tortoiseshell ring finger with scattered rose-gold leaf makes it fall-ready and refined. 🌹\nLooking for gel nails in Modesto? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich color would you reach for first — black cherry or deep burgundy?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #CoffinNails #TortoiseshellNails #FallNails",
+    "alt_text": "One left hand shown from the back with medium skin tone and long coffined nails; three nails matte burgundy and one accent nail glossy tortoiseshell with gold flecks; a thin gold ring on the ring finger, resting on brown ribbed fabric. AI-generated image.",
+    "question": "Which color would you reach for first — black cherry or deep burgundy?",
+    "welcome": "First time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?",
+    "seo_phrase": "gel nails in Modesto",
+    "style": "luxe",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "coffin",
+    "skin": "medium tan",
+    "finish": "soft matte with glossy accents",
+    "color_focus": "black cherry, burgundy and rose gold",
+    "design": "One visible hand (medium tan skin) with long coffin nails. The set reads cohesive and luxe: alternating soft-matte Black Cherry and Deep Burgundy bases on the thumb, index, middle and pinky. The ring finger is a glossy, hand-painted tortoiseshell panel—warm amber, espresso and honey swirls layered with scattered Rose Gold metallic leaf flecks. Matte nails carry narrow glossy rose-gold accents (a thin vertical bar near the cuticle on the thumb and a delicate diagonal stripe on the pinky) so the finish is mostly soft matte with selective high-shine details. Styled on a chocolate brown ribbed knit sweater background, overall look is polished, fall-warm and modernly elegant.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 10/10 - none",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long coffin nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Black Cherry, Deep Burgundy, Rose Gold Metallic, Warm Tortoiseshell Amber. Design: One visible hand (medium tan skin) with long coffin nails. The set reads cohesive and luxe: alternating soft-matte Black Cherry and Deep Burgundy bases on the thumb, index, middle and pinky. The ring finger is a glossy, hand-painted tortoiseshell panel—warm amber, espresso and honey swirls layered with scattered Rose Gold metallic leaf flecks. Matte nails carry narrow glossy rose-gold accents (a thin vertical bar near the cuticle on the thumb and a delicate diagonal stripe on the pinky) so the finish is mostly soft matte with selective high-shine details. Styled on a chocolate brown ribbed knit sweater background, overall look is polished, fall-warm and modernly elegant. Technique emphasis: tortoiseshell with gold flecks. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
