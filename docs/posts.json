@@ -1415,5 +1415,53 @@
       "posted": "2026-11-07T12:00:41-08:00",
       "story_id": "1642861057215856"
     }
+  },
+  {
+    "id": "2026-11-07-fall-160828-448a8",
+    "date": "2026-11-07",
+    "created": "2026-11-07T16:08:29-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Opulent Pearl Smoke",
+    "palette": [
+      "Deep Wine",
+      "Burgundy Velvet",
+      "Antique Gold Leaf",
+      "Champagne Pearl Glaze"
+    ],
+    "palette_text": "Deep Wine, Burgundy Velvet, Antique Gold Leaf, Champagne Pearl Glaze",
+    "technique": "smoky marble",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-07-fall-160828-448a8.jpg",
+    "feed_image": "posts/2026-11-07-fall-160828-448a8-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Smoky deep-wine marble over a champagne pearl glaze, warmed with antique gold leaf and a subtle cat-eye glow. This season's inspired look — luxury nails in Modesto. Book at Venetian Nail Spa (link in bio) or call 209-408-8597 🍂\n\nWhat occasion would you wear these smoky pearl-tinted tapered squares to this fall?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoCA",
+      "#SmokyMarble",
+      "#TaperedSquare",
+      "#FallNails"
+    ],
+    "full_caption": "Smoky deep-wine marble over a champagne pearl glaze, warmed with antique gold leaf and a subtle cat-eye glow. This season's inspired look — luxury nails in Modesto. Book at Venetian Nail Spa (link in bio) or call 209-408-8597 🍂\n\nWhat occasion would you wear these smoky pearl-tinted tapered squares to this fall?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoCA #SmokyMarble #TaperedSquare #FallNails",
+    "alt_text": "One light-medium skinned hand with long tapered coffin nails in deep burgundy and pink marbling with gold foil accents; thin gold rings including a twisted ring with a clear stone on the ring finger. Hand resting on a cream knit sweater. AI-generated image.",
+    "question": "What occasion would you wear these smoky pearl-tinted tapered squares to this fall?",
+    "welcome": "Welcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.",
+    "seo_phrase": "luxury nails in Modesto",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "tapered square",
+    "skin": "fair white",
+    "finish": "glazed pearl",
+    "color_focus": "deep wine, burgundy and gold",
+    "design": "One visible hand with long tapered-square nails, fair white skin, posed on a cream cable-knit sweater. Each nail wears a champagne pearl-glazed base with a soft iridescent sheen. Thumb and middle show smoky-marble veining in layered deep wine and burgundy, the swirls diffused and translucent like smoldering silk. Index and pinky are saturated Burgundy Velvet with a subtle cat-eye shimmer pulled gently toward the cuticle. Ring finger is the accent: a delicate field of Antique Gold Leaf broken by smoky wine wisps and a whisper-thin silver metallic thread at the lunula for contrast. Overall finish: luminous glazed pearl, cohesive fall-luxe harmony.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - None — single hand, fingers straight and slightly spread, overhead view on sweater; thumb slightly tucked but pose matches reference.",
+    "pose": "04-flat-on-knee",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Wine, Burgundy Velvet, Antique Gold Leaf, Champagne Pearl Glaze. Design: One visible hand with long tapered-square nails, fair white skin, posed on a cream cable-knit sweater. Each nail wears a champagne pearl-glazed base with a soft iridescent sheen. Thumb and middle show smoky-marble veining in layered deep wine and burgundy, the swirls diffused and translucent like smoldering silk. Index and pinky are saturated Burgundy Velvet with a subtle cat-eye shimmer pulled gently toward the cuticle. Ring finger is the accent: a delicate field of Antique Gold Leaf broken by smoky wine wisps and a whisper-thin silver metallic thread at the lunula for contrast. Overall finish: luminous glazed pearl, cohesive fall-luxe harmony. Technique emphasis: smoky marble. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
