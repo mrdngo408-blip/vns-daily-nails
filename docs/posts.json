@@ -1472,5 +1472,53 @@
       "posted": "2026-11-07T18:00:24-08:00",
       "story_id": "1020378704425390"
     }
+  },
+  {
+    "id": "2026-11-08-fall-071429-99973",
+    "date": "2026-11-08",
+    "created": "2026-11-08T07:14:29-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Amber Crescent Tip",
+    "palette": [
+      "Sheer Caramel Jelly",
+      "Warm Amber Tortoiseshell",
+      "Antique 22K Gold",
+      "Copper Cat-Eye Shimmer"
+    ],
+    "palette_text": "Sheer Caramel Jelly, Warm Amber Tortoiseshell, Antique 22K Gold, Copper Cat-Eye Shimmer",
+    "technique": "modern French tip variation",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-08-fall-071429-99973.jpg",
+    "feed_image": "posts/2026-11-08-fall-071429-99973-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Sheer caramel jelly meets warm amber tortoiseshell and antique 22K gold crescent tips — a modern French for fall. ✨\nA tortoiseshell ring-finger with a copper cat-eye stripe adds evening glow.\nThis Modesto manicure is the season's refined inspiration — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow would you wear this—soft daytime shimmer or bold evening shine?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#AlmondNails",
+      "#SheerJelly",
+      "#FallNails"
+    ],
+    "full_caption": "Sheer caramel jelly meets warm amber tortoiseshell and antique 22K gold crescent tips — a modern French for fall. ✨\nA tortoiseshell ring-finger with a copper cat-eye stripe adds evening glow.\nThis Modesto manicure is the season's refined inspiration — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow would you wear this—soft daytime shimmer or bold evening shine?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #AlmondNails #SheerJelly #FallNails",
+    "alt_text": "One hand seen from the back with medium skin tone and long almond-shaped nails with brown tortoiseshell tips and thin gold accents, no rings, resting on a ribbed brown sweater. AI-generated image.",
+    "question": "How would you wear this—soft daytime shimmer or bold evening shine?",
+    "welcome": "So happy you found us! What nail look are you planning next?",
+    "seo_phrase": "Modesto manicure",
+    "style": "luxe",
+    "skin_step": "light tan",
+    "length": "long",
+    "shape": "almond",
+    "skin": "light tan",
+    "finish": "sheer jelly",
+    "color_focus": null,
+    "design": "One visible hand (long almond nails, light tan skin) posed on a chocolate-brown ribbed knit sweater. All nails wear a sheer caramel jelly base that lets the nail bed glow. Modern French variation: slim antique 22K gold crescent tips hug the free edge but are subtly shifted to an angled crescent on each nail for a contemporary silhouette. Index and middle feature a translucent warm amber tortoiseshell wash layered just beneath the gold crescent so the pattern peeks through the jelly. Ring finger is the accent: a full amber tortoiseshell panel over the jelly base, edged with a hairline of micro gold leaf and a vertical copper cat-eye shimmer stripe running through the center for depth. Thumb shows a reversed micro-gold crescent near the cuticle; pinky keeps a delicate gold crescent only. Finish is glossy, sheer jelly with warm metallic accents—cohesive, luxe, and fall-ready.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 8/10 - none",
+    "pose": "05-draped-over-edge",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Sheer Caramel Jelly, Warm Amber Tortoiseshell, Antique 22K Gold, Copper Cat-Eye Shimmer. Design: One visible hand (long almond nails, light tan skin) posed on a chocolate-brown ribbed knit sweater. All nails wear a sheer caramel jelly base that lets the nail bed glow. Modern French variation: slim antique 22K gold crescent tips hug the free edge but are subtly shifted to an angled crescent on each nail for a contemporary silhouette. Index and middle feature a translucent warm amber tortoiseshell wash layered just beneath the gold crescent so the pattern peeks through the jelly. Ring finger is the accent: a full amber tortoiseshell panel over the jelly base, edged with a hairline of micro gold leaf and a vertical copper cat-eye shimmer stripe running through the center for depth. Thumb shows a reversed micro-gold crescent near the cuticle; pinky keeps a delicate gold crescent only. Finish is glossy, sheer jelly with warm metallic accents—cohesive, luxe, and fall-ready. Technique emphasis: modern French tip variation. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
