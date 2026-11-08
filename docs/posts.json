@@ -1529,5 +1529,53 @@
       "posted": "2026-11-08T09:00:36-08:00",
       "story_id": "1959556418758960"
     }
+  },
+  {
+    "id": "2026-11-08-fall-100750-c8a68",
+    "date": "2026-11-08",
+    "created": "2026-11-08T10:07:50-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Maple Tartan Muse",
+    "palette": [
+      "Mahogany Maple",
+      "Chestnut Brown",
+      "Ivory Sand",
+      "Antique Bronze Chrome"
+    ],
+    "palette_text": "Mahogany Maple, Chestnut Brown, Ivory Sand, Antique Bronze Chrome",
+    "technique": "classic plaid / tartan accent nail",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-08-fall-100750-c8a68.jpg",
+    "feed_image": "posts/2026-11-08-fall-100750-c8a68-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Mahogany and chestnut plaids meet reflective bronze — long soft stiletto nails with luxe mirror chrome shine. A modern tartan accent with subtle rose-gold pinstriping, perfect for fall inspiration 🍁\nWe do acrylic nails in Modesto — book your seasonal set at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich color from this set fits your fall wardrobe best?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#TartanNails",
+      "#SoftStiletto",
+      "#FallNails"
+    ],
+    "full_caption": "Mahogany and chestnut plaids meet reflective bronze — long soft stiletto nails with luxe mirror chrome shine. A modern tartan accent with subtle rose-gold pinstriping, perfect for fall inspiration 🍁\nWe do acrylic nails in Modesto — book your seasonal set at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich color from this set fits your fall wardrobe best?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #TartanNails #SoftStiletto #FallNails",
+    "alt_text": "One medium-tanned hand with long almond-shaped nails; most nails are metallic bronze and the ring finger has a translucent base with thin black stripes. Two gold rings on the middle and ring fingers; ribbed beige sweater and beige background. AI-generated image.",
+    "question": "Which color from this set fits your fall wardrobe best?",
+    "welcome": "New here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?",
+    "seo_phrase": "acrylic nails in Modesto",
+    "style": "luxe",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "soft stiletto",
+    "skin": "medium tan",
+    "finish": "mirror chrome",
+    "color_focus": null,
+    "design": "One visible hand (medium-tan skin) with long soft-stiletto tips posed on a camel cashmere background. Thumb, index, middle and pinky are a high-shine Antique Bronze Chrome mirror finish with a whisper of rose-gold micro-foil crescent at the cuticle and a subtle vertical cat-eye shimmer stripe down the center for depth. The ring finger is a classic tartan accent: an Ivory Sand base layered with crisp Mahogany Maple and Chestnut Brown crossing lines, each intersection edged with a fine rose-gold metallic pinstripe to catch light; the plaid is sealed in a reflective chrome topcoat so the accent mirrors the rest of the set. All nails read cohesive, luxe and autumnal with a warm metallic glow.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 10/10 - none",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Mahogany Maple, Chestnut Brown, Ivory Sand, Antique Bronze Chrome. Design: One visible hand (medium-tan skin) with long soft-stiletto tips posed on a camel cashmere background. Thumb, index, middle and pinky are a high-shine Antique Bronze Chrome mirror finish with a whisper of rose-gold micro-foil crescent at the cuticle and a subtle vertical cat-eye shimmer stripe down the center for depth. The ring finger is a classic tartan accent: an Ivory Sand base layered with crisp Mahogany Maple and Chestnut Brown crossing lines, each intersection edged with a fine rose-gold metallic pinstripe to catch light; the plaid is sealed in a reflective chrome topcoat so the accent mirrors the rest of the set. All nails read cohesive, luxe and autumnal with a warm metallic glow. Technique emphasis: classic plaid / tartan accent nail. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
