@@ -1662,7 +1662,11 @@
     "image": "posts/2026-11-09-fall-072959-0e6b7.jpg",
     "feed_image": "posts/2026-11-09-fall-072959-0e6b7-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17881121877632007",
+      "posted": "2026-11-09T09:00:14-08:00",
+      "story_id": "18108008681577742"
+    },
     "caption": "A timeless Ivory Lace French—clean elongated white tips with a whisper of antique gold for fall elegance. ✨\nThis season’s refined take in sheer almond nude and deep white is polished and effortless. Find it among our Modesto nail designs.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer a crisp white smile line or a softer curved French?\n\nJust discovering us? Welcome! What's your go-to manicure style?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1689,6 +1693,11 @@
     "pose": "01-curled-over-fabric",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: a CLASSIC FRENCH TIP set on oval nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (deep French white tips). Add a small, delicate design accent on only one or two nails (a delicate gold foil fleck); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Almond Nude, Deep French White, Antique Gold Foil. Design: One visible hand with long oval nails on deep dark brown skin, posed over a cream cable-knit sweater. Each nail wears a sheer almond-nude base that lets the natural nail bed glow, finished with a crisp, elongated deep French white tip (clean smile line). The ring finger is the single accent: a delicate antique gold foil fleck placed just off-center at the base near the cuticle, with an ultra-fine white micro-line that echoes the tip for cohesion. All nails are high-gloss for a refined, wearable fall look. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122333615150240822",
+      "posted": "2026-11-09T09:00:30-08:00",
+      "story_id": "3184121708443197"
+    }
   }
 ]
