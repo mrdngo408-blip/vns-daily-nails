@@ -1699,5 +1699,53 @@
       "posted": "2026-11-09T09:00:30-08:00",
       "story_id": "3184121708443197"
     }
+  },
+  {
+    "id": "2026-11-09-fall-113312-84f19",
+    "date": "2026-11-09",
+    "created": "2026-11-09T11:33:12-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Gilded Tortoise Velvet",
+    "palette": [
+      "Deep Garnet",
+      "Chestnut Tortoiseshell Amber",
+      "Copper Cat-Eye Shimmer",
+      "Antique Gold Leaf"
+    ],
+    "palette_text": "Deep Garnet, Chestnut Tortoiseshell Amber, Copper Cat-Eye Shimmer, Antique Gold Leaf",
+    "technique": "chrome cuff at the cuticle line",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-09-fall-113312-84f19.jpg",
+    "feed_image": "posts/2026-11-09-fall-113312-84f19-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Deep garnet, warm tortoiseshell and molten copper — a fall mani that feels like cashmere and candlelight. ✨\nLong ballerina coffins, velvet cat-eye shimmer and a gold chrome cuff at the cuticle for modern luxe.\nFind us at our nail spa on McHenry Ave — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer your fall nails warm and earthy or rich and polished?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#VelvetCatEye",
+      "#BallerinaCoffin",
+      "#FallNails"
+    ],
+    "full_caption": "Deep garnet, warm tortoiseshell and molten copper — a fall mani that feels like cashmere and candlelight. ✨\nLong ballerina coffins, velvet cat-eye shimmer and a gold chrome cuff at the cuticle for modern luxe.\nFind us at our nail spa on McHenry Ave — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer your fall nails warm and earthy or rich and polished?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #VelvetCatEye #BallerinaCoffin #FallNails",
+    "alt_text": "One hand with light-medium skin showing four long tapered nails in sharp focus, metallic burgundy and copper polish with a tortoiseshell accent nail and gold flakes, no rings, resting on a brown knit fabric. AI-generated image.",
+    "question": "Do you prefer your fall nails warm and earthy or rich and polished?",
+    "welcome": "Just found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?",
+    "seo_phrase": "nail spa on McHenry Ave",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "ballerina coffin",
+    "skin": "fair white",
+    "finish": "velvet cat-eye",
+    "color_focus": null,
+    "design": "One visible hand with long ballerina-coffin nails, fair white skin posed on a chocolate brown ribbed knit sweater. Thumb, index and middle wear a deep garnet velvet cat-eye with a linear copper cat-eye flash that shifts as the hand moves; each of these nails has a thin gold chrome cuff precisely at the cuticle line. Ring finger is a glazed chestnut tortoiseshell panel (warm amber and espresso swirls) layered with delicate antique gold leaf flecks and a narrow gold chrome cuff at the base. Pinky is a molten copper cat-eye with soft, velvety shimmer and the same gold cuff at the cuticle so every nail reads cohesive and luxe.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "02-diagonal-on-knit",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long ballerina coffin nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Garnet, Chestnut Tortoiseshell Amber, Copper Cat-Eye Shimmer, Antique Gold Leaf. Design: One visible hand with long ballerina-coffin nails, fair white skin posed on a chocolate brown ribbed knit sweater. Thumb, index and middle wear a deep garnet velvet cat-eye with a linear copper cat-eye flash that shifts as the hand moves; each of these nails has a thin gold chrome cuff precisely at the cuticle line. Ring finger is a glazed chestnut tortoiseshell panel (warm amber and espresso swirls) layered with delicate antique gold leaf flecks and a narrow gold chrome cuff at the base. Pinky is a molten copper cat-eye with soft, velvety shimmer and the same gold cuff at the cuticle so every nail reads cohesive and luxe. Technique emphasis: chrome cuff at the cuticle line. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
