@@ -1890,7 +1890,11 @@
     "image": "posts/2026-11-10-fall-101857-07d39.jpg",
     "feed_image": "posts/2026-11-10-fall-101857-07d39-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18100630160199654",
+      "posted": "2026-11-10T12:00:15-08:00",
+      "story_id": "18653351731052259"
+    },
     "caption": "Mirror carmine and molten copper, polished to a luxe chrome with crackled gold veins ✨\nAlmond-cream tortoise on the ring finger adds autumn warmth — seasonal design inspiration.\nA fresh fall look from your Central Valley nail salon. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhich detail draws you in most — the copper mirror or the crackled gold veins?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1917,6 +1921,11 @@
     "pose": "05-draped-over-edge",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Carmine Mirror Chrome, Copper Bronze Mirror, Almond Cream, Antique Gold Crackle. Design: One visible hand (dark tan skin) posed on a cream cable-knit sweater. Long stiletto nails, all high-shine mirror chrome finish. Index and middle are Carmine Mirror Chrome with delicate antique-gold crackled foil veins that run like fine, organic fractures across the center. Thumb and pinky are Copper Bronze Mirror with a whisper of Almond Cream near the cuticle faded into the copper, finished with scattered gold-crackle highlights. Ring finger is the accent: Almond Cream base layered with translucent amber tortoiseshell swirls and a thin copper-mirror French tip; the whole accent is overlaid with fine crackled gold foil and a tiny gold-leaf crescent at the cuticle for a luxe focal point. Overall the set reads cohesive and opulent—warm metallics, deep carmine and copper mirrors united by the crackled gold detail. Technique emphasis: crackled gold foil. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122333819138240822",
+      "posted": "2026-11-10T12:00:36-08:00",
+      "story_id": "1176321758300938"
+    }
   }
 ]
