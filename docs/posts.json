@@ -1833,7 +1833,11 @@
     "image": "posts/2026-11-10-fall-071942-873e7.jpg",
     "feed_image": "posts/2026-11-10-fall-071942-873e7-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17968733586235059",
+      "posted": "2026-11-10T09:00:13-08:00",
+      "story_id": "18062169515550773"
+    },
     "caption": "Sheer mocha jelly, deep oxblood panels and champagne-gold wire lines — fall coffin perfection. ✨\nTortoiseshell accent, oxblood cat-eye shimmer and micro gold leaf—this is the season's look and a fresh idea for gel nails in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhat's one accessory you'd pair with these—gold hoops, a caramel scarf, or a leather clutch?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1860,6 +1864,11 @@
     "pose": "04-flat-on-knee",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long coffin nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Oxblood Burgundy, Mocha Jelly Sheer, Champagne Gold Chrome, Amber Tortoiseshell Brown. Design: One visible hand (medium tan skin) posed on mocha velvet. Long coffin nails with a translucent mocha-jelly base that lets the nail bed glow. Thumb, index and pinky feature diagonal oxblood-jelly panels layered beneath ultra-fine champagne-gold wire-line geometric art: angled rectangles, chevrons and delicate intersecting lines that sit just above the jelly for a luxe architectural effect. Middle nail showcases a deep oxblood cat-eye band with a subtle shifting shimmer. Ring finger is a statement tortoiseshell accent—warm amber and oxblood layers with micro gold-leaf flecks and a tiny champagne-gold wire triangle framing the tip. Overall finish is glossy sheer jelly; technique highlighted: gold wire-line geometric art in champagne gold for refined, modern luxe. Technique emphasis: gold wire-line geometric art. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122333797562240822",
+      "posted": "2026-11-10T09:00:34-08:00",
+      "story_id": "1588410623323368"
+    }
   }
 ]
