@@ -1776,7 +1776,11 @@
     "image": "posts/2026-11-09-fall-161019-bb673.jpg",
     "feed_image": "posts/2026-11-09-fall-161019-bb673-feed.jpg",
     "slot": "evening",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17900964498399042",
+      "posted": "2026-11-09T18:00:17-08:00",
+      "story_id": "18160785259508333"
+    },
     "caption": "Glazed-pearl long-oval mani: deep oxblood and warm cranberry reverse crescents with soft cat-eye shimmer and antique gold leaf. ✨\nA luxe fall look and fresh Modesto nail art inspiration — rich, wearable, and polished.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich shade feels more fall to you: cranberry or oxblood?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -1803,6 +1807,11 @@
     "pose": "03-curled-claw-denim",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cranberry, Oxblood, Antique Gold Leaf, Champagne Pearl Glaze. Design: One visible hand (light tan skin) posed on a camel cashmere background. Long oval nails with a glossy champagne-pearl glazed base; each nail features a reverse-French crescent at the cuticle—alternating rich oxblood and deep cranberry crescents that sit like a luminous halo. Index finger: the cranberry crescent carries a fine linear cat-eye shimmer streak that shifts in warm light. Middle: a delicate, hand-painted tortoiseshell arc in amber and espresso sits just above the free edge, soft and painterly. Ring finger (accent): oxblood crescent layered with scattered antique gold leaf flakes and a tiny hammered gold crescent at the very base. Pinky: small micro-gold flecks trailing from the cuticle crescent toward the tip. All nails finished in a high-gloss glazed-pearl sheen with warm gold accents for a cohesive, luxe long-oval set. Technique emphasis: reverse French (color at the cuticle). Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122333677136240822",
+      "posted": "2026-11-09T18:00:41-08:00",
+      "story_id": "1112045175153983"
+    }
   }
 ]
