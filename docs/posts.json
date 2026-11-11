@@ -1927,5 +1927,53 @@
       "posted": "2026-11-10T12:00:36-08:00",
       "story_id": "1176321758300938"
     }
+  },
+  {
+    "id": "2026-11-10-fall-160822-660e9",
+    "date": "2026-11-10",
+    "created": "2026-11-10T16:08:22-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Almond Gold Leaf French",
+    "palette": [
+      "Sheer Almond Blush",
+      "Bright Porcelain White",
+      "Antique Gold Leaf",
+      "Warm Copper Microline"
+    ],
+    "palette_text": "Sheer Almond Blush, Bright Porcelain White, Antique Gold Leaf, Warm Copper Microline",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-10-fall-160822-660e9.jpg",
+    "feed_image": "posts/2026-11-10-fall-160822-660e9-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Timeless French, fall-fresh — sheer almond blush with bright white tips, polished to a mirror shine.\nRing finger: a minimalist vine in warm copper, dotted with antique gold and soft tortoise-amber for autumn ✨\nThis is seasonal, understated luxe — design inspiration from your favorite nail salon in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWould you keep this classic French for weekdays or save it for evenings out?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#ClassicFrench",
+      "#AlmondNails",
+      "#FallMani"
+    ],
+    "full_caption": "Timeless French, fall-fresh — sheer almond blush with bright white tips, polished to a mirror shine.\nRing finger: a minimalist vine in warm copper, dotted with antique gold and soft tortoise-amber for autumn ✨\nThis is seasonal, understated luxe — design inspiration from your favorite nail salon in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWould you keep this classic French for weekdays or save it for evenings out?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #ClassicFrench #AlmondNails #FallMani",
+    "alt_text": "One dark brown hand with long almond nails, nude polish and white French tips with a small gold leaf accent on the index nail. Two gold rings with clear stones, a brown ribbed sweater sleeve and dark brown ribbed background. AI-generated image.",
+    "question": "Would you keep this classic French for weekdays or save it for evenings out?",
+    "welcome": "First time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?",
+    "seo_phrase": "nail salon in Modesto",
+    "style": "french",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "medium almond",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "high-gloss",
+    "color_focus": null,
+    "design": "One visible hand with deep dark brown skin posed on a chocolate-brown ribbed knit sweater. Long, medium-almond nails finished high-gloss. Every nail wears a sheer almond-blush base that lets the nail bed glow, topped with crisp, bright porcelain white French tips that taper gently to follow the almond silhouette. The ring finger is the delicate accent: a minimalist hand-painted vine in a warm copper microline that curves from the cuticle toward the tip and is dotted with tiny antique-gold leaf flecks; inside the leaf shapes are softly mottled tortoise-amber spots for a whisper of fall warmth. All lines are fine and refined — elegant, wearable, and cohesive across the set.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: a CLASSIC FRENCH TIP set on medium almond nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (bright white tips). Add a small, delicate design accent on only one or two nails (a minimalist leaf or vine); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Almond Blush, Bright Porcelain White, Antique Gold Leaf, Warm Copper Microline. Design: One visible hand with deep dark brown skin posed on a chocolate-brown ribbed knit sweater. Long, medium-almond nails finished high-gloss. Every nail wears a sheer almond-blush base that lets the nail bed glow, topped with crisp, bright porcelain white French tips that taper gently to follow the almond silhouette. The ring finger is the delicate accent: a minimalist hand-painted vine in a warm copper microline that curves from the cuticle toward the tip and is dotted with tiny antique-gold leaf flecks; inside the leaf shapes are softly mottled tortoise-amber spots for a whisper of fall warmth. All lines are fine and refined — elegant, wearable, and cohesive across the set. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
