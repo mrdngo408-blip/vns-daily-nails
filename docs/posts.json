@@ -2041,5 +2041,53 @@
       "posted": "2026-11-11T09:00:26-08:00",
       "story_id": "3066471100359442"
     }
+  },
+  {
+    "id": "2026-11-11-fall-102644-d03bc",
+    "date": "2026-11-11",
+    "created": "2026-11-11T10:26:44-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Cashmere Copper Gradient",
+    "palette": [
+      "Copper Cat-Eye",
+      "Warm Cocoa",
+      "Oxblood Merlot",
+      "Antique Gold Leaf"
+    ],
+    "palette_text": "Copper Cat-Eye, Warm Cocoa, Oxblood Merlot, Antique Gold Leaf",
+    "technique": "gradient that deepens finger by finger",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-11-fall-102644-d03bc.jpg",
+    "feed_image": "posts/2026-11-11-fall-102644-d03bc-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Cashmere-to-copper ombré with velvet cat-eye shimmer and a tortoiseshell gold-leaf accent — cozy, polished fall luxury. Modesto manicure inspiration for long almond lovers this season ✨ Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nIs almond your favorite long shape for fall nails?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#VelvetCatEye",
+      "#AlmondNails",
+      "#FallOmbre"
+    ],
+    "full_caption": "Cashmere-to-copper ombré with velvet cat-eye shimmer and a tortoiseshell gold-leaf accent — cozy, polished fall luxury. Modesto manicure inspiration for long almond lovers this season ✨ Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nIs almond your favorite long shape for fall nails?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #VelvetCatEye #AlmondNails #FallOmbre",
+    "alt_text": "One left hand seen from the back with light-medium skin and long almond nails painted shimmery copper-brown; the ring finger has brown-to-gold flake accents and a thin gold ring at the base, resting on dark brown velvety fabric. AI-generated image.",
+    "question": "Is almond your favorite long shape for fall nails?",
+    "welcome": "Hi and welcome if you're new here! What's the last nail color you fell in love with?",
+    "seo_phrase": "Modesto manicure",
+    "style": "luxe",
+    "skin_step": "light tan",
+    "length": "long",
+    "shape": "almond",
+    "skin": "light tan",
+    "finish": "velvet cat-eye",
+    "color_focus": null,
+    "design": "One visible hand (light tan skin) posed on mocha velvet. Long almond nails with a velvet cat-eye finish; the polish is painted in a smooth ombré that deepens finger by finger from a soft warm cocoa at the thumb into a molten copper cat-eye on the index and middle, finishing in a rich oxblood merlot at the ring and pinky. A diagonal cat-eye shimmer draws a soft luminous stripe toward each tip. The ring finger is a coordinated accent: a translucent amber tortoiseshell panel layered over the deep merlot base with delicate antique gold-leaf veining along one side. Tiny gold-cuff microlines hug the cuticle on the middle and ring for a cohesive luxe touch.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - No issues — pose matches reference.",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Copper Cat-Eye, Warm Cocoa, Oxblood Merlot, Antique Gold Leaf. Design: One visible hand (light tan skin) posed on mocha velvet. Long almond nails with a velvet cat-eye finish; the polish is painted in a smooth ombré that deepens finger by finger from a soft warm cocoa at the thumb into a molten copper cat-eye on the index and middle, finishing in a rich oxblood merlot at the ring and pinky. A diagonal cat-eye shimmer draws a soft luminous stripe toward each tip. The ring finger is a coordinated accent: a translucent amber tortoiseshell panel layered over the deep merlot base with delicate antique gold-leaf veining along one side. Tiny gold-cuff microlines hug the cuticle on the middle and ring for a cohesive luxe touch. Technique emphasis: gradient that deepens finger by finger. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
