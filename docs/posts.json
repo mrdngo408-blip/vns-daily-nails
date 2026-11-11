@@ -1984,5 +1984,53 @@
       "posted": "2026-11-10T18:00:31-08:00",
       "story_id": "1416345357236070"
     }
+  },
+  {
+    "id": "2026-11-11-fall-072155-d9e58",
+    "date": "2026-11-11",
+    "created": "2026-11-11T07:21:55-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Oak & Gold Luxe",
+    "palette": [
+      "Amber Tortoise Brown",
+      "Burnished Copper",
+      "Antique Gold Leaf",
+      "Champagne Pearl"
+    ],
+    "palette_text": "Amber Tortoise Brown, Burnished Copper, Antique Gold Leaf, Champagne Pearl",
+    "technique": "micro-pearl border along the cuticle",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-11-fall-072155-d9e58.jpg",
+    "feed_image": "posts/2026-11-11-fall-072155-d9e58-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Long tapered squares in matte amber-brown with glossy tortoiseshell and burnished-copper cat-eye accents. Micro-pearl cuticle borders and antique gold leaf add layered, cozy shine this season. This is fall's luxe inspiration — luxury nails in Modesto. Book at Venetian Nail Spa (link in bio) or call 209-408-8597 ✨\n\nWould you keep the long tapered-square length or go shorter for everyday wear?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#TortoiseshellNails",
+      "#TaperedSquare",
+      "#FallNails"
+    ],
+    "full_caption": "Long tapered squares in matte amber-brown with glossy tortoiseshell and burnished-copper cat-eye accents. Micro-pearl cuticle borders and antique gold leaf add layered, cozy shine this season. This is fall's luxe inspiration — luxury nails in Modesto. Book at Venetian Nail Spa (link in bio) or call 209-408-8597 ✨\n\nWould you keep the long tapered-square length or go shorter for everyday wear?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #TortoiseshellNails #TaperedSquare #FallNails",
+    "alt_text": "One hand with light-medium skin tone shows long coffin-shaped nails in brown, copper and tortoiseshell designs with small pearl accents; a gold ring with a dark red stone is visible. Hand rests on a tan knit fabric. AI-generated image.",
+    "question": "Would you keep the long tapered-square length or go shorter for everyday wear?",
+    "welcome": "New to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?",
+    "seo_phrase": "luxury nails in Modesto",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "tapered square",
+    "skin": "fair white",
+    "finish": "soft matte with glossy accents",
+    "color_focus": null,
+    "design": "One visible hand (fair white skin) posed on a camel cashmere background. Long tapered-square nails: thumb, index and pinky wear a soft-matte Amber Tortoise Brown base with a thin glossy diagonal stripe near the free edge. The middle nail is a glossy Burnished Copper cat-eye shimmer running in a narrow vertical band down the center, edged with tiny scattered Antique Gold Leaf flakes. The ring finger is a glossy amber-tortoiseshell art—warm translucent amber patches with deep chocolate tortoise spots and flecks of gold leaf layered for depth. Every nail has a delicate micro-pearl border following the cuticle line (pearlescent beads tiny and perfectly aligned). Finish is predominantly soft matte with the described glossy accents and warm metallic gold highlights for a luxe fall look.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - no issues",
+    "pose": "07-resting-at-table",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting on a soft knit fabric at a cozy table setting, seen from the back, fingers relaxed and gently curved, pointing down toward the lower left and slightly spread so all four nails are clearly visible; the thumb is hidden; a gold ring with a deep red stone on one finger and a thin gold band on another; warm candle-lit, softly blurred background. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Amber Tortoise Brown, Burnished Copper, Antique Gold Leaf, Champagne Pearl. Design: One visible hand (fair white skin) posed on a camel cashmere background. Long tapered-square nails: thumb, index and pinky wear a soft-matte Amber Tortoise Brown base with a thin glossy diagonal stripe near the free edge. The middle nail is a glossy Burnished Copper cat-eye shimmer running in a narrow vertical band down the center, edged with tiny scattered Antique Gold Leaf flakes. The ring finger is a glossy amber-tortoiseshell art—warm translucent amber patches with deep chocolate tortoise spots and flecks of gold leaf layered for depth. Every nail has a delicate micro-pearl border following the cuticle line (pearlescent beads tiny and perfectly aligned). Finish is predominantly soft matte with the described glossy accents and warm metallic gold highlights for a luxe fall look. Technique emphasis: micro-pearl border along the cuticle. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
