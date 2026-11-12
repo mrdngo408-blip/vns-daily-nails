@@ -2155,5 +2155,53 @@
       "posted": "2026-11-11T18:00:32-08:00",
       "story_id": "1864275681422589"
     }
+  },
+  {
+    "id": "2026-11-12-fall-072955-1d286",
+    "date": "2026-11-12",
+    "created": "2026-11-12T07:29:55-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Champagne Bow French",
+    "palette": [
+      "Sheer Blush Nude",
+      "Cranberry Red",
+      "Black Cherry",
+      "Champagne Gold"
+    ],
+    "palette_text": "Sheer Blush Nude, Cranberry Red, Black Cherry, Champagne Gold",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-12-fall-072955-1d286.jpg",
+    "feed_image": "posts/2026-11-12-fall-072955-1d286-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Long square French with crisp cranberry tips and a tiny black-cherry bow—champagne-gold smile lines for high-gloss fall luxury ✨\nThis season's refined look: cozy sweater-ready, evening-elegant.\nSearching for the best nails in Modesto, CA? Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nHow often do you refresh long French tips to keep them flawless?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#CranberryFrench",
+      "#LongSquareNails",
+      "#FallNails"
+    ],
+    "full_caption": "Long square French with crisp cranberry tips and a tiny black-cherry bow—champagne-gold smile lines for high-gloss fall luxury ✨\nThis season's refined look: cozy sweater-ready, evening-elegant.\nSearching for the best nails in Modesto, CA? Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nHow often do you refresh long French tips to keep them flawless?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #CranberryFrench #LongSquareNails #FallNails",
+    "alt_text": "One dark-skinned hand with long almond-to-square nails showing sheer nude bases and deep burgundy French tips with thin gold accents, a beaded gold ring and a thin diamond band, on a ribbed brown sweater. AI-generated image.",
+    "question": "How often do you refresh long French tips to keep them flawless?",
+    "welcome": "So happy you found us! What nail look are you planning next?",
+    "seo_phrase": "best nails in Modesto, CA",
+    "style": "french",
+    "skin_step": "dark tan",
+    "length": "long",
+    "shape": "square",
+    "skin": "dark tan, deep warm brown",
+    "finish": "high-gloss",
+    "color_focus": "cherry red, black cherry and champagne gold",
+    "design": "One visible hand with long square nails and deep warm brown skin posed on a chocolate-brown ribbed knit sweater. Every nail wears a sheer blush-pink nude base and crisp cranberry French tips; each smile line is traced with a hair-fine champagne-gold edge. The ring finger is the delicate accent: a tiny hand-painted black-cherry bow sits centered on the smile line with a minuscule champagne-gold knot. High-gloss finish across all nails; a slim silver stacking band on the index finger catches the light for an elegant metallic contrast.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 8/10 - none",
+    "pose": "03-curled-claw-denim",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: a CLASSIC FRENCH TIP set on square nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (cranberry tips with a fine gold edge). Add a small, delicate design accent on only one or two nails (a tiny bow); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Blush Nude, Cranberry Red, Black Cherry, Champagne Gold. Design: One visible hand with long square nails and deep warm brown skin posed on a chocolate-brown ribbed knit sweater. Every nail wears a sheer blush-pink nude base and crisp cranberry French tips; each smile line is traced with a hair-fine champagne-gold edge. The ring finger is the delicate accent: a tiny hand-painted black-cherry bow sits centered on the smile line with a minuscule champagne-gold knot. High-gloss finish across all nails; a slim silver stacking band on the index finger catches the light for an elegant metallic contrast. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
