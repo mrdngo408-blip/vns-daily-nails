@@ -2212,5 +2212,53 @@
       "posted": "2026-11-12T09:00:23-08:00",
       "story_id": "1819557802568509"
     }
+  },
+  {
+    "id": "2026-11-12-fall-102426-3bd23",
+    "date": "2026-11-12",
+    "created": "2026-11-12T10:24:26-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Night Bloom Ballerina",
+    "palette": [
+      "Black Cherry Jelly",
+      "Oxblood Burgundy",
+      "Rose Gold Metallic",
+      "Antique Gold"
+    ],
+    "palette_text": "Black Cherry Jelly, Oxblood Burgundy, Rose Gold Metallic, Antique Gold",
+    "technique": "gold caviar bead accents",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-12-fall-102426-3bd23.jpg",
+    "feed_image": "posts/2026-11-12-fall-102426-3bd23-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Sheer black-cherry jelly, oxblood depth and rose-gold cat-eye—long ballerina luxe. ✨\nSearching for Modesto nail designs inspired by warm metallics and gold caviar bead accents.\nThis season's look—book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nSuede booties or patent heels — which would you pair with this set?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#BlackCherryNails",
+      "#BallerinaCoffin",
+      "#FallNails"
+    ],
+    "full_caption": "Sheer black-cherry jelly, oxblood depth and rose-gold cat-eye—long ballerina luxe. ✨\nSearching for Modesto nail designs inspired by warm metallics and gold caviar bead accents.\nThis season's look—book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nSuede booties or patent heels — which would you pair with this set?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #BlackCherryNails #BallerinaCoffin #FallNails",
+    "alt_text": "One dark-skinned hand with long coffin-shaped nails: metallic burgundy on most fingers, a tortoiseshell accent nail, and a rose-gold chrome accent with small gold beads; three gold rings visible, hand resting on tan sweater fabric. AI-generated image.",
+    "question": "Suede booties or patent heels — which would you pair with this set?",
+    "welcome": "New here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?",
+    "seo_phrase": "Modesto nail designs",
+    "style": "luxe",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "ballerina coffin",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "sheer jelly",
+    "color_focus": "black cherry, burgundy and rose gold",
+    "design": "One visible hand (deep dark brown skin of a Black woman) posed on a camel cashmere background. Long ballerina-coffin nails, sheer jelly finish across the whole set for luminous depth. Thumb, index and pinky are layered Black Cherry Jelly with translucent depth so the nail bed glows; each has a faint rose-gold cat-eye stripe running down the center for a liquid shimmer. Middle finger is a rich Oxblood Burgundy jelly with subtle, warm tortoiseshell swirls near the tip (amber and cocoa tones visible through the jelly). Ring finger is a rose-gold metallic jelly accent, polished high-shine and edged with a neat crescent of tiny antique gold caviar bead accents at the cuticle that continue as a single fine bead line across the base of the tip. Scattered micro flecks of antique gold catch the light across several nails to tie the set together—cohesive, luxe and wearable for long ballerina length.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - Pose matches reference: single hand, fingers straight and slightly spread pointing upper-right, thumb at bottom, resting on sweater-covered knee.",
+    "pose": "04-flat-on-knee",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long ballerina coffin nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Black Cherry Jelly, Oxblood Burgundy, Rose Gold Metallic, Antique Gold. Design: One visible hand (deep dark brown skin of a Black woman) posed on a camel cashmere background. Long ballerina-coffin nails, sheer jelly finish across the whole set for luminous depth. Thumb, index and pinky are layered Black Cherry Jelly with translucent depth so the nail bed glows; each has a faint rose-gold cat-eye stripe running down the center for a liquid shimmer. Middle finger is a rich Oxblood Burgundy jelly with subtle, warm tortoiseshell swirls near the tip (amber and cocoa tones visible through the jelly). Ring finger is a rose-gold metallic jelly accent, polished high-shine and edged with a neat crescent of tiny antique gold caviar bead accents at the cuticle that continue as a single fine bead line across the base of the tip. Scattered micro flecks of antique gold catch the light across several nails to tie the set together—cohesive, luxe and wearable for long ballerina length. Technique emphasis: gold caviar bead accents. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
