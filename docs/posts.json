@@ -2098,5 +2098,53 @@
       "posted": "2026-11-11T12:00:20-08:00",
       "story_id": "912557255276816"
     }
+  },
+  {
+    "id": "2026-11-11-fall-162446-b9697",
+    "date": "2026-11-11",
+    "created": "2026-11-11T16:24:47-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Encapsulated Wine Botanica",
+    "palette": [
+      "Deep Garnet Wine",
+      "Cream Cashmere",
+      "Antique Gold Foil",
+      "Champagne Pearl Glaze"
+    ],
+    "palette_text": "Deep Garnet Wine, Cream Cashmere, Antique Gold Foil, Champagne Pearl Glaze",
+    "technique": "encapsulated dried flowers",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-11-fall-162446-b9697.jpg",
+    "feed_image": "posts/2026-11-11-fall-162446-b9697-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Glazed pearl stiletto luxury — deep garnet, cream cashmere and antique gold foil with encapsulated pressed blooms. ✨\nA fall-inspired look that reads luxe and wearable this season.\nPerfect if you’re searching for acrylic nails in Modesto — Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich detail would you try first—encapsulated flowers, champagne pearl glaze, or antique gold foil?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#WineRedNails",
+      "#SoftStiletto",
+      "#FallNailArt"
+    ],
+    "full_caption": "Glazed pearl stiletto luxury — deep garnet, cream cashmere and antique gold foil with encapsulated pressed blooms. ✨\nA fall-inspired look that reads luxe and wearable this season.\nPerfect if you’re searching for acrylic nails in Modesto — Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich detail would you try first—encapsulated flowers, champagne pearl glaze, or antique gold foil?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #WineRedNails #SoftStiletto #FallNailArt",
+    "alt_text": "One hand with medium-tan skin showing four long pointed nails; two nails are deep burgundy, one is white with delicate dried-flower art and gold flakes, and one is translucent with gold flakes. Hand rests on a cream knit fabric. AI-generated image.",
+    "question": "Which detail would you try first—encapsulated flowers, champagne pearl glaze, or antique gold foil?",
+    "welcome": "Welcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.",
+    "seo_phrase": "acrylic nails in Modesto",
+    "style": "luxe",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "soft stiletto",
+    "skin": "medium tan",
+    "finish": "glazed pearl",
+    "color_focus": "wine red, cream and gold foil",
+    "design": "One visible hand with long soft-stiletto nails, medium-tan skin, posed on a cream cable-knit sweater. Cohesive luxe set: index and pinky in a saturated Deep Garnet Wine with a champagne pearl glazed finish and a whisper of cream veining near the tip; middle finger features a sheer-to-rich wine gradient with a reflective vertical cat-eye shimmer band and scattered antique gold foil flecks; ring finger is the accent—clear encapsulation holding tiny pressed dried blooms (delicate beige baby’s-breath) laid over a Cream Cashmere base, edged with thin antique gold leaf and a micro gold half-moon at the cuticle; thumb shows a cream pearl base with a soft wine-red painterly sweep and a few embedded gold foil flakes. All nails finished in a high-gloss glazed pearl sheen, subtle gold metal accents, and warm, wearable botanical luxury.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "02-diagonal-on-knit",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Garnet Wine, Cream Cashmere, Antique Gold Foil, Champagne Pearl Glaze. Design: One visible hand with long soft-stiletto nails, medium-tan skin, posed on a cream cable-knit sweater. Cohesive luxe set: index and pinky in a saturated Deep Garnet Wine with a champagne pearl glazed finish and a whisper of cream veining near the tip; middle finger features a sheer-to-rich wine gradient with a reflective vertical cat-eye shimmer band and scattered antique gold foil flecks; ring finger is the accent—clear encapsulation holding tiny pressed dried blooms (delicate beige baby’s-breath) laid over a Cream Cashmere base, edged with thin antique gold leaf and a micro gold half-moon at the cuticle; thumb shows a cream pearl base with a soft wine-red painterly sweep and a few embedded gold foil flakes. All nails finished in a high-gloss glazed pearl sheen, subtle gold metal accents, and warm, wearable botanical luxury. Technique emphasis: encapsulated dried flowers. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
