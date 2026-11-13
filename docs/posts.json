@@ -2269,5 +2269,53 @@
       "posted": "2026-11-12T12:00:24-08:00",
       "story_id": "2115869979292711"
     }
+  },
+  {
+    "id": "2026-11-12-fall-174620-4d978",
+    "date": "2026-11-12",
+    "created": "2026-11-12T17:46:20-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Tortoise Lace Chrome",
+    "palette": [
+      "Mocha Mirror Chrome",
+      "Antique Gold Leaf",
+      "Amber Tortoiseshell",
+      "Warm Bronze Cat-Eye"
+    ],
+    "palette_text": "Mocha Mirror Chrome, Antique Gold Leaf, Amber Tortoiseshell, Warm Bronze Cat-Eye",
+    "technique": "delicate lace pattern",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-12-fall-174620-4d978.jpg",
+    "feed_image": "posts/2026-11-12-fall-174620-4d978-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Long-oval mirror chrome meets warm tortoise and antique gold for a luxe fall statement ✨\nThis season's look mixes mocha chrome, amber tortoise swirls and delicate gold lace.\nFind this at our nail spa on McHenry Ave — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich element would you choose as your signature: mirror chrome, amber tortoise, or gold lace?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#MirrorChrome",
+      "#TortoiseshellNails",
+      "#LaceNails"
+    ],
+    "full_caption": "Long-oval mirror chrome meets warm tortoise and antique gold for a luxe fall statement ✨\nThis season's look mixes mocha chrome, amber tortoise swirls and delicate gold lace.\nFind this at our nail spa on McHenry Ave — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich element would you choose as your signature: mirror chrome, amber tortoise, or gold lace?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #MirrorChrome #TortoiseshellNails #LaceNails",
+    "alt_text": "One hand with light skin tone shown from the back with long almond-shaped metallic rose-gold chrome nails and gold filigree on the ring finger, no rings, resting on brown velvet fabric. AI-generated image.",
+    "question": "Which element would you choose as your signature: mirror chrome, amber tortoise, or gold lace?",
+    "welcome": "Welcome to all our new friends! What's your dream nail set?",
+    "seo_phrase": "nail spa on McHenry Ave",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "long oval",
+    "skin": "fair white",
+    "finish": "mirror chrome",
+    "color_focus": null,
+    "design": "One visible hand (fair white skin) posed on a mocha velvet background. Long oval nails, high-shine mirror chrome throughout. Thumb and pinky wear warm bronze cat-eye mirror chrome with a soft linear shimmer. Index and middle are Mocha Mirror Chrome with a whisper of antique-gold microfoil along the cuticle like a delicate metal cuff. Ring finger is the accent: a translucent amber tortoiseshell base with deep, glossy swirls, overlaid with an ultra-fine antique gold lace filigree that traces the nail from cuticle to tip; scattered gold-leaf flakes catch the light. All nails have a seamless chrome gleam and fine gold details to unify the set—no bulky gems, just precise luxe texture and reflective shine.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 8/10 - none",
+    "pose": "05-draped-over-edge",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Mocha Mirror Chrome, Antique Gold Leaf, Amber Tortoiseshell, Warm Bronze Cat-Eye. Design: One visible hand (fair white skin) posed on a mocha velvet background. Long oval nails, high-shine mirror chrome throughout. Thumb and pinky wear warm bronze cat-eye mirror chrome with a soft linear shimmer. Index and middle are Mocha Mirror Chrome with a whisper of antique-gold microfoil along the cuticle like a delicate metal cuff. Ring finger is the accent: a translucent amber tortoiseshell base with deep, glossy swirls, overlaid with an ultra-fine antique gold lace filigree that traces the nail from cuticle to tip; scattered gold-leaf flakes catch the light. All nails have a seamless chrome gleam and fine gold details to unify the set—no bulky gems, just precise luxe texture and reflective shine. Technique emphasis: delicate lace pattern. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
