@@ -2326,5 +2326,53 @@
       "posted": "2026-11-12T18:00:25-08:00",
       "story_id": "4525921237646978"
     }
+  },
+  {
+    "id": "2026-11-13-fall-072046-f9af1",
+    "date": "2026-11-13",
+    "created": "2026-11-13T07:20:46-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Golden Autumn Ombre",
+    "palette": [
+      "Warm Tortoiseshell Amber",
+      "Copper Cat-Eye Shimmer",
+      "Champagne Gold Leaf",
+      "Cream Cashmere"
+    ],
+    "palette_text": "Warm Tortoiseshell Amber, Copper Cat-Eye Shimmer, Champagne Gold Leaf, Cream Cashmere",
+    "technique": "glitter fade from the tip",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-13-fall-072046-f9af1.jpg",
+    "feed_image": "posts/2026-11-13-fall-072046-f9af1-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Long coffin luxe for crisp fall days — warm tortoiseshell, molten copper cat-eye and champagne-gold glitter fading from the tips ✨\nA fresh Modesto nail art idea for this season: soft-matte cream with glossy amber and gold accents.\nInspired? Book at Venetian Nail Spa (link in bio) or call 209-408-8597 to reserve your appointment.\n\nWhat's your favorite little luxury for cozy fall self-care?\n\nJust discovering us? Welcome! What's your go-to manicure style?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#CoffinNails",
+      "#MatteWithGloss",
+      "#FallNails"
+    ],
+    "full_caption": "Long coffin luxe for crisp fall days — warm tortoiseshell, molten copper cat-eye and champagne-gold glitter fading from the tips ✨\nA fresh Modesto nail art idea for this season: soft-matte cream with glossy amber and gold accents.\nInspired? Book at Venetian Nail Spa (link in bio) or call 209-408-8597 to reserve your appointment.\n\nWhat's your favorite little luxury for cozy fall self-care?\n\nJust discovering us? Welcome! What's your go-to manicure style?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #CoffinNails #MatteWithGloss #FallNails",
+    "alt_text": "One medium-toned hand with long square-tipped nails: nude nails with gold glitter tips, a metallic copper middle nail, and a tortoiseshell accent on the ring finger. Two gold crystal rings on the middle and ring fingers, a cream ribbed sweater cuff and a knitted beige background. AI-generated image.",
+    "question": "What's your favorite little luxury for cozy fall self-care?",
+    "welcome": "Just discovering us? Welcome! What's your go-to manicure style?",
+    "seo_phrase": "Modesto nail art",
+    "style": "luxe",
+    "skin_step": "light tan",
+    "length": "long",
+    "shape": "coffin",
+    "skin": "light tan",
+    "finish": "soft matte with glossy accents",
+    "color_focus": null,
+    "design": "One visible hand (light tan skin) posed on a cream cable-knit sweater. Long coffin nails with a soft-matte Cream Cashmere base across the hand. Thumb, index and pinky feature a delicate champagne-gold microglitter fade from the tip toward the middle — the glitter is glossy and concentrated at the very tip, fading to matte. Middle finger has a glossy copper cat-eye shimmer stripe running lengthwise down the center for a liquid metallic glow. Ring finger is the glossy focal accent: a warm tortoiseshell amber pattern with translucent honey and espresso swirls, finished with tiny hand-placed Champagne Gold Leaf flakes near the cuticle; that nail is fully glossy to contrast the matte field. Overall effect is luxe autumn warmth: matte skin-tone canvas with glossy metallic and tortoise accents and a glitter-tip fade.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - no issues",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long coffin nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Warm Tortoiseshell Amber, Copper Cat-Eye Shimmer, Champagne Gold Leaf, Cream Cashmere. Design: One visible hand (light tan skin) posed on a cream cable-knit sweater. Long coffin nails with a soft-matte Cream Cashmere base across the hand. Thumb, index and pinky feature a delicate champagne-gold microglitter fade from the tip toward the middle — the glitter is glossy and concentrated at the very tip, fading to matte. Middle finger has a glossy copper cat-eye shimmer stripe running lengthwise down the center for a liquid metallic glow. Ring finger is the glossy focal accent: a warm tortoiseshell amber pattern with translucent honey and espresso swirls, finished with tiny hand-placed Champagne Gold Leaf flakes near the cuticle; that nail is fully glossy to contrast the matte field. Overall effect is luxe autumn warmth: matte skin-tone canvas with glossy metallic and tortoise accents and a glitter-tip fade. Technique emphasis: glitter fade from the tip. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
