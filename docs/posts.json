@@ -2383,5 +2383,53 @@
       "posted": "2026-11-13T09:00:39-08:00",
       "story_id": "2405789503568062"
     }
+  },
+  {
+    "id": "2026-11-13-fall-102310-ae868",
+    "date": "2026-11-13",
+    "created": "2026-11-13T10:23:11-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Autumn Rose Gold French",
+    "palette": [
+      "Sheer Cappuccino",
+      "Deep French White (Porcelain)",
+      "Burnt Amber",
+      "Rose Gold Accent"
+    ],
+    "palette_text": "Sheer Cappuccino, Deep French White (Porcelain), Burnt Amber, Rose Gold Accent",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-13-fall-102310-ae868.jpg",
+    "feed_image": "posts/2026-11-13-fall-102310-ae868-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Timeless French reimagined for fall — sheer cappuccino base with crisp porcelain white tips and tiny burnt-amber florals with rose-gold centers. 🍂\nLooking for gel nails in Modesto? This long oval, high-gloss look is perfect for cozy layers with a polished finish.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer delicate florals or minimalist tips for your fall mani?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#ClassicFrench",
+      "#LongOvalNails",
+      "#FallNails"
+    ],
+    "full_caption": "Timeless French reimagined for fall — sheer cappuccino base with crisp porcelain white tips and tiny burnt-amber florals with rose-gold centers. 🍂\nLooking for gel nails in Modesto? This long oval, high-gloss look is perfect for cozy layers with a polished finish.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer delicate florals or minimalist tips for your fall mani?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #ClassicFrench #LongOvalNails #FallNails",
+    "alt_text": "One medium-tan hand seen from the back with medium-length almond nails in a nude French-tip style with white tips and small brown leaf accents; two gold rings including one with a deep red stone; hand resting on brown knit fabric. AI-generated image.",
+    "question": "Do you prefer delicate florals or minimalist tips for your fall mani?",
+    "welcome": "Just found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?",
+    "seo_phrase": "gel nails in Modesto",
+    "style": "french",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "oval",
+    "skin": "medium tan",
+    "finish": "high-gloss",
+    "color_focus": null,
+    "design": "One visible hand (medium tan skin) posed on a chocolate-brown ribbed knit sweater. Long oval nails, high-gloss finish. Every nail has a sheer cappuccino base with a crisp, deep French white smile line that sits slightly curved for a modern classic. The ring finger and thumb are the delicate accents: tiny seasonal floral sprigs painted at the lower side of the nail bed in burnt amber petals with a very small deep plum bud, finished with a single rose-gold metallic dot at each flower center. All lines are clean and refined; overall effect is elegant, wearable long french with a whisper of autumnal warmth.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "07-resting-at-table",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting on a soft knit fabric at a cozy table setting, seen from the back, fingers relaxed and gently curved, pointing down toward the lower left and slightly spread so all four nails are clearly visible; the thumb is hidden; a gold ring with a deep red stone on one finger and a thin gold band on another; warm candle-lit, softly blurred background. NAILS: a CLASSIC FRENCH TIP set on oval nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (deep French white tips). Add a small, delicate design accent on only one or two nails (tiny seasonal florals); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Cappuccino, Deep French White (Porcelain), Burnt Amber, Rose Gold Accent. Design: One visible hand (medium tan skin) posed on a chocolate-brown ribbed knit sweater. Long oval nails, high-gloss finish. Every nail has a sheer cappuccino base with a crisp, deep French white smile line that sits slightly curved for a modern classic. The ring finger and thumb are the delicate accents: tiny seasonal floral sprigs painted at the lower side of the nail bed in burnt amber petals with a very small deep plum bud, finished with a single rose-gold metallic dot at each flower center. All lines are clean and refined; overall effect is elegant, wearable long french with a whisper of autumnal warmth. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
