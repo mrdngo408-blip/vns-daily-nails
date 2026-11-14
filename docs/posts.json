@@ -2440,5 +2440,53 @@
       "posted": "2026-11-13T12:00:21-08:00",
       "story_id": "1823881108654655"
     }
+  },
+  {
+    "id": "2026-11-13-fall-161231-9bba2",
+    "date": "2026-11-13",
+    "created": "2026-11-13T16:12:31-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Silk Noir Dew Drips",
+    "palette": [
+      "Midnight Onyx",
+      "Smoked Cocoa",
+      "Copper Bronze",
+      "Refined Gold Fleck"
+    ],
+    "palette_text": "Midnight Onyx, Smoked Cocoa, Copper Bronze, Refined Gold Fleck",
+    "technique": "3D chrome water droplets",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-13-fall-161231-9bba2.jpg",
+    "feed_image": "posts/2026-11-13-fall-161231-9bba2-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Long velvet cat-eye in midnight onyx with warm copper shimmer and a tortoise amber accent ✨\nRaised chrome water-droplets and refined gold fleck add luxe texture.\nA fall scene from your Central Valley nail salon — seasonal inspiration for evening or day.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich color shift catches your eye most?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#StilettoNails",
+      "#VelvetCatEye",
+      "#FallNails"
+    ],
+    "full_caption": "Long velvet cat-eye in midnight onyx with warm copper shimmer and a tortoise amber accent ✨\nRaised chrome water-droplets and refined gold fleck add luxe texture.\nA fall scene from your Central Valley nail salon — seasonal inspiration for evening or day.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich color shift catches your eye most?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #StilettoNails #VelvetCatEye #FallNails",
+    "alt_text": "One hand with medium-dark skin and long almond-shaped nails; nails are glossy black and copper with metallic flake accents and small gold studs on some nails, a thin gold ring on the finger, resting on soft tan fabric. AI-generated image.",
+    "question": "Which color shift catches your eye most?",
+    "welcome": "New to our page? Welcome! What colors are you wearing on your nails this season?",
+    "seo_phrase": "Central Valley nail salon",
+    "style": "luxe",
+    "skin_step": "dark tan",
+    "length": "long",
+    "shape": "stiletto",
+    "skin": "dark tan, deep warm brown",
+    "finish": "velvet cat-eye",
+    "color_focus": null,
+    "design": "One visible hand (dark tan skin) posed on a camel cashmere backdrop. Long stiletto nails, cohesive luxe set: thumb, index and middle are a deep Midnight Onyx velvet cat-eye with a narrow vertical cat-eye shimmer that shifts from ink-blue to warm copper; raised 3D chrome water-droplets (mirrored micro-domes) are scattered across the index and middle, catching highlights like liquid metal. Ring finger is a translucent Smoked Cocoa tortoiseshell amber, layered for depth and finished with delicate Refined Gold Fleck veins and a soft copper-cat-eye halo. Pinky carries a Copper Bronze tip that melts into the Onyx base with a faint metallic sheen and a tiny gold crescent at the cuticle. Finish is plush velvet cat-eye with reflective chrome droplets and hand-placed gold accents for a unified, high-drama fall look.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - Matches reference pose; single hand seen from the back entering from the right, fingers gently curled and stacked (index on top), resting on fabric.",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Midnight Onyx, Smoked Cocoa, Copper Bronze, Refined Gold Fleck. Design: One visible hand (dark tan skin) posed on a camel cashmere backdrop. Long stiletto nails, cohesive luxe set: thumb, index and middle are a deep Midnight Onyx velvet cat-eye with a narrow vertical cat-eye shimmer that shifts from ink-blue to warm copper; raised 3D chrome water-droplets (mirrored micro-domes) are scattered across the index and middle, catching highlights like liquid metal. Ring finger is a translucent Smoked Cocoa tortoiseshell amber, layered for depth and finished with delicate Refined Gold Fleck veins and a soft copper-cat-eye halo. Pinky carries a Copper Bronze tip that melts into the Onyx base with a faint metallic sheen and a tiny gold crescent at the cuticle. Finish is plush velvet cat-eye with reflective chrome droplets and hand-placed gold accents for a unified, high-drama fall look. Technique emphasis: 3D chrome water droplets. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
