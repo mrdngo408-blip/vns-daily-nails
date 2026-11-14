@@ -2574,7 +2574,11 @@
     "image": "posts/2026-11-14-fall-100929-c5db9.jpg",
     "feed_image": "posts/2026-11-14-fall-100929-c5db9-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18455893744195688",
+      "posted": "2026-11-14T12:00:15-08:00",
+      "story_id": "18017346080974989"
+    },
     "caption": "Sheer raspberry jelly, copper cat-eye flash, warm tortoise and antique gold—an autumn jewel set with tiny rhinestone clusters for that luxe finish ✨\nThis season's look channels cozy glamour and the perfect layered shimmer.\nWe create luxury nails in Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nIf you tried this, what would you name the color combo?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -2601,6 +2605,11 @@
     "pose": "03-curled-claw-denim",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Sheer Raspberry Jelly, Copper Cat-Eye Shimmer, Warm Tortoise Amber, Antique Gold Leaf. Design: One visible hand (fair white skin) posed on a cream cable-knit sweater. Long almond nails, sheer jelly finish across the set. Index and pinky wear a translucent Sheer Raspberry Jelly base with a diagonal streak of Copper Cat-Eye Shimmer that flashes bronze-copper as the light moves. Middle finger is a soft raspberry jelly with delicate antique gold leaf veins fanned from the free edge toward the center. Ring finger is the accent: a warm Tortoise Amber 'window' framed in a thin gold leaf outline, finished with a vertical cluster of three small gold-toned rhinestones set near the cuticle. Thumb is translucent with scattered micro Antique Gold Leaf flakes and a subtle horizontal band of Copper Cat-Eye near the tip. All nails read as one cohesive luxe autumn set with glossy, depth-filled jelly shine and polished gold metal accents. Technique emphasis: rhinestone clusters. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122334501086240822",
+      "posted": "2026-11-14T12:00:30-08:00",
+      "story_id": "987953950565907"
+    }
   }
 ]
