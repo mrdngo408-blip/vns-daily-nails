@@ -2497,5 +2497,53 @@
       "posted": "2026-11-13T18:00:29-08:00",
       "story_id": "1552956519902904"
     }
+  },
+  {
+    "id": "2026-11-14-fall-071630-f6947",
+    "date": "2026-11-14",
+    "created": "2026-11-14T07:16:30-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Baroque Autumn Blooms",
+    "palette": [
+      "Burnt Sienna",
+      "Deep Wine",
+      "Champagne Pearl",
+      "Antique Gold"
+    ],
+    "palette_text": "Burnt Sienna, Deep Wine, Champagne Pearl, Antique Gold",
+    "technique": "3D gel florals",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-14-fall-071630-f6947.jpg",
+    "feed_image": "posts/2026-11-14-fall-071630-f6947-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Glazed pearl blooms in deep wine and burnt sienna, lifted with antique gold — luxe fall inspiration. ✨\nSculpted 3D florals, soft tortoise accents and warm metallics on long tapered-square nails.\nLooking for a nail salon in Modesto for seasonal inspo? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhen do you treat yourself to a luxe mani — a seasonal refresh or a special occasion?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#3DGelFlorals",
+      "#TaperedSquare",
+      "#FallNails"
+    ],
+    "full_caption": "Glazed pearl blooms in deep wine and burnt sienna, lifted with antique gold — luxe fall inspiration. ✨\nSculpted 3D florals, soft tortoise accents and warm metallics on long tapered-square nails.\nLooking for a nail salon in Modesto for seasonal inspo? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhen do you treat yourself to a luxe mani — a seasonal refresh or a special occasion?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #3DGelFlorals #TaperedSquare #FallNails",
+    "alt_text": "One dark-skinned hand seen from the back with four long tapered nails in sharp focus; nails feature burgundy, pearl and gold tones with 3D floral decorations and tortoiseshell tips, no rings, resting on brown velvet. AI-generated image.",
+    "question": "When do you treat yourself to a luxe mani — a seasonal refresh or a special occasion?",
+    "welcome": "New here? Welcome to Venetian Nail Spa! What nail style are you loving lately?",
+    "seo_phrase": "nail salon in Modesto",
+    "style": "luxe",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "tapered square",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "glazed pearl",
+    "color_focus": null,
+    "design": "One visible hand (deep dark brown skin of a Black woman) posed on mocha velvet. Long tapered-square nails, glazed pearl finish across the set. Thumb and pinky wear a warm Burnt Sienna pearl base with micro antique-gold leaf flecks at the cuticle and a tiny raised gel bud near the base. Index is a soft Champagne Pearl glaze with a slender tortoiseshell crescent near the free edge, bordered by a thin gold wireline. Middle is a lustrous Deep Wine pearl with a sculpted 3D gel floral in layered Burnt Sienna and Champagne Pearl, center kissed with a subtle cat-eye shimmer bead and scattered gold dust. Ring is the accent: translucent Antique Gold pearl layered with a small tortoise panel and a baroque 3D gel bloom in Deep Wine, edges gilded with delicate gold leaf fragments and a narrow gold metal loop; all nails finished high-shine glazed pearl to unify the set.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - no visible issues — single hand, four nails, natural finger placement, camera angle and depth of field match reference",
+    "pose": "02-diagonal-on-knit",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Burnt Sienna, Deep Wine, Champagne Pearl, Antique Gold. Design: One visible hand (deep dark brown skin of a Black woman) posed on mocha velvet. Long tapered-square nails, glazed pearl finish across the set. Thumb and pinky wear a warm Burnt Sienna pearl base with micro antique-gold leaf flecks at the cuticle and a tiny raised gel bud near the base. Index is a soft Champagne Pearl glaze with a slender tortoiseshell crescent near the free edge, bordered by a thin gold wireline. Middle is a lustrous Deep Wine pearl with a sculpted 3D gel floral in layered Burnt Sienna and Champagne Pearl, center kissed with a subtle cat-eye shimmer bead and scattered gold dust. Ring is the accent: translucent Antique Gold pearl layered with a small tortoise panel and a baroque 3D gel bloom in Deep Wine, edges gilded with delicate gold leaf fragments and a narrow gold metal loop; all nails finished high-shine glazed pearl to unify the set. Technique emphasis: 3D gel florals. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
