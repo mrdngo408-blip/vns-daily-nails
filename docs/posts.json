@@ -2611,5 +2611,53 @@
       "posted": "2026-11-14T12:00:30-08:00",
       "story_id": "987953950565907"
     }
+  },
+  {
+    "id": "2026-11-14-fall-160904-e00d3",
+    "date": "2026-11-14",
+    "created": "2026-11-14T16:09:05-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Twilight Saffron Nocturne",
+    "palette": [
+      "Deep Merlot Cat-Eye",
+      "Burnished Copper Mirror",
+      "Champagne Gold Metallic",
+      "Amber Tortoise Brown"
+    ],
+    "palette_text": "Deep Merlot Cat-Eye, Burnished Copper Mirror, Champagne Gold Metallic, Amber Tortoise Brown",
+    "technique": "cat-eye magnetic gel",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-14-fall-160904-e00d3.jpg",
+    "feed_image": "posts/2026-11-14-fall-160904-e00d3-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Long soft-stiletto luxe for sweater season—deep merlot cat-eye, burnished copper chrome and champagne-gold filigree. ✨\nA single tortoiseshell-tipped ring finger keeps the set modern and wearable.\nDreaming of a new Modesto manicure? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow long do you usually keep a stiletto mani?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#ModestoNails",
+      "#VenetianNailSpaModesto",
+      "#CatEyeNails",
+      "#SoftStiletto",
+      "#FallChrome"
+    ],
+    "full_caption": "Long soft-stiletto luxe for sweater season—deep merlot cat-eye, burnished copper chrome and champagne-gold filigree. ✨\nA single tortoiseshell-tipped ring finger keeps the set modern and wearable.\nDreaming of a new Modesto manicure? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow long do you usually keep a stiletto mani?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration\n.\n#ModestoNails #VenetianNailSpaModesto #CatEyeNails #SoftStiletto #FallChrome",
+    "alt_text": "One hand with medium skin tone rests on brown fabric, seen from above. Almond-shaped medium-length nails in metallic copper/burgundy with a tortoiseshell accent on the ring finger; thin gold rings on two fingers. AI-generated image.",
+    "question": "How long do you usually keep a stiletto mani?",
+    "welcome": "First time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?",
+    "seo_phrase": "Modesto manicure",
+    "style": "luxe",
+    "skin_step": "light tan",
+    "length": "long",
+    "shape": "soft stiletto",
+    "skin": "light tan",
+    "finish": "mirror chrome",
+    "color_focus": null,
+    "design": "One visible hand (light tan skin) posed on a chocolate-brown ribbed knit sweater. Long soft-stiletto nails, ultra-reflective mirror chrome topcoat. Thumb, index and middle are poured in a deep merlot cat-eye magnetic gel: a vertical, shifting streak of light runs down the center of each nail and catches bronze-gold tones as you tilt the hand; tiny champagne-gold microflakes nestle near the cuticles for a luxe glow. Ring finger is the accent: a translucent amber base with painterly tortoiseshell swirls at the tip, overlaid with two delicate, hand-brushed champagne gold leaf filigree strokes running lengthwise for an elegant focal line. Pinky is a burnished copper mirror chrome with a subtle horizontal cat-eye band that flips from copper to warm gold in motion. All nails read as one cohesive luxe set—cat-eye shimmer, warm metallics and a single tortoiseshell statement to anchor the look.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - no issues",
+    "pose": "04-flat-on-knee",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Merlot Cat-Eye, Burnished Copper Mirror, Champagne Gold Metallic, Amber Tortoise Brown. Design: One visible hand (light tan skin) posed on a chocolate-brown ribbed knit sweater. Long soft-stiletto nails, ultra-reflective mirror chrome topcoat. Thumb, index and middle are poured in a deep merlot cat-eye magnetic gel: a vertical, shifting streak of light runs down the center of each nail and catches bronze-gold tones as you tilt the hand; tiny champagne-gold microflakes nestle near the cuticles for a luxe glow. Ring finger is the accent: a translucent amber base with painterly tortoiseshell swirls at the tip, overlaid with two delicate, hand-brushed champagne gold leaf filigree strokes running lengthwise for an elegant focal line. Pinky is a burnished copper mirror chrome with a subtle horizontal cat-eye band that flips from copper to warm gold in motion. All nails read as one cohesive luxe set—cat-eye shimmer, warm metallics and a single tortoiseshell statement to anchor the look. Technique emphasis: cat-eye magnetic gel. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
