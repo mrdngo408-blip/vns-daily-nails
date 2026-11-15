@@ -2744,7 +2744,11 @@
     "image": "posts/2026-11-15-fall-100940-6f7e5.jpg",
     "feed_image": "posts/2026-11-15-fall-100940-6f7e5-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18104318021541559",
+      "posted": "2026-11-15T12:00:14-08:00",
+      "story_id": "18581914900077616"
+    },
     "caption": "This season's fall look: long square swirls in sienna, oxblood and copper, soft matte with glossy gold accents.\nA copper cat-eye band and antique gold-leaf veins give it a warm, luxe glow ✨\nFor the best nails in Modesto, CA, book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWhich jewel tone here would you wear on your toes this season?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -2771,6 +2775,11 @@
     "pose": "06-upright-sleeve",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long square nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Sienna Burnt Orange, Oxblood Merlot, Antique 22K Gold Leaf, Copper Cat-Eye Shimmer. Design: A single hand with dark-tan, deep warm-brown skin is gently fanned on a plush mocha velvet backdrop. Long square nails, all tied together by abstract flowing swirls: soft-matte sienna Burnt Orange bases on thumb and ring, matte oxblood Merlot on index and middle, and a deeper sienna-oxblood blended pinky. Glossy, painterly swirls of oxblood and copper cat-eye shimmer sweep across each nail in an organic, layered motion; thin veins of antique 22K gold leaf are laid into the swirls and pressed flat so they read as glossy metallic ribbons. The ring finger is a refined accent: a glossy tortoiseshell-inspired swirl built of warm sienna and oxblood with delicate gold-leaf highlights and a glossy copper cat-eye crescent near the cuticle. Overall finish is soft matte across the fields with artful glossy swirl accents and metallic shimmer for luxe contrast. Technique emphasis: abstract flowing swirls. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122334672068240822",
+      "posted": "2026-11-15T12:00:32-08:00",
+      "story_id": "1411229924114385"
+    }
   }
 ]
