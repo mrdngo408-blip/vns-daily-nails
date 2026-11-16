@@ -2838,5 +2838,53 @@
       "posted": "2026-11-15T18:00:31-08:00",
       "story_id": "1150306934169359"
     }
+  },
+  {
+    "id": "2026-11-16-fall-082328-ef550",
+    "date": "2026-11-16",
+    "created": "2026-11-16T08:23:28-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Nebula Pearl Ovals",
+    "palette": [
+      "Merlot Night",
+      "Burnt Copper",
+      "Champagne Pearl",
+      "Antique Gold Leaf"
+    ],
+    "palette_text": "Merlot Night, Burnt Copper, Champagne Pearl, Antique Gold Leaf",
+    "technique": "galaxy sparkle ombre",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-16-fall-082328-ef550.jpg",
+    "feed_image": "posts/2026-11-16-fall-082328-ef550-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Long-oval galaxy ombré in Merlot, burnished copper and champagne pearl — glazed and luminous for fall ✨\nA luxe look with a tortoiseshell + antique gold-leaf accent, straight from your local nail spa on McHenry Ave.\nReady to wear this season's inspiration? Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nHow long do you usually keep long ovals like these?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#GalaxyOmbre",
+      "#LongOvalNails",
+      "#FallNails"
+    ],
+    "full_caption": "Long-oval galaxy ombré in Merlot, burnished copper and champagne pearl — glazed and luminous for fall ✨\nA luxe look with a tortoiseshell + antique gold-leaf accent, straight from your local nail spa on McHenry Ave.\nReady to wear this season's inspiration? Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nHow long do you usually keep long ovals like these?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #GalaxyOmbre #LongOvalNails #FallNails",
+    "alt_text": "A single light-skinned left hand seen from the back with almond medium-long nails: burgundy-to-gold shimmer ombre, one marbled tortoiseshell accent with tiny gold star decals; a simple gold band on the ring finger, resting on ribbed brown fabric. AI-generated image.",
+    "question": "How long do you usually keep long ovals like these?",
+    "welcome": "So happy you found us! What nail look are you planning next?",
+    "seo_phrase": "nail spa on McHenry Ave",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "long oval",
+    "skin": "fair white",
+    "finish": "glazed pearl",
+    "color_focus": null,
+    "design": "One visible hand (fair white skin) with long oval nails posed on a chocolate-brown ribbed knit sweater. All nails use a glazed-pearl finish and a galaxy sparkle ombre: index and middle blend Merlot Night at the tips into Champagne Pearl by the cuticle with fine, scattered microglitter stars and a thin band of coppery cat-eye shimmer arcing across the center. Thumb and pinky are glossy Burnt Copper with soft, speckled galaxy flecks and a subtle champagne halo near the cuticle. Ring finger is the accent: a delicate tortoiseshell pocket in warm browns and amber, overlaid with fine Antique Gold Leaf veins and tiny star-sparkle flecks so it reads like a jeweled constellation. Touches of gold metallic at the base of two nails tie the set together.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 10/10 - matches reference pose",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Merlot Night, Burnt Copper, Champagne Pearl, Antique Gold Leaf. Design: One visible hand (fair white skin) with long oval nails posed on a chocolate-brown ribbed knit sweater. All nails use a glazed-pearl finish and a galaxy sparkle ombre: index and middle blend Merlot Night at the tips into Champagne Pearl by the cuticle with fine, scattered microglitter stars and a thin band of coppery cat-eye shimmer arcing across the center. Thumb and pinky are glossy Burnt Copper with soft, speckled galaxy flecks and a subtle champagne halo near the cuticle. Ring finger is the accent: a delicate tortoiseshell pocket in warm browns and amber, overlaid with fine Antique Gold Leaf veins and tiny star-sparkle flecks so it reads like a jeweled constellation. Touches of gold metallic at the base of two nails tie the set together. Technique emphasis: galaxy sparkle ombre. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
