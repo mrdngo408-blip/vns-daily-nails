@@ -3028,7 +3028,11 @@
     "image": "posts/2026-11-17-fall-072807-19b66.jpg",
     "feed_image": "posts/2026-11-17-fall-072807-19b66-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18213516304369254",
+      "posted": "2026-11-17T09:00:10-08:00",
+      "story_id": "18123169502065762"
+    },
     "caption": "Deep-wine to burgundy ombré with mirror-chrome shine and warm gold leaf accents ✨\nA luxe, harvest-season look and fresh design inspiration from your Central Valley nail salon.\nPerfect for long tapered-square nails this fall — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nLeather jacket or cashmere scarf—which would you pair this look with?\n\nJust discovering us? Welcome! What's your go-to manicure style?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3055,6 +3059,11 @@
     "pose": "04-flat-on-knee",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Wine, Rich Burgundy, Antique Gold Mirror, Warm Amber Tortoise. Design: One visible hand (dark tan, deep warm brown skin) gently resting on a cream cable-knit sweater. Long tapered-square nails, soft ombré starting with a glossy deep wine at the cuticle that melts into rich burgundy at the tips; the entire ombré is finished in a high-shine mirror chrome for a glasslike, reflective surface. Accent on the ring finger: a vertical warm-amber tortoiseshell panel framed by irregular antique gold leaf flakes and a thin mirrored-gold crescent at the cuticle. Middle finger carries a narrow gold microline along the outer edge and a faint cat-eye shimmer streak through the center that shifts with movement. Thumb and pinky are pure mirrored deep wine-burgundy ombré, while the index has a whisper of scattered gold leaf near the base—cohesive, luxe and fall-ready. Technique emphasis: soft ombre. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335013612240822",
+      "posted": "2026-11-17T09:00:27-08:00",
+      "story_id": "2412484285955235"
+    }
   }
 ]
