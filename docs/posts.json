@@ -2951,5 +2951,53 @@
       "posted": "2026-11-16T12:27:31-08:00",
       "story_id": "1398392922091319"
     }
+  },
+  {
+    "id": "2026-11-16-fall-161842-663e1",
+    "date": "2026-11-16",
+    "created": "2026-11-16T16:18:42-08:00",
+    "season": "fall",
+    "holiday": "Thanksgiving (warm harvest tones)",
+    "title": "Auburn Luxe Stiletto",
+    "palette": [
+      "Deep Merlot Jelly",
+      "Burnt Sienna Copper",
+      "Warm Tortoiseshell Amber",
+      "Rose Gold Metallic"
+    ],
+    "palette_text": "Deep Merlot Jelly, Burnt Sienna Copper, Warm Tortoiseshell Amber, Rose Gold Metallic",
+    "technique": "velvet cat-eye shimmer",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-16-fall-161842-663e1.jpg",
+    "feed_image": "posts/2026-11-16-fall-161842-663e1-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "This season's stiletto: sheer merlot jelly with a velvet cat-eye shimmer and a warm tortoiseshell ring accent ✨\nRose-gold microlines and gold leaf add a harvest-glow edge.\nLooking for gel nails in Modesto? Book at Venetian Nail Spa (link in bio)\n\nDo you prefer this rich merlot depth or a lighter amber glow for daytime?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#StilettoNails",
+      "#CatEyeNails",
+      "#FallNails"
+    ],
+    "full_caption": "This season's stiletto: sheer merlot jelly with a velvet cat-eye shimmer and a warm tortoiseshell ring accent ✨\nRose-gold microlines and gold leaf add a harvest-glow edge.\nLooking for gel nails in Modesto? Book at Venetian Nail Spa (link in bio)\n\nDo you prefer this rich merlot depth or a lighter amber glow for daytime?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #StilettoNails #CatEyeNails #FallNails",
+    "alt_text": "One medium-toned hand shown from the back with long pointed stiletto nails; three nails metallic burgundy, one tortoiseshell accent nail with gold flecks, and one copper shimmer nail. Two gold rings and a zigzag ring; brown velvet background. AI-generated image.",
+    "question": "Do you prefer this rich merlot depth or a lighter amber glow for daytime?",
+    "welcome": "Welcome to all our new friends! What's your dream nail set?",
+    "seo_phrase": "gel nails in Modesto",
+    "style": "luxe",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "stiletto",
+    "skin": "medium tan",
+    "finish": "sheer jelly",
+    "color_focus": null,
+    "design": "One visible hand (medium tan skin) posed on plush mocha velvet, long stiletto nails with a sheer jelly finish across the set. Thumb, index and middle wear a translucent Deep Merlot Jelly base layered with velvet cat-eye shimmer that throws a vertical, plush 'velvet' halo when tilted. The ring finger is a warm tortoiseshell amber accent: translucent amber-brown swirls, crisp dark amber spots and scattered rose-gold leaf flakes near the tip. Pinky reads as a Burnt Sienna Copper jelly with a soft cat-eye stripe centered down the nail. Delicate rose-gold microlines hug the cuticle of the middle and pinky for a luxe metallic frame. Overall high-gloss, luminous depth with subtle metallic warmth—cohesive, seasonal and refined.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "03-curled-claw-denim",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Merlot Jelly, Burnt Sienna Copper, Warm Tortoiseshell Amber, Rose Gold Metallic. Design: One visible hand (medium tan skin) posed on plush mocha velvet, long stiletto nails with a sheer jelly finish across the set. Thumb, index and middle wear a translucent Deep Merlot Jelly base layered with velvet cat-eye shimmer that throws a vertical, plush 'velvet' halo when tilted. The ring finger is a warm tortoiseshell amber accent: translucent amber-brown swirls, crisp dark amber spots and scattered rose-gold leaf flakes near the tip. Pinky reads as a Burnt Sienna Copper jelly with a soft cat-eye stripe centered down the nail. Delicate rose-gold microlines hug the cuticle of the middle and pinky for a luxe metallic frame. Overall high-gloss, luminous depth with subtle metallic warmth—cohesive, seasonal and refined. Technique emphasis: velvet cat-eye shimmer. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
