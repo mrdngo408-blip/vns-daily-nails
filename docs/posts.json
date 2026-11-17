@@ -3065,5 +3065,53 @@
       "posted": "2026-11-17T09:00:27-08:00",
       "story_id": "2412484285955235"
     }
+  },
+  {
+    "id": "2026-11-17-fall-114002-2adef",
+    "date": "2026-11-17",
+    "created": "2026-11-17T11:40:02-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Molten Cocoa Marble",
+    "palette": [
+      "Espresso Brown",
+      "Warm Tortoise Amber",
+      "Burnished Gold Leaf",
+      "Copper Cat-Eye Shimmer"
+    ],
+    "palette_text": "Espresso Brown, Warm Tortoise Amber, Burnished Gold Leaf, Copper Cat-Eye Shimmer",
+    "technique": "marble with metallic veins",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-17-fall-114002-2adef.jpg",
+    "feed_image": "posts/2026-11-17-fall-114002-2adef-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Molten Cocoa Marble — long almond nails in espresso, tortoise amber and burnished gold. ✨\nSoft-matte fields with glossy metallic veins and a tortoiseshell accent make this your fall statement; find this luxe inspiration at our nail salon in Modesto.\nBook at Venetian Nail Spa — link in bio or call 209-408-8597.\n\nWhich element would make this set yours — an extra tortoise nail or a thin gold edge?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#AlmondNails",
+      "#MarbleMani",
+      "#FallNails"
+    ],
+    "full_caption": "Molten Cocoa Marble — long almond nails in espresso, tortoise amber and burnished gold. ✨\nSoft-matte fields with glossy metallic veins and a tortoiseshell accent make this your fall statement; find this luxe inspiration at our nail salon in Modesto.\nBook at Venetian Nail Spa — link in bio or call 209-408-8597.\n\nWhich element would make this set yours — an extra tortoise nail or a thin gold edge?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #AlmondNails #MarbleMani #FallNails",
+    "alt_text": "One dark brown hand seen from the back with long almond-shaped brown marble nails and gold accents, fingers hanging down and resting on a brown knit fabric; no rings visible. AI-generated image.",
+    "question": "Which element would make this set yours — an extra tortoise nail or a thin gold edge?",
+    "welcome": "Just found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?",
+    "seo_phrase": "nail salon in Modesto",
+    "style": "luxe",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "almond",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "soft matte with glossy accents",
+    "color_focus": null,
+    "design": "One visible hand (deep dark brown skin of a Black woman) posed on a chocolate-brown ribbed knit sweater. Long almond nails, unified as a luxe set with a soft-matte espresso brown base. Thumb, index and middle feature creamy tortoise-amber and warm sienna marble swirls with glossy, fine burnished-gold veins that look like liquid metal running through the stone; the veins are glossy against the matte field. Ring finger is a glossy warm tortoise amber accent with delicate scattered gold-leaf flakes catching light. Pinky wears the matte espresso base with a single vertical copper cat-eye shimmer stripe down the center (glossy), and a tiny glossy gold crescent near the cuticle on the thumb and middle tie the look together. Overall finish is soft-matte with strategic glossy metallic veins and accents for contrast.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 8/10 - none",
+    "pose": "05-draped-over-edge",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Espresso Brown, Warm Tortoise Amber, Burnished Gold Leaf, Copper Cat-Eye Shimmer. Design: One visible hand (deep dark brown skin of a Black woman) posed on a chocolate-brown ribbed knit sweater. Long almond nails, unified as a luxe set with a soft-matte espresso brown base. Thumb, index and middle feature creamy tortoise-amber and warm sienna marble swirls with glossy, fine burnished-gold veins that look like liquid metal running through the stone; the veins are glossy against the matte field. Ring finger is a glossy warm tortoise amber accent with delicate scattered gold-leaf flakes catching light. Pinky wears the matte espresso base with a single vertical copper cat-eye shimmer stripe down the center (glossy), and a tiny glossy gold crescent near the cuticle on the thumb and middle tie the look together. Overall finish is soft-matte with strategic glossy metallic veins and accents for contrast. Technique emphasis: marble with metallic veins. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
