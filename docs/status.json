@@ -1,5 +1,5 @@
 {
-  "ok": false,
-  "message": "Made 0 post(s), then failed: RuntimeError: Every image failed the hand check, so nothing was saved or posted: pose 3/10 - Hand pose differs from reference: fingers point toward the lower-right (mirrored) and are straighter/less curved than the reference; overall hand orientation and finger curl do not match. | pose 4/10 - Hand orientation di",
-  "time": "2026-11-18 07:30 AM PT"
+  "ok": true,
+  "message": "Made 1 new post(s).",
+  "time": "2026-11-18 08:36 AM PT"
 }

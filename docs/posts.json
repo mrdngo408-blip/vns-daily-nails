@@ -3179,5 +3179,53 @@
       "posted": "2026-11-17T18:00:26-08:00",
       "story_id": "1678719963883499"
     }
+  },
+  {
+    "id": "2026-11-18-fall-083659-f665b",
+    "date": "2026-11-18",
+    "created": "2026-11-18T08:36:59-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Crimson Petal Double-Line",
+    "palette": [
+      "Sheer Biscotti",
+      "Porcelain White",
+      "Cranberry Petal",
+      "Antique Gold Leaf"
+    ],
+    "palette_text": "Sheer Biscotti, Porcelain White, Cranberry Petal, Antique Gold Leaf",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-18-fall-083659-f665b.jpg",
+    "feed_image": "posts/2026-11-18-fall-083659-f665b-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "A timeless double-line French updated for fall: crisp porcelain tips, cranberry petal accents and antique gold leaf for quiet luxury 🍁\nThis long oval, high-gloss set is warm, polished and exactly the seasonal inspiration you need — a fresh Modesto manicure.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow many tiny blooms would you add — one elegant accent or a pair for a little extra detail?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#DoubleLineFrench",
+      "#LongOvalNails",
+      "#FallNails"
+    ],
+    "full_caption": "A timeless double-line French updated for fall: crisp porcelain tips, cranberry petal accents and antique gold leaf for quiet luxury 🍁\nThis long oval, high-gloss set is warm, polished and exactly the seasonal inspiration you need — a fresh Modesto manicure.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow many tiny blooms would you add — one elegant accent or a pair for a little extra detail?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #DoubleLineFrench #LongOvalNails #FallNails",
+    "alt_text": "One hand with light-medium skin tone shows long almond nails with a nude base, white double French tips and small burgundy leaf accents; a gold ring with a deep red stone and a thin gold band are on the fingers. Hand rests on brown velvety fabric. AI-generated image.",
+    "question": "How many tiny blooms would you add — one elegant accent or a pair for a little extra detail?",
+    "welcome": "New here? Welcome to Venetian Nail Spa! What nail style are you loving lately?",
+    "seo_phrase": "Modesto manicure",
+    "style": "french",
+    "skin_step": "light tan",
+    "length": "long",
+    "shape": "oval",
+    "skin": "light tan",
+    "finish": "high-gloss",
+    "color_focus": "cranberry, oxblood and gold leaf",
+    "design": "One visible hand with light tan skin posed on a plush mocha velvet backdrop. Long oval nails, high-gloss finish. Each nail wears a sheer biscotti nude base and a crisp porcelain-white smile line tip, executed as a refined double-line French: a clean white tip with a thin antique gold leaf line directly beneath it. Ring finger (accent) shows a tiny seasonal floral near the smile line — three delicate cranberry petal strokes with a deep oxblood dot center and a whisper of gold-leaf flecking at the petal edge; middle finger repeats a single micro petal for balance. Overall effect is classic, elegant and modernly detailed with warm metallic highlights.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - ",
+    "pose": "07-resting-at-table",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting on a soft knit fabric at a cozy table setting, seen from the back, fingers relaxed and gently curved, pointing down toward the lower left and slightly spread so all four nails are clearly visible; the thumb is hidden; a gold ring with a deep red stone on one finger and a thin gold band on another; warm candle-lit, softly blurred background. NAILS: a CLASSIC FRENCH TIP set on oval nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (double-line French with a thin gold line under white tips). Add a small, delicate design accent on only one or two nails (tiny seasonal florals); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Biscotti, Porcelain White, Cranberry Petal, Antique Gold Leaf. Design: One visible hand with light tan skin posed on a plush mocha velvet backdrop. Long oval nails, high-gloss finish. Each nail wears a sheer biscotti nude base and a crisp porcelain-white smile line tip, executed as a refined double-line French: a clean white tip with a thin antique gold leaf line directly beneath it. Ring finger (accent) shows a tiny seasonal floral near the smile line — three delicate cranberry petal strokes with a deep oxblood dot center and a whisper of gold-leaf flecking at the petal edge; middle finger repeats a single micro petal for balance. Overall effect is classic, elegant and modernly detailed with warm metallic highlights. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
