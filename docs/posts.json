@@ -3122,5 +3122,53 @@
       "posted": "2026-11-17T12:00:37-08:00",
       "story_id": "1139185521995848"
     }
+  },
+  {
+    "id": "2026-11-17-fall-162401-196e6",
+    "date": "2026-11-17",
+    "created": "2026-11-17T16:24:02-08:00",
+    "season": "fall",
+    "holiday": "Thanksgiving (warm harvest tones)",
+    "title": "Cider & Silver Halo",
+    "palette": [
+      "Burnt Sienna",
+      "Merlot Wine",
+      "Cream Cashmere",
+      "Antique Silver"
+    ],
+    "palette_text": "Burnt Sienna, Merlot Wine, Cream Cashmere, Antique Silver",
+    "technique": "negative-space design",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-17-fall-162401-196e6.jpg",
+    "feed_image": "posts/2026-11-17-fall-162401-196e6-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "This season's soft-stiletto inspiration — Burnt Sienna & Merlot with Cream Cashmere negative-space crescents. ✨\nVelvet cat-eye halos, a tortoise ring accent and antique-silver flecks for warm Thanksgiving glow.\nSearching for luxury nails in Modesto? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich negative-space detail would you try on your next mani?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoCA",
+      "#SoftStiletto",
+      "#VelvetCatEye",
+      "#ThanksgivingNails"
+    ],
+    "full_caption": "This season's soft-stiletto inspiration — Burnt Sienna & Merlot with Cream Cashmere negative-space crescents. ✨\nVelvet cat-eye halos, a tortoise ring accent and antique-silver flecks for warm Thanksgiving glow.\nSearching for luxury nails in Modesto? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich negative-space detail would you try on your next mani?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoCA #SoftStiletto #VelvetCatEye #ThanksgivingNails",
+    "alt_text": "One hand with light skin tone shown from the back, long almond nails in copper and cream with marbled and half-moon details, two gold gem rings, beige ribbed sleeve and brown fabric background. AI-generated image.",
+    "question": "Which negative-space detail would you try on your next mani?",
+    "welcome": "New to our page? Welcome! What colors are you wearing on your nails this season?",
+    "seo_phrase": "luxury nails in Modesto",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "soft stiletto",
+    "skin": "fair white",
+    "finish": "velvet cat-eye",
+    "color_focus": null,
+    "design": "One visible hand (fair white skin) resting on a camel cashmere backdrop. Long soft-stiletto nails, all unified by a velvet cat-eye finish. Thumb, index and middle are Burnt Sienna cat-eye with a crescent negative-space near the cuticle (bare warm-nude visible) and a soft magnetic halo running down the center. Ring finger is a glossy tortoiseshell accent built over translucent Merlot Wine veins, topped with scattered Antique Silver leaf flecks and a centered velvet cat-eye shimmer. Pinky is Cream Cashmere with a diagonal negative-space window and a thin silver microline tracing the clear edge. Negative-space shapes are crisp and intentional so the natural nail plays as part of the luxe composition.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - No issues; hand orientation, finger arrangement and camera angle match reference.",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Burnt Sienna, Merlot Wine, Cream Cashmere, Antique Silver. Design: One visible hand (fair white skin) resting on a camel cashmere backdrop. Long soft-stiletto nails, all unified by a velvet cat-eye finish. Thumb, index and middle are Burnt Sienna cat-eye with a crescent negative-space near the cuticle (bare warm-nude visible) and a soft magnetic halo running down the center. Ring finger is a glossy tortoiseshell accent built over translucent Merlot Wine veins, topped with scattered Antique Silver leaf flecks and a centered velvet cat-eye shimmer. Pinky is Cream Cashmere with a diagonal negative-space window and a thin silver microline tracing the clear edge. Negative-space shapes are crisp and intentional so the natural nail plays as part of the luxe composition. Technique emphasis: negative-space design. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
