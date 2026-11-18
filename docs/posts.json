@@ -3236,5 +3236,53 @@
       "posted": "2026-11-18T09:00:37-08:00",
       "story_id": "1091030677317834"
     }
+  },
+  {
+    "id": "2026-11-18-fall-102326-71e63",
+    "date": "2026-11-18",
+    "created": "2026-11-18T10:23:26-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Meridian Glow Squares",
+    "palette": [
+      "Oxblood Merlot",
+      "Mocha Glaze",
+      "Gold Chrome Leaf",
+      "Champagne Pearl Glaze"
+    ],
+    "palette_text": "Oxblood Merlot, Mocha Glaze, Gold Chrome Leaf, Champagne Pearl Glaze",
+    "technique": "aura airbrush glow",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-18-fall-102326-71e63.jpg",
+    "feed_image": "posts/2026-11-18-fall-102326-71e63-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Long square oxblood with a warm mocha aura and gilded flashes — pearly and fall-ready. ✨\nAura airbrush glow meets painterly tortoise and gold-chrome leaf for luxe depth.\nLooking for acrylic nails in Modesto inspiration? Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWould you try the aura airbrush glow on your toes, too?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#OxbloodNails",
+      "#LongSquareNails",
+      "#FallMani"
+    ],
+    "full_caption": "Long square oxblood with a warm mocha aura and gilded flashes — pearly and fall-ready. ✨\nAura airbrush glow meets painterly tortoise and gold-chrome leaf for luxe depth.\nLooking for acrylic nails in Modesto inspiration? Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nWould you try the aura airbrush glow on your toes, too?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #OxbloodNails #LongSquareNails #FallMani",
+    "alt_text": "Single left hand with warm tan skin and long coffin nails in glossy burgundy ombré with a tortoiseshell and gold-flake accent on the ring finger; a thin gold band on the ring finger; hand rests on cream cable-knit fabric. AI-generated image.",
+    "question": "Would you try the aura airbrush glow on your toes, too?",
+    "welcome": "Welcome, new friends! What nail trend has caught your eye lately?",
+    "seo_phrase": "acrylic nails in Modesto",
+    "style": "luxe",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "square",
+    "skin": "medium tan",
+    "finish": "glazed pearl",
+    "color_focus": "oxblood, mocha and gold chrome",
+    "design": "One visible hand (medium tan skin) gently resting on a cream cable-knit sweater. Long square nails, all unified with a deep oxblood merlot base and an aura airbrush glow of warm mocha that radiates softly from the cuticle outward, finished in a glazed pearl sheen. Ring finger is the accent: a vertical, painterly tortoiseshell panel — layered translucent amber and mocha — edged with scattered gold chrome leaf flakes clustered near the cuticle. Thumb and pinky carry tiny gold-chrome specks along the free edge to catch light; index and middle show a delicate silver micro-crescent at the base for a modern metallic hint. The overall effect is luminous, plush depth with refined metallic flashes.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long square nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Oxblood Merlot, Mocha Glaze, Gold Chrome Leaf, Champagne Pearl Glaze. Design: One visible hand (medium tan skin) gently resting on a cream cable-knit sweater. Long square nails, all unified with a deep oxblood merlot base and an aura airbrush glow of warm mocha that radiates softly from the cuticle outward, finished in a glazed pearl sheen. Ring finger is the accent: a vertical, painterly tortoiseshell panel — layered translucent amber and mocha — edged with scattered gold chrome leaf flakes clustered near the cuticle. Thumb and pinky carry tiny gold-chrome specks along the free edge to catch light; index and middle show a delicate silver micro-crescent at the base for a modern metallic hint. The overall effect is luminous, plush depth with refined metallic flashes. Technique emphasis: aura airbrush glow. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
