@@ -3293,5 +3293,53 @@
       "posted": "2026-11-18T12:00:31-08:00",
       "story_id": "1819079029239548"
     }
+  },
+  {
+    "id": "2026-11-18-fall-162544-95e06",
+    "date": "2026-11-18",
+    "created": "2026-11-18T16:25:45-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Amber Jelly Glass Luxe",
+    "palette": [
+      "Mocha Sheer Jelly",
+      "Burnt Amber Tortoiseshell",
+      "Espresso Tip Depth",
+      "Antique 22K Gold Leaf"
+    ],
+    "palette_text": "Mocha Sheer Jelly, Burnt Amber Tortoiseshell, Espresso Tip Depth, Antique 22K Gold Leaf",
+    "technique": "jelly glass effect",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-18-fall-162544-95e06.jpg",
+    "feed_image": "posts/2026-11-18-fall-162544-95e06-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Sheer amber jelly glass with tortoiseshell shards and suspended 22K gold — luxe this fall. ✨\nLong ballerina-coffin nails with a smoky espresso cat-eye stripe and warm metallic flecks.\nConsider this as inspiration for the best nails in Modesto, CA. Book at Venetian Nail Spa (link in bio).\n\nWhich detail feels most luxe to you — the suspended gold leaf or the smoky jelly depth?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#JellyGlassNails",
+      "#BallerinaCoffin",
+      "#FallNailInspo"
+    ],
+    "full_caption": "Sheer amber jelly glass with tortoiseshell shards and suspended 22K gold — luxe this fall. ✨\nLong ballerina-coffin nails with a smoky espresso cat-eye stripe and warm metallic flecks.\nConsider this as inspiration for the best nails in Modesto, CA. Book at Venetian Nail Spa (link in bio).\n\nWhich detail feels most luxe to you — the suspended gold leaf or the smoky jelly depth?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #JellyGlassNails #BallerinaCoffin #FallNailInspo",
+    "alt_text": "A single hand with medium-dark brown skin showing four long coffin-shaped nails in brown and amber tones with metallic shimmer, gold flakes and a tortoiseshell accent on the ring finger, resting on a brown knit fabric. AI-generated image.",
+    "question": "Which detail feels most luxe to you — the suspended gold leaf or the smoky jelly depth?",
+    "welcome": "First time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?",
+    "seo_phrase": "best nails in Modesto, CA",
+    "style": "luxe",
+    "skin_step": "dark tan",
+    "length": "long",
+    "shape": "ballerina coffin",
+    "skin": "dark tan, deep warm brown",
+    "finish": "sheer jelly",
+    "color_focus": null,
+    "design": "One visible hand with dark tan, deep warm-brown skin, fingers softly curled and resting on a chocolate-brown ribbed knit sweater. Long ballerina-coffin nails in a sheer jelly finish: all nails start with a translucent mocha-sheer jelly base that lets the natural nail glow. Thumb fades to a deeper espresso tip inside the jelly for a smoked-amber ombré. Index and pinky hold tiny suspended warm metallic flecks that catch light like jewels beneath glass. Middle nail features a vertical smoky espresso cat-eye stripe with subtle magnetic shimmer embedded in the jelly. Ring finger is the accent: layered burnt-amber tortoiseshell shards artfully encapsulated in clear jelly glass, with delicate antique 22K gold-leaf veins seeming to float between the layers. Overall high-shine, softly rounded edges, and a luxe suspended-glass depth across the set.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "02-diagonal-on-knit",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long ballerina coffin nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Mocha Sheer Jelly, Burnt Amber Tortoiseshell, Espresso Tip Depth, Antique 22K Gold Leaf. Design: One visible hand with dark tan, deep warm-brown skin, fingers softly curled and resting on a chocolate-brown ribbed knit sweater. Long ballerina-coffin nails in a sheer jelly finish: all nails start with a translucent mocha-sheer jelly base that lets the natural nail glow. Thumb fades to a deeper espresso tip inside the jelly for a smoked-amber ombré. Index and pinky hold tiny suspended warm metallic flecks that catch light like jewels beneath glass. Middle nail features a vertical smoky espresso cat-eye stripe with subtle magnetic shimmer embedded in the jelly. Ring finger is the accent: layered burnt-amber tortoiseshell shards artfully encapsulated in clear jelly glass, with delicate antique 22K gold-leaf veins seeming to float between the layers. Overall high-shine, softly rounded edges, and a luxe suspended-glass depth across the set. Technique emphasis: jelly glass effect. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
