@@ -3407,5 +3407,53 @@
       "posted": "2026-11-19T09:00:30-08:00",
       "story_id": "1679092173742003"
     }
+  },
+  {
+    "id": "2026-11-19-fall-102735-3d961",
+    "date": "2026-11-19",
+    "created": "2026-11-19T10:27:35-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Ochre Brushstroke Coffins",
+    "palette": [
+      "Copper Bronze",
+      "Deep Wine Merlot",
+      "Mocha Cream",
+      "Antique Gold Leaf"
+    ],
+    "palette_text": "Copper Bronze, Deep Wine Merlot, Mocha Cream, Antique Gold Leaf",
+    "technique": "abstract painterly brush strokes",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-19-fall-102735-3d961.jpg",
+    "feed_image": "posts/2026-11-19-fall-102735-3d961-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Copper bronze, deep wine merlot and mocha cream in bold painterly strokes—soft matte with glossy highlights and antique gold leaf. 🍁\nTortoiseshell ring accent and a glossy cat-eye flash add autumn depth.\nFind this season's inspiration at the nail spa on McHenry Ave.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you love long coffin nails for fall, or are you thinking of changing shapes this season?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#CoffinNails",
+      "#MatteAndGloss",
+      "#FallNails"
+    ],
+    "full_caption": "Copper bronze, deep wine merlot and mocha cream in bold painterly strokes—soft matte with glossy highlights and antique gold leaf. 🍁\nTortoiseshell ring accent and a glossy cat-eye flash add autumn depth.\nFind this season's inspiration at the nail spa on McHenry Ave.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you love long coffin nails for fall, or are you thinking of changing shapes this season?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #CoffinNails #MatteAndGloss #FallNails",
+    "alt_text": "A single fair-skinned hand with long almond-shaped nails: a glossy burgundy middle nail, a tortoiseshell ring nail with gold foil, and nude nails with brown-gold marble accents. Gold rings on index and ring fingers, hand resting on brown velvety fabric. AI-generated image.",
+    "question": "Do you love long coffin nails for fall, or are you thinking of changing shapes this season?",
+    "welcome": "Hi and welcome if you're new here! What's the last nail color you fell in love with?",
+    "seo_phrase": "nail spa on McHenry Ave",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "coffin",
+    "skin": "fair white",
+    "finish": "soft matte with glossy accents",
+    "color_focus": null,
+    "design": "One visible hand (fair white skin) posed on plush mocha velvet, long coffin nails. Soft-matte mocha cream bases on thumb and pinkie with broad, abstract painterly brushstrokes in copper bronze sweeping diagonally from cuticle to tip. Index and middle wear deep wine merlot matte with glossy, freehand copper strokes layered on top for painterly contrast. Ring finger is the accent: a glossy tortoiseshell vignette worked into the matte base, finished with thin antique gold leaf veins and a subtle glossy cat-eye shimmer flash that catches the light. Fine glossy accents trace parts of the brushstrokes for a raised wet-look against the velvet-matte field, and tiny gold leaf fragments add warm metallic punctuation without overpowering the set.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "04-flat-on-knee",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long coffin nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Copper Bronze, Deep Wine Merlot, Mocha Cream, Antique Gold Leaf. Design: One visible hand (fair white skin) posed on plush mocha velvet, long coffin nails. Soft-matte mocha cream bases on thumb and pinkie with broad, abstract painterly brushstrokes in copper bronze sweeping diagonally from cuticle to tip. Index and middle wear deep wine merlot matte with glossy, freehand copper strokes layered on top for painterly contrast. Ring finger is the accent: a glossy tortoiseshell vignette worked into the matte base, finished with thin antique gold leaf veins and a subtle glossy cat-eye shimmer flash that catches the light. Fine glossy accents trace parts of the brushstrokes for a raised wet-look against the velvet-matte field, and tiny gold leaf fragments add warm metallic punctuation without overpowering the set. Technique emphasis: abstract painterly brush strokes. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
