@@ -3350,5 +3350,53 @@
       "posted": "2026-11-18T18:00:31-08:00",
       "story_id": "1688528876394911"
     }
+  },
+  {
+    "id": "2026-11-19-fall-073134-d04d8",
+    "date": "2026-11-19",
+    "created": "2026-11-19T07:31:34-08:00",
+    "season": "fall",
+    "holiday": "Thanksgiving (warm harvest tones)",
+    "title": "Maple Mosaic Mirror",
+    "palette": [
+      "Wine Mirror Chrome",
+      "Burnt Maple Tortoise",
+      "Olive-Umber Cat-Eye",
+      "Antique Gold Chrome"
+    ],
+    "palette_text": "Wine Mirror Chrome, Burnt Maple Tortoise, Olive-Umber Cat-Eye, Antique Gold Chrome",
+    "technique": "gold chrome stained-glass outlines",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-19-fall-073134-d04d8.jpg",
+    "feed_image": "posts/2026-11-19-fall-073134-d04d8-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Long oval mirror chrome panels in wine, olive cat-eye and burnt tortoise, edged in antique gold ✨\nA luxe stained-glass look for this season — Modesto nail designs you can wear.\nDesign inspiration to try now. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nIs long oval your go-to shape for luxe fall manis?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#MirrorChrome",
+      "#LongOvalNails",
+      "#ThanksgivingNails"
+    ],
+    "full_caption": "Long oval mirror chrome panels in wine, olive cat-eye and burnt tortoise, edged in antique gold ✨\nA luxe stained-glass look for this season — Modesto nail designs you can wear.\nDesign inspiration to try now. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nIs long oval your go-to shape for luxe fall manis?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #MirrorChrome #LongOvalNails #ThanksgivingNails",
+    "alt_text": "One hand with dark brown skin shows long pointed stiletto nails in olive green and burgundy panels outlined in thin gold, one nail with tortoiseshell detail. Two gold rings adorn the fingers and a tan fuzzy fabric is in the background. AI-generated image.",
+    "question": "Is long oval your go-to shape for luxe fall manis?",
+    "welcome": "New to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?",
+    "seo_phrase": "Modesto nail designs",
+    "style": "luxe",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "long oval",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "mirror chrome",
+    "color_focus": null,
+    "design": "One visible hand (deep dark brown skin) posed on a camel cashmere backdrop. Long oval nails, mirror chrome finish. Each nail reads as a stained-glass panel: thin antique gold chrome outlines trace irregular mosaic shapes across the nail surface. Panels alternate rich Wine Mirror Chrome and shimmering Olive-Umber Cat-Eye, with Burnt Maple Tortoise panels layered like translucent glass on the ring finger accent. The ring finger wears a larger tortoiseshell panel flecked with tiny antique-gold specks; the thumb shows a soft cat-eye flash through a wine panel. All panels are high-gloss mirror chrome, the gold chrome outlines crisp and reflective, giving a luxe, architectural mosaic feel.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "03-curled-claw-denim",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Wine Mirror Chrome, Burnt Maple Tortoise, Olive-Umber Cat-Eye, Antique Gold Chrome. Design: One visible hand (deep dark brown skin) posed on a camel cashmere backdrop. Long oval nails, mirror chrome finish. Each nail reads as a stained-glass panel: thin antique gold chrome outlines trace irregular mosaic shapes across the nail surface. Panels alternate rich Wine Mirror Chrome and shimmering Olive-Umber Cat-Eye, with Burnt Maple Tortoise panels layered like translucent glass on the ring finger accent. The ring finger wears a larger tortoiseshell panel flecked with tiny antique-gold specks; the thumb shows a soft cat-eye flash through a wine panel. All panels are high-gloss mirror chrome, the gold chrome outlines crisp and reflective, giving a luxe, architectural mosaic feel. Technique emphasis: gold chrome stained-glass outlines. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
