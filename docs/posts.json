@@ -3483,7 +3483,11 @@
     "image": "posts/2026-11-19-fall-174933-3f730.jpg",
     "feed_image": "posts/2026-11-19-fall-174933-3f730-feed.jpg",
     "slot": "evening",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18252581221311557",
+      "posted": "2026-11-19T18:00:16-08:00",
+      "story_id": "17911893102668779"
+    },
     "caption": "Timeless French, updated with a gilded accent. ✨\nSheer rose bisque base, milky porcelain tips, and a tiny warm 22K gold bow create a refined Modesto nail art moment.\nSeasonal inspo for long almond nails — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer your French tips subtle or with a single signature accent?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3510,6 +3514,11 @@
     "pose": "05-draped-over-edge",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: a CLASSIC FRENCH TIP set on medium almond nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (soft milky white tips). Add a small, delicate design accent on only one or two nails (a tiny bow); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: soft rose bisque, milky porcelain white, warm 22K gold. Design: One visible hand with light-tan skin rests on a cream cable-knit sweater. Long, medium-almond nails finished high-gloss. Every nail wears a sheer soft-rose bisque base with a crisp, soft milky white smile line across the tip (classic French). The ring finger is the delicate accent: a tiny warm 22K gold bow placed at the base center above a whisper of gold micro-dot; all lines are precise and refined so the set reads as one coordinated, elegant salon mani. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335417586240822",
+      "posted": "2026-11-19T18:00:34-08:00",
+      "story_id": "1120937610842256"
+    }
   }
 ]
