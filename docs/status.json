@@ -1,5 +1,5 @@
 {
-  "ok": false,
-  "message": "Made 0 post(s), then failed: RuntimeError: Every image failed the hand check, so nothing was saved or posted: pose 4/10 - Pose mismatch: the hand is resting on knitted fabric rather than draped over the top edge of a smooth object; thumb is not partly visible at the side as in the reference. | pose 6/10 - Hand pose differs from reference: th",
-  "time": "2026-11-19 04:20 PM PT"
+  "ok": true,
+  "message": "Made 1 new post(s).",
+  "time": "2026-11-19 05:49 PM PT"
 }
