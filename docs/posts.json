@@ -3597,7 +3597,11 @@
     "image": "posts/2026-11-20-fall-103053-7c39c.jpg",
     "feed_image": "posts/2026-11-20-fall-103053-7c39c-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18134728606762367",
+      "posted": "2026-11-20T12:00:15-08:00",
+      "story_id": "18176827360461435"
+    },
     "caption": "Wine, cream and antique gold—hand-painted fine-line florals over a glazed-pearl cabernet base with a cream accent and gilded foil details 🌿\nA luxe Central Valley nail salon take on fall florals—long tapered-square, warm and wearable.\nBook at Venetian Nail Spa — link in bio or call 209-408-8597\n\nWhich finger gets the fine-line garden on you?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3624,6 +3628,11 @@
     "pose": "07-resting-at-table",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting on a soft knit fabric at a cozy table setting, seen from the back, fingers relaxed and gently curved, pointing down toward the lower left and slightly spread so all four nails are clearly visible; the thumb is hidden; a gold ring with a deep red stone on one finger and a thin gold band on another; warm candle-lit, softly blurred background. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cabernet Wine, Cream Cashmere, Antique Gold Foil, Amber Tortoise Accent. Design: One visible hand (dark tan, deep warm brown skin) posed on a camel cashmere background. Long tapered-square nails, glazed-pearl finish. Thumb, index and middle are a luminous cabernet-wine base with ultra-fine hand-painted cream vines and tiny silver bead centers running diagonally from cuticle to tip. Ring finger is a cream-cashmere canvas with a detailed hand-painted cabernet bloom, antique gold foil petals layered into the flower and a whisper of amber tortoise at the free edge. Pinkie wears a warm amber-tortoise micro-swatch edged with thin gold-foil veins and a soft cat-eye shimmer halo under the pearl glaze, tying the set together as one cohesive luxe look. Technique emphasis: hand-painted fine-line florals. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335558394240822",
+      "posted": "2026-11-20T12:00:32-08:00",
+      "story_id": "1145673001659756"
+    }
   }
 ]
