@@ -3540,7 +3540,11 @@
     "image": "posts/2026-11-20-fall-073005-fd564.jpg",
     "feed_image": "posts/2026-11-20-fall-073005-fd564-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17917118940280914",
+      "posted": "2026-11-20T09:00:09-08:00",
+      "story_id": "18115345715155514"
+    },
     "caption": "Long sculpted skittles in sepia fall tones — velvet cat-eye Bordeaux, mocha truffle and amber tortoise.\nChampagne-gold accents, hand-painted tortoiseshell and soft magnetic shimmer for a cozy-luxe finish ✨\nTry this season's look as your next set of gel nails in Modesto — book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you prefer your fall skittle sets richly matched or boldly mixed?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3567,6 +3571,11 @@
     "pose": "06-upright-sleeve",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Bordeaux Velvet Cat-Eye, Amber Tortoise, Mocha Truffle, Champagne Gold Metallic. Design: One visible hand (medium tan skin) posed on a chocolate-brown ribbed knit sweater. Long stiletto nails, mismatched skittle shades unified by a velvet cat-eye finish: thumb in deep Bordeaux velvet cat-eye with a subtle diagonal champagne-gold micro-edge; index in warm Mocha Truffle velvet cat-eye with tiny champagne-gold flecks near the tip; middle rendered as a soft Amber Tortoise pattern reinterpreted in velvet cat-eye shimmer with delicate, hand-brushed champagne-gold veins; ring finger a rich espresso-Bordeaux cat-eye base finished with stacked, hammered champagne-gold crescents near the cuticle as the accent nail; pinky a lighter mocha-to-biscotti cat-eye with a slender, centered champagne-gold pinstripe. All nails long, sculpted, cohesive luxe styling with the champagne-gold metal accents tying the skittle mix together. Technique emphasis: mismatched skittle shades. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335534526240822",
+      "posted": "2026-11-20T09:00:24-08:00",
+      "story_id": "1501836781795444"
+    }
   }
 ]
