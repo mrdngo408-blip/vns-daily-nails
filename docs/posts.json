@@ -3654,7 +3654,11 @@
     "image": "posts/2026-11-20-fall-162309-6d7e2.jpg",
     "feed_image": "posts/2026-11-20-fall-162309-6d7e2-feed.jpg",
     "slot": "evening",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17994576797861376",
+      "posted": "2026-11-20T18:00:12-08:00",
+      "story_id": "18110205814970168"
+    },
     "caption": "Mocha-glaze jelly, burnt copper cat-eye, and an amber tortoise accent — glazed pearl chrome perfection. ✨\nA seasonal muse from your trusted nail salon in Modesto, pairing soft translucence with silver-leaf flashes.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich finish do you prefer — soft pearl glow or high-shine chrome?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3681,6 +3685,11 @@
     "pose": "01-curled-over-fabric",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Mocha Glaze Jelly, Burnt Copper Cat-Eye, Amber Tortoise Brown, Antique Silver Leaf. Design: One visible hand of a Black woman with deep dark brown skin, long almond nails finished in a sheer jelly base with a glazed pearl chrome overlay. Thumb, index and middle wear translucent mocha-glaze jelly shot through with a warm burnt-copper cat-eye stripe that shifts with movement; the middle finger features a fine vertical ribbon of antique silver leaf from cuticle toward center. Ring finger is the accent: an amber tortoiseshell panel suspended in glossy jelly with a soft copper cat-eye band and scattered silver-leaf flecks near the tip. Pinky shows the same mocha jelly base with a tiny crescent of silver leaf at the cuticle and a diluted pearl sheen. All nails read as one coordinated luxe set—long almond silhouette, luminous glazed-pearl chrome finish, and cohesive warm metallic highlights. Technique emphasis: glazed pearl chrome. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335597208240822",
+      "posted": "2026-11-20T18:00:30-08:00",
+      "story_id": "4421498034767470"
+    }
   }
 ]
