@@ -3711,7 +3711,11 @@
     "image": "posts/2026-11-21-fall-072156-0dd5c.jpg",
     "feed_image": "posts/2026-11-21-fall-072156-0dd5c-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18119786771098867",
+      "posted": "2026-11-21T09:00:15-08:00",
+      "story_id": "17962450347252891"
+    },
     "caption": "Deep cherry mirror chrome with a single tortoiseshell + champagne-gold flake accent — fall opulence in every angle. ✨\nThis is fall's luxe inspiration; we do luxury nails in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWould you match your lip to the cherry tones or keep your makeup neutral?\n\nJust discovering us? Welcome! What's your go-to manicure style?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3738,6 +3742,11 @@
     "pose": "02-diagonal-on-knit",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cherry Red Jelly, Black Cherry Mirror Chrome, Champagne Gold Leaf, Warm Amber Tortoise Brown. Design: One visible hand (fair white skin) gently resting on a cream cable-knit sweater. Long soft-stiletto nails, high-reflective mirror chrome finish. Thumb, index, middle and pinky are a deep black-cherry mirror chrome — liquid, high-shine surfaces that catch warm light. Ring finger is the accent: a layered translucent cherry-red jelly base with hand-painted tortoiseshell spots in warm amber and espresso brown, scattered champagne-gold leaf flecks pressed into the top layer and sealed with a glossy finish. A hairline champagne-gold microcrescent at the cuticle of the ring finger ties the set together for a cohesive, luxe fall look. Technique emphasis: tortoiseshell with gold flecks. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335717022240822",
+      "posted": "2026-11-21T09:00:36-08:00",
+      "story_id": "2152462472035392"
+    }
   }
 ]
