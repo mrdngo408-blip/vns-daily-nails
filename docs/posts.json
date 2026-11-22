@@ -3919,5 +3919,53 @@
       "posted": "2026-11-22T09:00:23-08:00",
       "story_id": "1150491547567192"
     }
+  },
+  {
+    "id": "2026-11-22-fall-101602-0d783",
+    "date": "2026-11-22",
+    "created": "2026-11-22T10:16:02-08:00",
+    "season": "fall",
+    "holiday": "Thanksgiving (warm harvest tones)",
+    "title": "Cabernet Crescent French",
+    "palette": [
+      "Deep Merlot",
+      "Warm Amber Tortoise",
+      "Champagne Pearl Glaze",
+      "Rose Gold Metallic"
+    ],
+    "palette_text": "Deep Merlot, Warm Amber Tortoise, Champagne Pearl Glaze, Rose Gold Metallic",
+    "technique": "modern French tip variation",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-22-fall-101602-0d783.jpg",
+    "feed_image": "posts/2026-11-22-fall-101602-0d783-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "Long oval glazed-pearl French with deep merlot tips and a tortoise accent for a Thanksgiving glow. 🍂\nSoft champagne base, rose-gold edges, and tiny gold-leaf flecks—rich, warm and utterly luxe.\nModesto nail designs—seasonal inspiration for your holiday look.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWould you add a tiny hand-painted wheat stalk on the accent nail for Thanksgiving?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoCA",
+      "#MerlotFrench",
+      "#LongOvalNails",
+      "#ThanksgivingNails"
+    ],
+    "full_caption": "Long oval glazed-pearl French with deep merlot tips and a tortoise accent for a Thanksgiving glow. 🍂\nSoft champagne base, rose-gold edges, and tiny gold-leaf flecks—rich, warm and utterly luxe.\nModesto nail designs—seasonal inspiration for your holiday look.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWould you add a tiny hand-painted wheat stalk on the accent nail for Thanksgiving?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoCA #MerlotFrench #LongOvalNails #ThanksgivingNails",
+    "alt_text": "One dark-skinned hand with long almond nails showing sheer nude bases and deep burgundy French tips with a tortoiseshell accent on one nail, two gold rhinestone rings and a cream ribbed sweater background. AI-generated image.",
+    "question": "Would you add a tiny hand-painted wheat stalk on the accent nail for Thanksgiving?",
+    "welcome": "Welcome, new friends! What nail trend has caught your eye lately?",
+    "seo_phrase": "Modesto nail designs",
+    "style": "luxe",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "long oval",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "glazed pearl",
+    "color_focus": null,
+    "design": "One visible hand of a Black woman with deep dark brown skin, gently resting on a cream cable-knit sweater. Long oval nails, all finished in a glazed pearl sheen. Base is a sheer champagne-pearl mocha glaze; tips are a modern crescent French in deep merlot (soft, rounded smile line). A hairline rose-gold metallic edge separates each merlot tip from the pearly base. Ring finger is the accent: an amber tortoiseshell diagonal French tip layered over the same pearl base with tiny, scattered 22k gold-leaf flecks and a slim vertical rose-gold sliver at the cuticle. Middle nail features a subtle deep-plum cat-eye shimmer focused through the tip for depth and movement. Overall luxe, wearable long-oval set with warm harvest tones and a delicate touch of metallic.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Merlot, Warm Amber Tortoise, Champagne Pearl Glaze, Rose Gold Metallic. Design: One visible hand of a Black woman with deep dark brown skin, gently resting on a cream cable-knit sweater. Long oval nails, all finished in a glazed pearl sheen. Base is a sheer champagne-pearl mocha glaze; tips are a modern crescent French in deep merlot (soft, rounded smile line). A hairline rose-gold metallic edge separates each merlot tip from the pearly base. Ring finger is the accent: an amber tortoiseshell diagonal French tip layered over the same pearl base with tiny, scattered 22k gold-leaf flecks and a slim vertical rose-gold sliver at the cuticle. Middle nail features a subtle deep-plum cat-eye shimmer focused through the tip for depth and movement. Overall luxe, wearable long-oval set with warm harvest tones and a delicate touch of metallic. Technique emphasis: modern French tip variation. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
