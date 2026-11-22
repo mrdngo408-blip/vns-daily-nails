@@ -3882,7 +3882,11 @@
     "image": "posts/2026-11-22-fall-072159-335ac.jpg",
     "feed_image": "posts/2026-11-22-fall-072159-335ac-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "17961309570267313",
+      "posted": "2026-11-22T09:00:09-08:00",
+      "story_id": "18108317885529075"
+    },
     "caption": "Smoky marble, burnished copper and wine with whispers of gold — a luxe Thanksgiving mani. 🍂\nLong ballerina-coffin shape finished in velvet cat-eye shimmer; perfect for harvest gatherings and holiday photos.\nFind the best nails in Modesto, CA at Venetian Nail Spa — book via link in bio or call 209-408-8597.\n\nWhich part of this mani feels most like Thanksgiving to you?\n\nNew here? Welcome to Venetian Nail Spa! What nail style are you loving lately?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -3909,6 +3913,11 @@
     "pose": "05-draped-over-edge",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long ballerina coffin nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Wine Ember, Burnt Copper, Espresso Truffle, Antique Gold Leaf. Design: One visible hand with dark tan, deep warm-brown skin, palm-down and slightly splayed on rich mocha-velvet fabric. Long ballerina-coffin nails, all coordinated: thumb and pinkie are solid Wine Ember with a velvet cat-eye shimmer that shifts in the light; index and middle feature smoky marble—layered translucent Wine Ember and Burnt Copper swirled with Espresso Truffle smoky veins, finished with a soft velvet cat-eye luminosity; ring finger is a warm tortoiseshell accent in amber and espresso tones, encapsulated with delicate Antique Gold Leaf veins and a thin gold metal inlay at the cuticle for sculpted shine. All nails are long, sculpted ballerina tips with warm metallic highlights tying the set together. Technique emphasis: smoky marble. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335897838240822",
+      "posted": "2026-11-22T09:00:23-08:00",
+      "story_id": "1150491547567192"
+    }
   }
 ]
