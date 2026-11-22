@@ -3805,5 +3805,53 @@
       "posted": "2026-11-21T12:00:28-08:00",
       "story_id": "1713548200188505"
     }
+  },
+  {
+    "id": "2026-11-21-fall-161343-6a255",
+    "date": "2026-11-21",
+    "created": "2026-11-21T16:13:43-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Black Cherry Knit Squares",
+    "palette": [
+      "Black Cherry",
+      "Burgundy Merlot",
+      "Rose Gold Metallic",
+      "Champagne Gold Leaf"
+    ],
+    "palette_text": "Black Cherry, Burgundy Merlot, Rose Gold Metallic, Champagne Gold Leaf",
+    "technique": "cozy sweater-knit 3D texture",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-21-fall-161343-6a255.jpg",
+    "feed_image": "posts/2026-11-21-fall-161343-6a255-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Black cherry and burgundy threaded with rose-gold — cozy knit meets luxe shine. 🍂\nLong square, soft-matte nails with a 3D sweater-knit accent and a glossy tortoiseshell + champagne-gold leaf ring.\nLooking for acrylic nails in Modesto? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHave you tried 3D sweater-knit texture on long square nails before?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#SweaterKnitNails",
+      "#BlackCherryNails",
+      "#SoftMatteSquares"
+    ],
+    "full_caption": "Black cherry and burgundy threaded with rose-gold — cozy knit meets luxe shine. 🍂\nLong square, soft-matte nails with a 3D sweater-knit accent and a glossy tortoiseshell + champagne-gold leaf ring.\nLooking for acrylic nails in Modesto? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHave you tried 3D sweater-knit texture on long square nails before?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #SweaterKnitNails #BlackCherryNails #SoftMatteSquares",
+    "alt_text": "One left hand with medium skin tone and long coffin nails; matte burgundy polish on most nails, one tortoiseshell accent with gold flakes, and one cable-knit textured nail. Two gold rings and a thumb band; hand rests on tan fabric and a sweater cuff. AI-generated image.",
+    "question": "Have you tried 3D sweater-knit texture on long square nails before?",
+    "welcome": "New to our page? Welcome! What colors are you wearing on your nails this season?",
+    "seo_phrase": "acrylic nails in Modesto",
+    "style": "luxe",
+    "skin_step": "medium tan",
+    "length": "long",
+    "shape": "square",
+    "skin": "medium tan",
+    "finish": "soft matte with glossy accents",
+    "color_focus": "black cherry, burgundy and rose gold",
+    "design": "One visible hand (medium tan skin) with long square nails, posed lightly draped over a folded camel cashmere scarf. Thumb, index and pinkie are a soft-matte Black Cherry base shot through with a narrow glossy rose-gold cat-eye spine down the center for subtle shimmer. Middle finger is a deep Burgundy Merlot soft-matte with a raised 3D sweater-knit gel texture in matching burgundy — tiny raised stitches look plush and finely threaded with micro rose-gold accents. Ring finger is the glossy accent: a translucent black-cherry tortoiseshell (warm amber + burgundy swirls) layered with scattered Champagne Gold leaf flakes near the cuticle and a high-gloss finish for contrast. Overall finish is soft matte with selective glossy accents and delicate metallic warmth, photographed on camel cashmere background to emphasize luxe fall tones.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - no issues",
+    "pose": "04-flat-on-knee",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long square nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with champagne gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Black Cherry, Burgundy Merlot, Rose Gold Metallic, Champagne Gold Leaf. Design: One visible hand (medium tan skin) with long square nails, posed lightly draped over a folded camel cashmere scarf. Thumb, index and pinkie are a soft-matte Black Cherry base shot through with a narrow glossy rose-gold cat-eye spine down the center for subtle shimmer. Middle finger is a deep Burgundy Merlot soft-matte with a raised 3D sweater-knit gel texture in matching burgundy — tiny raised stitches look plush and finely threaded with micro rose-gold accents. Ring finger is the glossy accent: a translucent black-cherry tortoiseshell (warm amber + burgundy swirls) layered with scattered Champagne Gold leaf flakes near the cuticle and a high-gloss finish for contrast. Overall finish is soft matte with selective glossy accents and delicate metallic warmth, photographed on camel cashmere background to emphasize luxe fall tones. Technique emphasis: cozy sweater-knit 3D texture. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
