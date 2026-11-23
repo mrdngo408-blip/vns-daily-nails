@@ -3996,7 +3996,11 @@
     "image": "posts/2026-11-22-fall-161918-9c9c9.jpg",
     "feed_image": "posts/2026-11-22-fall-161918-9c9c9-feed.jpg",
     "slot": "evening",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18132474481845398",
+      "posted": "2026-11-22T18:00:09-08:00",
+      "story_id": "18026507075720907"
+    },
     "caption": "This season's inspiration: crimson jelly coffins with burgundy velvet cat-eye, antique gold leaf and a classic tartan accent. Find our nail spa on McHenry Ave — a Thanksgiving-ready, luxe look ✨\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWould you prefer the tartan in delicate pinstripes or bold boxy lines?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -4023,6 +4027,11 @@
     "pose": "07-resting-at-table",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting on a soft knit fabric at a cozy table setting, seen from the back, fingers relaxed and gently curved, pointing down toward the lower left and slightly spread so all four nails are clearly visible; the thumb is hidden; a gold ring with a deep red stone on one finger and a thin gold band on another; warm candle-lit, softly blurred background. NAILS: long coffin nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Burgundy Velvet Cat-Eye, Merlot Sheer Jelly, Antique Gold Leaf, Chocolate Tortoise Brown. Design: One visible hand with fair white skin, gently splayed on a chocolate-brown ribbed knit sweater. Long coffin nails, all finished in a sheer jelly shine. Thumb, index and middle nails wear a translucent merlot jelly base shot through with burgundy velvet cat-eye pigment that shifts lengthwise; each of these nails has micro antique-gold leaf flakes clustered near the cuticle and a whisper-thin gold edge along the free edge. Ring finger is a classic plaid/tartan accent rendered on a semi-opaque wine-cream jelly: crisp deep-burgundy and chocolate crosshatch lines form the tartan, with ultra-fine gold striping at every intersection and tiny gold-leaf squares for subtle luxe highlights. Pinky features a refined chocolate tortoise quarter-moon at the base, warm amber flecks and a dusting of gold leaf that ties into the set. Overall look: cohesive rich burgundy cat-eye depth, warm tortoise warmth and luxe antique-gold accents, glossy sheer jelly finish on long coffin silhouettes. Technique emphasis: classic plaid / tartan accent nail. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122335959638240822",
+      "posted": "2026-11-22T18:00:30-08:00",
+      "story_id": "2528555154337031"
+    }
   }
 ]
