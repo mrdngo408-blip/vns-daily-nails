@@ -1,5 +1,5 @@
 {
   "ok": false,
-  "message": "Made 0 post(s), then failed: RuntimeError: Every image failed the hand check, so nothing was saved or posted: pose 3/10 - Hand pose does not match reference: fingers are straighter and the hand is oriented upward/diagonally different rather than relaxed and pointing down toward the lower-left; camera angle/orientation mismatch. | pose 3/10 -",
-  "time": "2026-11-23 10:26 AM PT"
+  "message": "Made 0 post(s), then failed: RuntimeError: Every image failed the hand check, so nothing was saved or posted: pose 3/10 - Hand pose differs from reference: fingers and nail tips point upward/away instead of down toward the lower-left; overall orientation and camera angle do not match. | pose 4/10 - Pose mismatch: fingers/tips point upward/aw",
+  "time": "2026-11-23 11:38 AM PT"
 }
