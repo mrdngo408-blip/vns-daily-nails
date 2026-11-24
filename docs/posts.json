@@ -4110,7 +4110,9 @@
     "image": "posts/2026-11-23-fall-162500-b923d.jpg",
     "feed_image": "posts/2026-11-23-fall-162500-b923d-feed.jpg",
     "slot": "evening",
-    "instagram": null,
+    "instagram": {
+      "error": "Instagram API error 400: {\"error\":{\"message\":\"Media ID is not available\",\"code\":9007,\"type\":\"OAuthException\",\"error_subcode\":2207027,\"is_transient\":false,\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"error_user_title\":\"Cannot Publish\",\"fbtrace_id\":\"A9y8Ri-xnhW7L"
+    },
     "caption": "Cranberry and deep-wine stiletto, suede-matte luxury with antique gold leaf accents. 🍂\nA tortoiseshell crescent and slim silver mirror detail modernize the harvest palette.\nFor gel nails in Modesto, book your holiday set at Venetian Nail Spa — link in bio or call 209-408-8597.\n\nVelvet dress or cozy knit — which would you wear this with?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
