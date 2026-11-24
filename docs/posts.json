@@ -4167,7 +4167,11 @@
     "image": "posts/2026-11-24-fall-102451-cb681.jpg",
     "feed_image": "posts/2026-11-24-fall-102451-cb681-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18141266902646026",
+      "posted": "2026-11-24T12:00:08-08:00",
+      "story_id": "18016123004764322"
+    },
     "caption": "Warm mocha matte meets glossy tortoise and a clean silver chrome cuff—this is fall refinement ✨\nA rich mix of Mocha Dusk, Coppered Amber and Honey Tortoise with Sterling Silver accents — perfect as this season's inspiration. Venetian Nail Spa is your Central Valley nail salon for elevated fall manis.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nDo you love the contrast of a soft-matte field with glossy micro-details this season?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -4194,6 +4198,11 @@
     "pose": "03-curled-claw-denim",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand with the fingers loosely curled toward the camera, seen from the back of the fingers, nails pointing to the right and stacked one above another like steps, fingertips resting near the frayed edge of fabric; two gold rings on the fingers; warm, softly blurred background. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Mocha Dusk, Coppered Amber, Honey Tortoise, Sterling Silver. Design: One visible hand (dark tan, deep warm brown skin) gently splayed on a cream cable-knit sweater. Long tapered-square nails, overall soft-matte Mocha Dusk base. Each nail has a precise, thin Sterling Silver chrome cuff at the cuticle (clean crescent line) that catches light. Thumb: glossy Honey Tortoise overlay that covers the center of the nail, warm amber swirls visible beneath a high-shine topcoat and tiny scattered Sterling Silver leaf specks near the free edge. Index: matte Mocha Dusk with a glossy Coppered Amber French curve that grows thicker toward the tip, edged by a faint silver microline. Middle: dramatic vertical glossy cat-eye shimmer band in Coppered Amber running from cuticle-cuff to tip, the rest matte, creating a polished stripe contrast. Ring (accent): layered Honey Tortoise lacquer in a glossy patchwork—translucent amber islands and darker espresso veins—encapsulated with a few delicate Sterling Silver leaf flakes over a matte border. Pinky: solid matte Mocha Dusk with a narrow glossy tip and a single tiny silver leaf fleck near the sidewall. Overall finish: soft matte field with intentional glossy pockets (tortoise and cat-eye) and uniform silver chrome cuffs at every cuticle for a cohesive, luxe look. Technique emphasis: chrome cuff at the cuticle line. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122336276684240822",
+      "posted": "2026-11-24T12:00:24-08:00",
+      "story_id": "1487210342789176"
+    }
   }
 ]
