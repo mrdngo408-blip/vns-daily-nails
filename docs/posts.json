@@ -4111,7 +4111,9 @@
     "feed_image": "posts/2026-11-23-fall-162500-b923d-feed.jpg",
     "slot": "morning",
     "instagram": {
-      "error": "Instagram API error 400: {\"error\":{\"message\":\"Media ID is not available\",\"code\":9007,\"type\":\"OAuthException\",\"error_subcode\":2207027,\"is_transient\":false,\"error_user_msg\":\"The media is not ready for publishing, please wait for a moment\",\"error_user_title\":\"Cannot Publish\",\"fbtrace_id\":\"A9y8Ri-xnhW7L"
+      "feed_id": "18060819161573961",
+      "posted": "2026-11-24T09:00:16-08:00",
+      "story_id": "17942621880392582"
     },
     "caption": "Cranberry and deep-wine stiletto, suede-matte luxury with antique gold leaf accents. 🍂\nA tortoiseshell crescent and slim silver mirror detail modernize the harvest palette.\nFor gel nails in Modesto, book your holiday set at Venetian Nail Spa — link in bio or call 209-408-8597.\n\nVelvet dress or cozy knit — which would you wear this with?\n\nHi and welcome if you're new here! What's the last nail color you fell in love with?\n\n✨ AI-generated design inspiration",
     "hashtags": [
@@ -4139,6 +4141,11 @@
     "pose": "02-diagonal-on-knit",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cranberry, Deep Wine Bordeaux, Antique Gold Leaf, Silver Mirror Chrome. Design: One visible hand (medium-tan skin) splayed on soft mocha velvet. Long stiletto nails, base finished in a velvet suede-look matte: most nails are a deep cranberry that fades into a concentrated deep-wine Bordeaux at the tips with a whisper of cat-eye shimmer caught in the center. Ring finger is the accent: a hand-placed cluster of antique gold leaf near the apex with a tiny warm tortoiseshell crescent at the cuticle. Thumb and index wear a single, thin silver mirror-chrome crescent at the base and a delicate vertical chrome pinstripe to add luminous contrast against the matte. Overall luxe harvest tones — tactile suede matte with pinpoint mirror chrome and gold leaf accents. Technique emphasis: velvet suede-look matte. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Subtle elegant nod to Thanksgiving (warm harvest tones). Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122336255342240822",
+      "posted": "2026-11-24T09:00:38-08:00",
+      "story_id": "1520638336575410"
+    }
   }
 ]
