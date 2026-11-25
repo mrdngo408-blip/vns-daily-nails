@@ -4204,5 +4204,53 @@
       "posted": "2026-11-24T12:00:24-08:00",
       "story_id": "1487210342789176"
     }
+  },
+  {
+    "id": "2026-11-24-fall-162420-ddff8",
+    "date": "2026-11-24",
+    "created": "2026-11-24T16:24:20-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Plum Crescent Atelier",
+    "palette": [
+      "Plum Velvet Cat-Eye",
+      "Espresso Truffle",
+      "Amber Tortoise Brown",
+      "Sterling Silver"
+    ],
+    "palette_text": "Plum Velvet Cat-Eye, Espresso Truffle, Amber Tortoise Brown, Sterling Silver",
+    "technique": "reverse French (color at the cuticle)",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-24-fall-162420-ddff8.jpg",
+    "feed_image": "posts/2026-11-24-fall-162420-ddff8-feed.jpg",
+    "slot": "evening",
+    "instagram": null,
+    "caption": "Velvet cat-eye in deep espresso with plum cuticle crescents and an amber tortoise accent — autumn refined ✨\nFind this fall inspiration at your favorite nail salon in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597 to reserve your appointment.\n\nWhich silver accent would you try — a thin crescent at the cuticle or scattered microflakes?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#VelvetCatEye",
+      "#ReverseFrench",
+      "#AlmondNails"
+    ],
+    "full_caption": "Velvet cat-eye in deep espresso with plum cuticle crescents and an amber tortoise accent — autumn refined ✨\nFind this fall inspiration at your favorite nail salon in Modesto.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597 to reserve your appointment.\n\nWhich silver accent would you try — a thin crescent at the cuticle or scattered microflakes?\n\nSo happy you found us! What nail look are you planning next?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #VelvetCatEye #ReverseFrench #AlmondNails",
+    "alt_text": "One dark-skinned hand with long almond-shaped nails painted metallic brown with deep magenta half-moon accents and a small rhinestone on the ring finger; three gold rings on the fingers. Hand rests on a ribbed brown sweater. AI-generated image.",
+    "question": "Which silver accent would you try — a thin crescent at the cuticle or scattered microflakes?",
+    "welcome": "So happy you found us! What nail look are you planning next?",
+    "seo_phrase": "nail salon in Modesto",
+    "style": "luxe",
+    "skin_step": "black",
+    "length": "long",
+    "shape": "almond",
+    "skin": "deep dark brown, a Black woman's",
+    "finish": "velvet cat-eye",
+    "color_focus": null,
+    "design": "One visible hand of a Black woman with deep dark brown skin, gently splayed over a chocolate-brown ribbed knit sweater. Long almond nails, velvet cat-eye finish. Each nail has a deep Espresso Truffle base with a subtle vertical cat-eye shimmer; a reversed-French plum crescent (Plum Velvet Cat-Eye) hugs the cuticle on every finger as a soft inverted smile. The ring finger is the accent: the plum crescent is layered with a fine amber tortoise crescent inside it, tiny tortoise freckling spilling slightly into the center, and a delicate Sterling Silver crescent-line tracing the outer edge of the tortoise. A whisper of micro silver flakes dots the inner cuticle of the thumb and index for quiet sparkle; all edges are tapered and glossy, the overall look coordinated, luxe and tactile against the sweater.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 8/10 - Minor differences: fingers are slightly curved and held closer together and the camera angle is a touch more angled than the reference; no anatomical or framing issues.",
+    "pose": "04-flat-on-knee",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Plum Velvet Cat-Eye, Espresso Truffle, Amber Tortoise Brown, Sterling Silver. Design: One visible hand of a Black woman with deep dark brown skin, gently splayed over a chocolate-brown ribbed knit sweater. Long almond nails, velvet cat-eye finish. Each nail has a deep Espresso Truffle base with a subtle vertical cat-eye shimmer; a reversed-French plum crescent (Plum Velvet Cat-Eye) hugs the cuticle on every finger as a soft inverted smile. The ring finger is the accent: the plum crescent is layered with a fine amber tortoise crescent inside it, tiny tortoise freckling spilling slightly into the center, and a delicate Sterling Silver crescent-line tracing the outer edge of the tortoise. A whisper of micro silver flakes dots the inner cuticle of the thumb and index for quiet sparkle; all edges are tapered and glossy, the overall look coordinated, luxe and tactile against the sweater. Technique emphasis: reverse French (color at the cuticle). Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
