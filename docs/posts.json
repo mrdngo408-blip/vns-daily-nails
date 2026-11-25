@@ -4318,5 +4318,53 @@
       "posted": "2026-11-25T09:27:35-08:00",
       "story_id": "1666546071543257"
     }
+  },
+  {
+    "id": "2026-11-25-fall-102011-7f176",
+    "date": "2026-11-25",
+    "created": "2026-11-25T10:20:12-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Autumn Vine Elegance",
+    "palette": [
+      "Sheer Champagne Bisque",
+      "Copper-Bronze",
+      "Warm Tortoise Amber",
+      "Antique Gold"
+    ],
+    "palette_text": "Sheer Champagne Bisque, Copper-Bronze, Warm Tortoise Amber, Antique Gold",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "mocha velvet",
+    "image": "posts/2026-11-25-fall-102011-7f176.jpg",
+    "feed_image": "posts/2026-11-25-fall-102011-7f176-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "A timeless French reimagined for fall — sheer champagne, copper-bronze tips and a tiny tortoise-amber accent with a hand-painted gold vine. Modesto manicure inspiration for cozy, elevated evenings ✨\nClassic with a modern twist — long ovals, high-gloss finish. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nIf this were your fall mani, what color lipstick would you pair with it?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#AutumnFrench",
+      "#TortoiseAccent",
+      "#LongOvalNails"
+    ],
+    "full_caption": "A timeless French reimagined for fall — sheer champagne, copper-bronze tips and a tiny tortoise-amber accent with a hand-painted gold vine. Modesto manicure inspiration for cozy, elevated evenings ✨\nClassic with a modern twist — long ovals, high-gloss finish. Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nIf this were your fall mani, what color lipstick would you pair with it?\n\nWelcome to all our new friends! What's your dream nail set?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #AutumnFrench #TortoiseAccent #LongOvalNails",
+    "alt_text": "One light-medium skinned hand shown from the back with almond-shaped medium-length nude nails with brown tips and a marble accent on one nail, two gold sparkly rings, a dark ribbed sleeve and brown background. AI-generated image.",
+    "question": "If this were your fall mani, what color lipstick would you pair with it?",
+    "welcome": "Welcome to all our new friends! What's your dream nail set?",
+    "seo_phrase": "Modesto manicure",
+    "style": "french",
+    "skin_step": "light tan",
+    "length": "long",
+    "shape": "oval",
+    "skin": "light tan",
+    "finish": "high-gloss",
+    "color_focus": null,
+    "design": "One visible hand (light tan skin) softly splayed on mocha velvet. Long oval nails, high-gloss finish, classic French: a sheer champagne bisque base on every nail with crisp seasonal colored tips in copper-bronze (clean smile lines, slightly rounded). Ring finger is the accent: a single fine hand-painted antique-gold vine starting at the cuticle and trailing delicately toward the tip, with a tiny warm tortoise-amber inlay near the base of the vine. Middle nail carries a whisper of cat-eye shimmer along the copper tip so the light shifts as the hand moves. All nails read as one coordinated, elegant fall French set.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - ",
+    "pose": "06-upright-sleeve",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: a CLASSIC FRENCH TIP set on oval nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (seasonal colored tips in Sheer Champagne Bisque). Add a small, delicate design accent on only one or two nails (fine hand-painted line art); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Champagne Bisque, Copper-Bronze, Warm Tortoise Amber, Antique Gold. Design: One visible hand (light tan skin) softly splayed on mocha velvet. Long oval nails, high-gloss finish, classic French: a sheer champagne bisque base on every nail with crisp seasonal colored tips in copper-bronze (clean smile lines, slightly rounded). Ring finger is the accent: a single fine hand-painted antique-gold vine starting at the cuticle and trailing delicately toward the tip, with a tiny warm tortoise-amber inlay near the base of the vine. Middle nail carries a whisper of cat-eye shimmer along the copper tip so the light shifts as the hand moves. All nails read as one coordinated, elegant fall French set. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft mocha velvet, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
