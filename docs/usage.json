@@ -99,14 +99,14 @@
       "cost": 0.24
     },
     "2026-11-25": {
-      "images": 2,
-      "cost": 0.16
+      "images": 3,
+      "cost": 0.24
     }
   },
   "months": {
     "2026-11": {
-      "images": 121,
-      "cost": 13.64,
+      "images": 122,
+      "cost": 13.72,
       "test_images": 11
     }
   },

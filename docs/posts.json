@@ -4261,5 +4261,53 @@
       "posted": "2026-11-24T18:00:37-08:00",
       "story_id": "1132369809782803"
     }
+  },
+  {
+    "id": "2026-11-25-fall-092700-4fc32",
+    "date": "2026-11-25",
+    "created": "2026-11-25T09:27:00-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Wine & Wire Stilettos",
+    "palette": [
+      "Deep Wine Merlot",
+      "Velvet Burgundy",
+      "Champagne Gold Leaf",
+      "Warm Amber Tortoise"
+    ],
+    "palette_text": "Deep Wine Merlot, Velvet Burgundy, Champagne Gold Leaf, Warm Amber Tortoise",
+    "technique": "gold wire-line geometric art",
+    "background": "camel cashmere",
+    "image": "posts/2026-11-25-fall-092700-4fc32.jpg",
+    "feed_image": "posts/2026-11-25-fall-092700-4fc32-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Long soft-stiletto in deep wine and velvet burgundy with a glazed-pearl glow and gold-wire geometry — a modern luxe fall statement. Looking for luxury nails in Modesto? ✨\nBook at Venetian Nail Spa (link in bio).\n\nDoes this gold-wire geometry feel modern or timeless to you?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#GoldWireArt",
+      "#BurgundyStilettos",
+      "#FallGlam"
+    ],
+    "full_caption": "Long soft-stiletto in deep wine and velvet burgundy with a glazed-pearl glow and gold-wire geometry — a modern luxe fall statement. Looking for luxury nails in Modesto? ✨\nBook at Venetian Nail Spa (link in bio).\n\nDoes this gold-wire geometry feel modern or timeless to you?\n\nNew here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #GoldWireArt #BurgundyStilettos #FallGlam",
+    "alt_text": "One light-medium skinned hand seen from the back with long pointed stiletto burgundy metallic nails featuring thin gold lines and tortoiseshell tips, no rings, resting on beige wool fabric. AI-generated image.",
+    "question": "Does this gold-wire geometry feel modern or timeless to you?",
+    "welcome": "New here? Welcome to the Venetian Nail Spa family! What's your must-have nail detail: chrome, gems or art?",
+    "seo_phrase": "luxury nails in Modesto",
+    "style": "luxe",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "soft stiletto",
+    "skin": "fair white",
+    "finish": "glazed pearl",
+    "color_focus": "deep wine, burgundy and gold",
+    "design": "One visible hand (fair white skin) posed on a camel cashmere background. Long soft-stiletto nails, all finished in a glazed-pearl sheen that softens the sparkle. Thumb and index wear a saturated Deep Wine Merlot base; the index is overlaid with three parallel micro gold-wire lines that form a delicate geometric ladder from cuticle to tip. Middle nail is Velvet Burgundy with a vertical cat-eye shimmer stripe down the center, edged on either side by thin gold-wire chevrons. Ring finger is the accent: an ombré from merlot to burgundy with a tiny warm amber tortoise inlay near the tip and a single, crisp sliver of Champagne Gold Leaf tucked by the cuticle under a clear pearl glaze. Pinky is a translucent warm amber tortoise glaze with a single gold-wire curve tracing the free edge. Every nail reads as one coordinated luxe set — glazed pearl glow, precise gold-wire geometry, and a whisper of tortoise warmth.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - none",
+    "pose": "05-draped-over-edge",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long soft stiletto nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Wine Merlot, Velvet Burgundy, Champagne Gold Leaf, Warm Amber Tortoise. Design: One visible hand (fair white skin) posed on a camel cashmere background. Long soft-stiletto nails, all finished in a glazed-pearl sheen that softens the sparkle. Thumb and index wear a saturated Deep Wine Merlot base; the index is overlaid with three parallel micro gold-wire lines that form a delicate geometric ladder from cuticle to tip. Middle nail is Velvet Burgundy with a vertical cat-eye shimmer stripe down the center, edged on either side by thin gold-wire chevrons. Ring finger is the accent: an ombré from merlot to burgundy with a tiny warm amber tortoise inlay near the tip and a single, crisp sliver of Champagne Gold Leaf tucked by the cuticle under a clear pearl glaze. Pinky is a translucent warm amber tortoise glaze with a single gold-wire curve tracing the free edge. Every nail reads as one coordinated luxe set — glazed pearl glow, precise gold-wire geometry, and a whisper of tortoise warmth. Technique emphasis: gold wire-line geometric art. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
