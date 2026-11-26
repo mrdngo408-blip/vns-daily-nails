@@ -4509,7 +4509,11 @@
     "image": "posts/2026-11-26-fall-102208-55520.jpg",
     "feed_image": "posts/2026-11-26-fall-102208-55520-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18116993738142654",
+      "posted": "2026-11-26T12:00:12-08:00",
+      "story_id": "18050932466827565"
+    },
     "caption": "Design inspiration: long-oval ombré that deepens thumb to pinky — soft-matte warmth with glossy cat-eye and a tortoise ring accent. Modesto nail designs blending Cream Cashmere, Caramel Toffee, Burnt Amber and rose-gold micro-crescents. ✨ Book at Venetian Nail Spa (link in bio) or call 209-408-8597\n\nSpiced latte or red wine — which pairs with this mani for you?\n\nNew to our page? Welcome! What colors are you wearing on your nails this season?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -4536,6 +4540,11 @@
     "pose": "02-diagonal-on-knit",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand seen from the back at a steep diagonal, fingers relaxed and gently curved, pointing down toward the lower left, resting on a soft knit surface; four long nails in sharp focus stacked diagonally from top to bottom, the thumb softly out of focus at the top left; very shallow depth of field. NAILS: long long oval nails, perfectly manicured, clean cuticles, flawless soft matte with glossy accents gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cream Cashmere, Caramel Toffee, Burnt Amber, Warm Tortoise Amber. Design: One visible hand of a Black woman (deep dark brown skin) gently splayed on a folded camel cashmere backdrop. Long oval nails, gradient deepening finger by finger: thumb a soft Cream Cashmere matte; index a warm Caramel Toffee matte with a thin glossy rose-gold crescent at the cuticle; middle a Burnt Amber soft-matte base with a vertical glossy rose-gold cat-eye shimmer stripe down the center; ring finger a glossy Warm Tortoise Amber accent with scattered rose-gold leaf flecks; pinky a deeper Burnt Amber matte to anchor the ombré. Overall finish is a luxurious soft-matte field with select high-gloss micro-accents that catch the light; length long, shape long oval, luxe styling. Technique emphasis: gradient that deepens finger by finger. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, deep dark brown, a Black woman's skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122336620274240822",
+      "posted": "2026-11-26T12:00:30-08:00",
+      "story_id": "1166429295837198"
+    }
   }
 ]
