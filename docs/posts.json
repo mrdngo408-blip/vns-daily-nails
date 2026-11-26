@@ -4432,5 +4432,53 @@
       "posted": "2026-11-25T18:00:31-08:00",
       "story_id": "1469885061169365"
     }
+  },
+  {
+    "id": "2026-11-26-fall-073533-1d7c1",
+    "date": "2026-11-26",
+    "created": "2026-11-26T07:35:33-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Rose Gold Mirror Muse",
+    "palette": [
+      "Wine Mirror Chrome",
+      "Amber Tortoise Brown",
+      "Rose Gold Metallic",
+      "Champagne Micro-Pearl"
+    ],
+    "palette_text": "Wine Mirror Chrome, Amber Tortoise Brown, Rose Gold Metallic, Champagne Micro-Pearl",
+    "technique": "micro-pearl border along the cuticle",
+    "background": "chocolate brown ribbed knit sweater",
+    "image": "posts/2026-11-26-fall-073533-1d7c1.jpg",
+    "feed_image": "posts/2026-11-26-fall-073533-1d7c1-feed.jpg",
+    "slot": "morning",
+    "instagram": null,
+    "caption": "Luxe wine mirror chrome meets warm amber tortoise and rose-gold leaf—mirror shine for fall elegance. ✨\nLooking for the best nails in Modesto, CA? This long ballerina set pairs mirror chrome with a tortoise accent and a micro-pearl cuticle for a high-lux finish.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow do you keep long ballerina nails glossy through the season?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#MirrorChromeNails",
+      "#TortoiseshellNails",
+      "#BallerinaCoffin"
+    ],
+    "full_caption": "Luxe wine mirror chrome meets warm amber tortoise and rose-gold leaf—mirror shine for fall elegance. ✨\nLooking for the best nails in Modesto, CA? This long ballerina set pairs mirror chrome with a tortoise accent and a micro-pearl cuticle for a high-lux finish.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow do you keep long ballerina nails glossy through the season?\n\nJust found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #MirrorChromeNails #TortoiseshellNails #BallerinaCoffin",
+    "alt_text": "A single dark-skinned left hand shown from the back with long coffin-shaped nails: two glossy burgundy chrome nails, one tortoiseshell accent nail and one bronze shimmer nail, a gold ring, resting on brown ribbed fabric. AI-generated image.",
+    "question": "How do you keep long ballerina nails glossy through the season?",
+    "welcome": "Just found us? Welcome to Venetian Nail Spa! What's your favorite nail shape right now?",
+    "seo_phrase": "best nails in Modesto, CA",
+    "style": "luxe",
+    "skin_step": "dark tan",
+    "length": "long",
+    "shape": "ballerina coffin",
+    "skin": "dark tan, deep warm brown",
+    "finish": "mirror chrome",
+    "color_focus": null,
+    "design": "One visible hand (dark tan, deep warm-brown skin) palm-down, fingers gently splayed on a chocolate-brown ribbed knit sweater. Long ballerina-coffin nails, high-gloss mirror chrome: thumb, index and middle in a deep wine mirror chrome; the middle has a hairline vertical rose-gold metallic stripe that catches light like a cat-eye flash. Ring finger is an amber tortoiseshell encapsulation—translucent warm amber and espresso swirls with scattered rose-gold leaf flecks under glossy topcoat. Pinkie is a soft champagne-rose gold mirror chrome with a faint cat-eye shimmer. Every nail is edged at the cuticle with a delicate micro-pearl border in creamy champagne for a refined, luxe halo.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 9/10 - no issues",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: long ballerina coffin nails, perfectly manicured, clean cuticles, flawless mirror chrome gel finish, with rose gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Wine Mirror Chrome, Amber Tortoise Brown, Rose Gold Metallic, Champagne Micro-Pearl. Design: One visible hand (dark tan, deep warm-brown skin) palm-down, fingers gently splayed on a chocolate-brown ribbed knit sweater. Long ballerina-coffin nails, high-gloss mirror chrome: thumb, index and middle in a deep wine mirror chrome; the middle has a hairline vertical rose-gold metallic stripe that catches light like a cat-eye flash. Ring finger is an amber tortoiseshell encapsulation—translucent warm amber and espresso swirls with scattered rose-gold leaf flecks under glossy topcoat. Pinkie is a soft champagne-rose gold mirror chrome with a faint cat-eye shimmer. Every nail is edged at the cuticle with a delicate micro-pearl border in creamy champagne for a refined, luxe halo. Technique emphasis: micro-pearl border along the cuticle. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
