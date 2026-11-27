@@ -4679,7 +4679,11 @@
     "image": "posts/2026-11-27-fall-113549-132e5.jpg",
     "feed_image": "posts/2026-11-27-fall-113549-132e5-feed.jpg",
     "slot": "noon",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18038859038665774",
+      "posted": "2026-11-27T12:00:08-08:00",
+      "story_id": "18172281601483948"
+    },
     "caption": "Rich cranberry and oxblood layered under a champagne-glazed pearl sheen, finished with antique gold leaf and a tiny gold-caviar crescent. Searching for gel nails in Modesto? This long tapered-square luxe is fall's most elegant inspiration. ✨ Book at Venetian Nail Spa (link in bio).\n\nWhich nail would you pick for the gold-caviar crescent — ring or thumb?\n\nFirst time here? Welcome to Venetian Nail Spa! Are you more of a classic or a bold nail person?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -4706,6 +4710,11 @@
     "pose": "05-draped-over-edge",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand draped over the top edge of a smooth natural object, seen from the back, fingers hanging down over the edge toward the camera with the nails pointing down, thumb partly visible at the side; light neutral background. NAILS: long tapered square nails, perfectly manicured, clean cuticles, flawless glazed pearl gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Cranberry Jewel, Oxblood Velvet, Antique Gold Leaf, Champagne Glazed Pearl. Design: One visible hand (medium-tan skin) gently cupped, fingers slightly overlapped, resting on a chocolate-brown ribbed knit sweater. Long tapered-square nails, all unified by a soft glazed-pearl finish. Index and pinky are Oxblood Velvet with a subtle champagne-glazed pearl wash for depth. Middle is Cranberry Jewel with a faint vertical silver thread near the cuticle for a cool-metal contrast. Ring finger is the accent: a translucent cranberry jelly field sprinkled with irregular Antique Gold Leaf shards and edged along a diagonal with a crescent of clustered gold caviar beads. Thumb is Champagne Glazed Pearl with a thin Oxblood Velvet diagonal stripe and tiny scattered gold-leaf specks to tie the set together. Overall look: luxe, autumnal depth with concentrated gold-caviar texture at the accent nail and a single cool silver thread detail. Technique emphasis: gold caviar bead accents. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft chocolate brown ribbed knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, medium tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122336790356240822",
+      "posted": "2026-11-27T12:00:24-08:00",
+      "story_id": "1127493376856342"
+    }
   }
 ]
