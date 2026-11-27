@@ -4622,7 +4622,11 @@
     "image": "posts/2026-11-27-fall-073325-d5016.jpg",
     "feed_image": "posts/2026-11-27-fall-073325-d5016-feed.jpg",
     "slot": "morning",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18417327517090385",
+      "posted": "2026-11-27T09:00:14-08:00",
+      "story_id": "18378911797243759"
+    },
     "caption": "Deep-plum velvet cat-eye with espresso accents and a single floral reveal ✨\nEncapsulated dried blooms on cream, finished with silver leaf and subtle smoked-tortoise edge—this season's luxe mani inspiration.\nModesto nail art elevated for fall with velvet depth. Book at Venetian Nail Spa — link in bio or call 209-408-8597.\n\nWhat's your go-to fall mani appointment ritual?\n\nWelcome, new friends! What nail trend has caught your eye lately?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -4649,6 +4653,11 @@
     "pose": "04-flat-on-knee",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand resting flat on a fabric-covered knee, seen from directly above, fingers straight and slightly spread pointing to the upper right, a cozy sweater cuff at the wrist, the thumb relaxed at the bottom of the frame; thin gold rings on two fingers. NAILS: long stiletto nails, perfectly manicured, clean cuticles, flawless velvet cat-eye gel finish, with silver accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Deep Plum Velvet, Espresso Truffle, Cream Cashmere, Sterling Silver Leaf. Design: One visible hand (light-tan skin) softly splayed on a cream cable-knit sweater. Long stiletto nails, all unified by a velvet cat-eye finish: the index, middle and pinky are a shifting deep-plum cat-eye with a soft halo of magnetic shimmer; the thumb is a rich espresso-truffle cat-eye with a thin sterling-silver crescent at the cuticle. The ring finger is a translucent cream-cashmere base with encapsulated dried micro-blossoms (tiny amber blooms and white baby's-breath), sealed under the same velvet cat-eye top and accented with delicate sterling-silver leaf shards and a subtle smoked-tortoise frame to tie the set together. Technique emphasis: encapsulated dried flowers. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, light tan skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122336768588240822",
+      "posted": "2026-11-27T09:00:28-08:00",
+      "story_id": "1687677662943683"
+    }
   }
 ]
