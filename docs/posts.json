@@ -4829,5 +4829,52 @@
       "posted": "2026-11-28T09:00:26-08:00",
       "story_id": "2290507171867160"
     }
+  },
+  {
+    "id": "2026-11-28-fall-101929-3dc2e",
+    "date": "2026-11-28",
+    "created": "2026-11-28T10:19:29-08:00",
+    "season": "fall",
+    "holiday": null,
+    "title": "Satin Opal Whisper",
+    "palette": [
+      "Sheer Almond Bisque",
+      "Classic French White",
+      "22K Gold"
+    ],
+    "palette_text": "Sheer Almond Bisque, Classic French White, 22K Gold",
+    "technique": "classic French tip with a delicate design accent",
+    "background": "cream cable-knit sweater",
+    "image": "posts/2026-11-28-fall-101929-3dc2e.jpg",
+    "feed_image": "posts/2026-11-28-fall-101929-3dc2e-feed.jpg",
+    "slot": "noon",
+    "instagram": null,
+    "caption": "A timeless French with a modern whisper of gold ✨\nSearching for luxury nails in Modesto? This sheer almond base, crisp double white tips and a fine 22K line make it fall’s understated statement.\nInspired? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow far ahead do you schedule mani appointments before a special event?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration",
+    "hashtags": [
+      "#VenetianNailSpaModesto",
+      "#ModestoNails",
+      "#ClassicFrench",
+      "#GoldAccentNails",
+      "#FallNails"
+    ],
+    "full_caption": "A timeless French with a modern whisper of gold ✨\nSearching for luxury nails in Modesto? This sheer almond base, crisp double white tips and a fine 22K line make it fall’s understated statement.\nInspired? Book at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nHow far ahead do you schedule mani appointments before a special event?\n\nWelcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.\n\n✨ AI-generated design inspiration\n.\n#VenetianNailSpaModesto #ModestoNails #ClassicFrench #GoldAccentNails #FallNails",
+    "alt_text": "Single left hand from the back with light skin tone and medium almond nails; nude base with white French tips and thin gold line accents. A thin gold ring on the ring finger; hand rests on a cream knit fabric. AI-generated image.",
+    "question": "How far ahead do you schedule mani appointments before a special event?",
+    "welcome": "Welcome to Venetian Nail Spa! New here? We'd love to hear your favorite nail vibe.",
+    "seo_phrase": "luxury nails in Modesto",
+    "style": "french",
+    "skin_step": "white",
+    "length": "long",
+    "shape": "medium almond",
+    "skin": "fair white",
+    "finish": "high-gloss",
+    "color_focus": null,
+    "design": "One visible hand (fair white skin) gently resting on a cream cable-knit sweater. Long, medium-almond nails with a luminous sheer almond-bisque base; each nail features a crisp double-line white French tip — two fine parallel white smile lines — with a hairline 22K gold stripe nestled directly beneath the white tips. High-gloss finish across the set. Ring finger carries a single delicate 22K gold soft swirl, beginning near the cuticle and arcing gently toward the tip for a subtle, modern accent.",
+    "image_model": "gpt-image-2+pose",
+    "hand_check": "pose 10/10 - no issues detected",
+    "pose": "01-curled-over-fabric",
+    "text_model": "gpt-5-mini",
+    "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single left hand seen from the back, entering from the right side of the frame, fingers pointing to the left and gently curled, resting on and lightly holding a fold of soft fabric. The index finger is on top, then middle, ring and pinky stacked diagonally below it, each slightly lower and more curled, softly separated so all four nails are fully visible. The thumb is tucked behind the fabric and not visible. Camera slightly above, close crop from the knuckles to the nail tips, hand centered. A thin dainty gold band on the ring finger. NAILS: a CLASSIC FRENCH TIP set on medium almond nails: sheer natural pink/nude base on every nail with a crisp, clean, evenly curved tip line (double-line French with a thin gold line under white tips). Add a small, delicate design accent on only one or two nails (a soft swirl); the rest stay clean classic French. Flawless high-gloss gel finish, clean cuticles. Elegant, timeless and understated - no heavy chrome, no big crystals, no busy patterns. Color palette: Sheer Almond Bisque, Classic French White, 22K Gold. Design: One visible hand (fair white skin) gently resting on a cream cable-knit sweater. Long, medium-almond nails with a luminous sheer almond-bisque base; each nail features a crisp double-line white French tip — two fine parallel white smile lines — with a hairline 22K gold stripe nestled directly beneath the white tips. High-gloss finish across the set. Ring finger carries a single delicate 22K gold soft swirl, beginning near the cuticle and arcing gently toward the tip for a subtle, modern accent. Technique emphasis: classic French tip with a delicate design accent. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft cream cable-knit sweater, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, fair white skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
+    "quality": "medium"
   }
 ]
