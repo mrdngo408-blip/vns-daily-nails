@@ -4735,7 +4735,11 @@
     "image": "posts/2026-11-27-fall-162417-06fff.jpg",
     "feed_image": "posts/2026-11-27-fall-162417-06fff-feed.jpg",
     "slot": "evening",
-    "instagram": null,
+    "instagram": {
+      "feed_id": "18130480831668036",
+      "posted": "2026-11-27T18:00:13-08:00",
+      "story_id": "18138580870779213"
+    },
     "caption": "Long almond garnet jelly with hand-painted mocha lace and gold chrome leaf — luxe and luminous ✨\nWe're your Central Valley nail salon for elevated fall looks with delicate lace and warm metallics.\nBook at Venetian Nail Spa (link in bio) or call 209-408-8597.\n\nWhich texture feels more luxe to you: sheer jelly or mirrored chrome?\n\nNew to Venetian Nail Spa? Welcome! Short and sweet or long and glam: what's your style?\n\n✨ AI-generated design inspiration",
     "hashtags": [
       "#VenetianNailSpaModesto",
@@ -4762,6 +4766,11 @@
     "pose": "06-upright-sleeve",
     "text_model": "gpt-5-mini",
     "prompt": "Ultra-realistic luxury beauty-editorial close-up photograph of ONE woman's hand. POSE (copy the reference photo exactly): a single hand held upright with the back of the hand facing the camera, fingers pointing straight up and gently spread, a ribbed sweater sleeve covering the wrist, two sparkly rings, soft warm side light against a dark background. NAILS: long almond nails, perfectly manicured, clean cuticles, flawless sheer jelly gel finish, with gold accents where the design calls for them. All visible nails form one coordinated salon set. Small crystals are fine where the design calls for them. Color palette: Garnet Jelly, Mocha Truffle, Gold Chrome Leaf. Design: One visible hand with long almond nails, all finished in a sheer jelly sheen. Most nails wear a translucent garnet-jelly base that lets light glow through; a hand-painted delicate mocha lace pattern crawls from cuticle to tip in fine filigree, varying slightly finger to finger. The ring finger is the accent: dense mocha-lace filigree layered over a deeper garnet jelly, finished with irregular flakes of gold chrome leaf near the cuticle. Thumb and middle show a hairline gold chrome thread following the lace curves; the pinky has a mocha-glaze tip to balance the set. Overall look: coordinated long almond silhouettes, soft depth from the jelly finish, and luxe metallic highlights in gold. Technique emphasis: delicate lace pattern. Seasonal mood (fall): tortoiseshell, gold leaf, cat-eye shimmer, warm metallics. Background: soft camel cashmere, out of focus. Anatomically perfect: exactly ONE hand and nothing else (no second hand, no extra fingers). Every visible finger has exactly three natural segments and natural knuckle creases, attached naturally to the hand, none fused, bent backwards, duplicated or missing; correct finger lengths (middle longest, pinky shortest); one nail per finger, every nail fully inside the frame. Realistic skin texture and fine lines, elegant slim fingers, dark tan, deep warm brown skin tone. Nails razor sharp and in focus, background softly out of focus. Soft natural window light with gentle highlights on the gloss. Tall vertical portrait composition. No text, no letters, no logos, no watermarks, no brand names.",
-    "quality": "medium"
+    "quality": "medium",
+    "facebook": {
+      "post_id": "271116699414616_122336825510240822",
+      "posted": "2026-11-27T18:00:33-08:00",
+      "story_id": "1630339744938192"
+    }
   }
 ]
